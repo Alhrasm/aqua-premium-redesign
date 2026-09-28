@@ -2,910 +2,1278 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aqua Premium Foods — Wholesale Canned &amp; Frozen Supply</title>
-<meta name="description" content="Aqua Premium Foods — HACCP-certified canned tuna, legumes, vegetables and frozen foods for retailers, distributors and restaurants. Wholesale orders from 50 cartons, private label, Cairo &amp; Dubai.">
-<meta name="theme-color" content="#F7F3EC">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aqua Premium Foods | Premium Food. Global Supply.</title>
+<meta name="description" content="Canned fish, legumes and vegetables, frozen lines and pantry staples from Aqua Premium: 65 products with carton and container figures, supplied from Cairo and Dubai.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F3EEE5">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aqua Premium Foods | Premium Food. Global Supply.">
+<meta property="og:description" content="65 products in 10 lines, specified by the carton and the container. Cairo · Dubai.">
+<meta property="og:image" content="https://alhrasm.github.io/aqua-premium-redesign/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preload" as="image" href="assets/img/photos/cans-light.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Readex+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Readex+Pro:wght@300..600&family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
 <style>
+/* ==========================================================================
+   Aqua Premium Foods — editorial premium-food system
+   cream paper · navy ink · Aqua royal blue · antique gold hairlines
+   ========================================================================== */
 :root{
-  --bg:#F7F3EC;--paper:#FFFDF9;--sand:#EFE8DB;--ink:#0B1F3F;--ink-2:#46546B;--ink-3:#7B8599;--line:#E4DCCD;
-  --navy:#0B2A5B;--aqua:#1BA8BD;--aqua-soft:#DCF2F5;--amber:#E9972E;--amber-soft:#FBEAD1;
-  --green:#3E9B4F;--green-soft:#E2F0DF;--red:#D8453B;--red-soft:#F8E0DC;--blue-soft:#E1EAF6;
-  --f-serif:"Fraunces",Georgia,serif;--f-sans:"DM Sans",system-ui,sans-serif;--f-ar:"Readex Pro",sans-serif;
-  --r:22px;--r-sm:14px;--ease:cubic-bezier(.2,.8,.2,1);
-  --wrap:1240px;--gut:clamp(18px,4vw,48px);
-  --sh:0 1px 1px rgba(11,31,63,.04),0 18px 40px -24px rgba(11,31,63,.28);
+  --paper:#F3EEE5;--paper-2:#FAF7F1;--sand:#E8E0D2;--sand-2:#D5C8B2;
+  --ink:#0C1830;--ink-2:#3A455B;--ink-3:#5B6477;
+  --navy:#0F2550;--navy-2:#0A1A3A;--royal:#13279A;
+  --gold:#A8844A;--gold-2:#CDB283;--gold-ink:#7E6030;
+  --line:rgba(12,24,48,.16);--line-2:rgba(12,24,48,.09);
+  --on-navy:#F3EEE5;--on-navy-2:rgba(243,238,229,.74);--line-navy:rgba(243,238,229,.17);
+  --err:#9E2F26;
+  --f-display:"Bodoni Moda",Didot,"Bodoni 72","Times New Roman",serif;
+  --f-text:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-ar-display:"Amiri","Times New Roman",serif;
+  --f-ar-text:"Readex Pro",system-ui,"Segoe UI",sans-serif;
+  --wrap:1320px;--gut:clamp(20px,4.4vw,64px);--hdr:78px;
+  --sec:clamp(88px,10vw,164px);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --shadow-pack:drop-shadow(0 26px 24px rgba(12,24,48,.24)) drop-shadow(0 5px 6px rgba(12,24,48,.12));
 }
+
+/* ---------- base ---------- */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--f-sans);color:var(--ink);background:var(--bg);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-html[lang="ar"] body{font-family:var(--f-ar)}
-html[lang="ar"] :is(h1,h2,h3,.num,summary,blockquote,.clock,.mark,.proof b,.tk span,.tile .nm,.mmenu a,.side-note b,.card h3,.ql-i b){font-family:var(--f-ar)!important;letter-spacing:0!important;font-style:normal!important}
-img{display:block;max-width:100%}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--hdr) + 16px);scrollbar-color:var(--sand-2) var(--paper);text-rendering:optimizeLegibility}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.62 var(--f-text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:clip;caret-color:var(--royal)}
+:lang(ar){font-family:var(--f-ar-text)}
+html[lang=ar] body{line-height:1.8}
+img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
-button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-input,select,textarea{font:inherit;color:inherit}
-.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gut)}
-[dir="ltr"]{unicode-bidi:isolate}
-::selection{background:var(--amber);color:#fff}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;letter-spacing:.03em;color:var(--ink-2);padding:6px 13px 6px 7px;border-radius:40px;background:var(--paper);border:1px solid var(--line)}
-html[dir="rtl"] .eyebrow{padding:6px 7px 6px 13px}
-.eyebrow i{width:20px;height:20px;border-radius:50%;background:var(--amber-soft);display:grid;place-items:center;font-style:normal;font-size:.7rem}
-h2.t{font-family:var(--f-serif);font-weight:500;font-size:clamp(2rem,4vw,3.4rem);line-height:1.02;letter-spacing:-.025em;margin-top:18px}
-h2.t em,h1 em{font-style:italic;color:var(--aqua)}
-.sub{color:var(--ink-2);font-size:1.02rem;max-width:52ch;margin-top:16px}
-.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,52px)}
-section{padding-block:clamp(70px,9vw,130px)}
-.b{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:40px;font-weight:600;font-size:.95rem;transition:transform .35s var(--ease),background .3s,color .3s,box-shadow .3s,border-color .3s;white-space:nowrap}
-.b svg{width:16px;height:16px;flex:none}
-html[dir="rtl"] .b svg.ar{transform:scaleX(-1)}
-.b-ink{background:var(--navy);color:#fff}.b-ink:hover{background:var(--aqua);box-shadow:0 14px 30px -12px rgba(27,168,189,.7)}
-.b-soft{background:var(--paper);border:1px solid var(--line)}.b-soft:hover{border-color:var(--ink)}
-.b-amber{background:var(--amber);color:#fff}.b-amber:hover{background:#d4831c}
-.rv{opacity:0;filter:blur(10px);transform:scale(.985);transition:opacity 1.1s var(--ease),filter 1.1s var(--ease),transform 1.1s var(--ease)}
-.rv.in{opacity:1;filter:none;transform:none}
-.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}
-.w>span{display:inline-block;transform:translateY(110%) rotate(5deg);transform-origin:left bottom;transition:transform 1s var(--ease)}
-.split.in .w>span{transform:none}
-.nav{position:fixed;top:14px;inset-inline:0;z-index:50;display:flex;justify-content:center;padding-inline:12px;transition:transform .5s var(--ease);pointer-events:none}
-.nav.hide{transform:translateY(-140%)}
-.nav-in{pointer-events:auto;display:flex;align-items:center;gap:6px;padding:7px 7px 7px 16px;border-radius:60px;background:rgba(255,253,249,.84);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(228,220,205,.9);box-shadow:var(--sh);max-width:100%}
-html[dir="rtl"] .nav-in{padding:7px 16px 7px 7px}
-.nav-logo img{height:34px;width:auto}
-.nav-links{display:flex;gap:2px;margin-inline:12px}
-.nav-links a{padding:8px 13px;border-radius:30px;font-size:.88rem;font-weight:500;color:var(--ink-2);transition:background .25s,color .25s}
-.nav-links a:hover,.nav-links a.act{background:var(--sand);color:var(--ink)}
-.lang{display:flex;background:var(--sand);border-radius:30px;padding:3px}
-.lang button{padding:5px 10px;border-radius:30px;font-size:.75rem;font-weight:700;color:var(--ink-3)}
-.lang button.on{background:var(--paper);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
-.nav .b{padding:10px 16px;font-size:.85rem}
-.burger{display:none;width:40px;height:40px;border-radius:50%;background:var(--sand);align-items:center;justify-content:center;flex-direction:column;gap:4px}
-.burger span{width:16px;height:1.6px;background:var(--ink);transition:transform .3s,opacity .3s}
-.burger.x span:nth-child(1){transform:translateY(5.6px) rotate(45deg)}.burger.x span:nth-child(2){opacity:0}.burger.x span:nth-child(3){transform:translateY(-5.6px) rotate(-45deg)}
-.mmenu{position:fixed;inset:10px;z-index:45;border-radius:26px;background:var(--navy);color:#fff;padding:96px 26px 26px;display:flex;flex-direction:column;gap:2px;clip-path:circle(0% at 50% 34px);transition:clip-path .7s var(--ease),visibility 0s .7s;visibility:hidden}
-.mmenu.open{clip-path:circle(150% at 50% 34px);visibility:visible;transition:clip-path .7s var(--ease)}
-.mmenu a{font-family:var(--f-serif);font-size:2rem;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.12)}
-.mmenu a.b{margin-top:auto;justify-content:center;font-family:var(--f-sans)!important;font-size:1rem;border:0;padding:14px 22px}
-.hero{padding-top:128px;padding-bottom:0}
-.hero-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
-.hero h1{font-family:var(--f-serif);font-weight:500;font-size:clamp(2.8rem,6vw,5.4rem);line-height:.98;letter-spacing:-.035em;margin-top:22px}
-.hero .sub{font-size:1.1rem;margin-top:24px}
-.hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:32px}
-.proof{display:flex;gap:30px;flex-wrap:wrap;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
-.proof b{display:block;font-family:var(--f-serif);font-size:2rem;font-weight:500;line-height:1}
-.proof>div>span{font-size:.8rem;color:var(--ink-3)}
-.hero-tiles{position:relative}
-.tiles{display:grid;grid-template-columns:1fr 1fr;gap:14px;aspect-ratio:1/1.04}
-.tile{position:relative;border-radius:var(--r);overflow:hidden;background:var(--tc);display:flex;flex-direction:column;justify-content:space-between;padding:16px 18px;isolation:isolate;opacity:0;transform:translateY(30px);animation:tin 1.1s var(--ease) forwards}
-.tile:nth-child(1){--tc:var(--amber-soft);animation-delay:.15s}.tile:nth-child(2){--tc:var(--green-soft);animation-delay:.3s}.tile:nth-child(3){--tc:var(--blue-soft);animation-delay:.45s}.tile:nth-child(4){--tc:var(--red-soft);animation-delay:.6s}
-@keyframes tin{to{opacity:1;transform:none}}
-.tile .lab{position:relative;z-index:2;font-size:.76rem;font-weight:700;letter-spacing:.03em;display:flex;justify-content:space-between;align-items:center;gap:8px}
-.tile .lab small{font-weight:500;color:var(--ink-3)}
-.tile .nm{position:relative;z-index:2;font-family:var(--f-serif);font-size:1.1rem;line-height:1.1;min-height:1.2em}
-.tile .pics{position:absolute;inset:16% 10% 18%}
-.tile .pics img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 20px 22px rgba(11,31,63,.22));opacity:0;transform:translateY(26px) scale(.92) rotate(-5deg);transition:opacity .9s var(--ease),transform 1.1s var(--ease)}
-.tile .pics img.on{opacity:1;transform:none}
-.tile::after{content:"";position:absolute;width:70%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.6);left:15%;top:16%;z-index:-1;filter:blur(6px)}
-.stamp{position:absolute;z-index:3;width:120px;height:120px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;top:50%;left:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 8px var(--bg)}
-.stamp svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 20s linear infinite}
-.stamp text{font-size:9.2px;font-weight:700;letter-spacing:2.1px;fill:#fff;font-family:var(--f-sans)}
-.stamp b{font-family:var(--f-serif);font-size:1.4rem;font-weight:500;line-height:1;text-align:center}
-.stamp b small{display:block;font-family:var(--f-sans);font-size:.5rem;letter-spacing:.1em;opacity:.7;margin-top:3px}
-@keyframes spin{to{transform:rotate(360deg)}}
-.ticker{margin-top:clamp(50px,7vw,90px);border-block:1px solid var(--line);overflow:hidden;padding:16px 0}
-.tk{display:flex;width:max-content;animation:tk 45s linear infinite}
-html[dir="rtl"] .tk{animation-name:tkr}
-@keyframes tk{to{transform:translateX(-50%)}}@keyframes tkr{to{transform:translateX(50%)}}
-.tk span{font-family:var(--f-serif);font-size:clamp(1.5rem,3vw,2.4rem);padding-inline:24px;white-space:nowrap;display:flex;align-items:center;gap:24px}
-.tk span::after{content:"✳";font-size:.6em;color:var(--amber);font-style:normal}
-.tk span:nth-child(even){font-style:italic;color:var(--ink-3)}
-.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(200px,auto);gap:14px}
-.bx{border-radius:var(--r);background:var(--paper);border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;position:relative;overflow:hidden;transition:transform .6s var(--ease),box-shadow .6s}
-.bx:hover{transform:translateY(-4px);box-shadow:var(--sh)}
-.bx .num{font-family:var(--f-serif);font-size:clamp(2.8rem,4.4vw,3.9rem);line-height:.9;font-weight:500;letter-spacing:-.03em}
-.bx .num small{font-size:.5em;color:var(--aqua)}
-.bx p{font-size:.92rem;color:var(--ink-2);max-width:34ch}
-.bx h3{font-family:var(--f-serif);font-weight:500;font-size:1.5rem;line-height:1.1}
-.bx.story{grid-column:span 2;grid-row:span 2;background:var(--navy);color:#fff;border:0;padding:clamp(24px,3vw,38px)}
-.bx.story h3{font-size:clamp(1.7rem,2.8vw,2.5rem);line-height:1.05}
-.bx.story h3 em{color:var(--amber);font-style:italic}
-.bx.story p{color:rgba(255,255,255,.75);max-width:46ch;font-size:1rem}
-.vals{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.vals>span{padding:12px 14px;border-radius:var(--r-sm);background:rgba(255,255,255,.07);font-size:.84rem;color:rgba(255,255,255,.75);transition:background .3s}
-.vals>span:hover{background:rgba(255,255,255,.13)}
-.vals b{display:block;color:#fff;font-size:.95rem}
-.bx.photo{grid-column:span 2;padding:0;border:0;min-height:240px}
-.bx.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
-.bx.photo:hover img{transform:scale(1.05)}
-.bx.photo span{position:absolute;bottom:16px;inset-inline-start:16px;background:var(--paper);padding:8px 14px;border-radius:30px;font-size:.8rem;font-weight:600}
-.bx.aqua{background:var(--aqua-soft);border-color:transparent}
-.bx.amber{background:var(--amber-soft);border-color:transparent}
-.bx.green{background:var(--green-soft);border-color:transparent}
-.ic{width:44px;height:44px;border-radius:50%;background:var(--paper);display:grid;place-items:center}
-.ic svg{width:22px;height:22px;color:var(--navy)}
-.cat{background:var(--paper);border-radius:36px;margin-inline:clamp(0px,1.4vw,18px)}
-.cat-layout{display:grid;grid-template-columns:230px 1fr;gap:clamp(24px,3vw,44px);align-items:start}
-.side{position:sticky;top:96px;display:flex;flex-direction:column;gap:4px}
-.side button{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 16px;border-radius:var(--r-sm);font-weight:500;color:var(--ink-2);text-align:start;transition:background .25s,color .25s}
-.side button small{font-size:.74rem;color:var(--ink-3);background:var(--sand);padding:2px 8px;border-radius:20px}
-.side button:hover{background:var(--bg)}
-.side button.on{background:var(--navy);color:#fff}.side button.on small{background:rgba(255,255,255,.15);color:#fff}
-.search{position:relative;margin-bottom:12px}
-.search input{width:100%;padding:12px 14px 12px 40px;border-radius:40px;border:1px solid var(--line);background:var(--bg);font-size:.9rem}
-html[dir="rtl"] .search input{padding:12px 40px 12px 14px}
-.search input:focus{outline:0;border-color:var(--aqua)}
-.search svg{position:absolute;inset-inline-start:14px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--ink-3)}
-.side-note{margin-top:16px;padding:18px;border-radius:var(--r-sm);background:var(--amber-soft);font-size:.84rem;color:var(--ink-2)}
-.side-note b{display:block;color:var(--ink);font-family:var(--f-serif);font-size:1.15rem;font-weight:500;margin-bottom:4px}
-.m-search{display:none}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{position:relative;border-radius:var(--r);background:var(--cc);padding:14px 14px 16px;display:flex;flex-direction:column;cursor:pointer;transition:transform .6s var(--ease),box-shadow .6s;animation:pop .6s var(--ease) both}
-@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.97)}}
-.card:hover{transform:translateY(-6px);box-shadow:var(--sh)}
-.card[data-cat="leg"]{--cc:var(--amber-soft)}.card[data-cat="veg"]{--cc:var(--green-soft)}.card[data-cat="sea"]{--cc:var(--blue-soft)}.card[data-cat="frz"]{--cc:var(--aqua-soft)}
-.card.hide{display:none}
-.card .pic{aspect-ratio:1;display:grid;place-items:center;position:relative}
-.card .pic::before{content:"";position:absolute;inset:14%;border-radius:50%;background:rgba(255,255,255,.6);transition:transform .8s var(--ease)}
-.card:hover .pic::before{transform:scale(1.12)}
-.card .pic img{position:relative;width:80%;height:80%;object-fit:contain;filter:drop-shadow(0 16px 18px rgba(11,31,63,.22));transition:transform .8s var(--ease)}
-.card:hover .pic img{transform:rotate(-5deg) scale(1.06)}
-.card .tag{position:absolute;top:12px;inset-inline-start:12px;z-index:2;font-size:.7rem;font-weight:700;padding:4px 10px;border-radius:30px;background:var(--paper)}
-.card .info{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin-top:6px}
-.card h3{font-family:var(--f-serif);font-weight:500;font-size:1.16rem;line-height:1.12}
-.card .meta{font-size:.78rem;color:var(--ink-3);margin-top:4px}
-.plus{flex:none;width:42px;height:42px;border-radius:50%;background:var(--paper);display:grid;place-items:center;transition:background .3s,color .3s}
-.plus svg{width:18px;height:18px;transition:transform .45s var(--ease)}
-.plus:hover,.plus.on{background:var(--navy);color:#fff}
-.plus.on svg{transform:rotate(135deg)}
-.empty{grid-column:1/-1;display:none;padding:40px;text-align:center;border:1.5px dashed var(--line);border-radius:var(--r);color:var(--ink-3)}
-.empty.on{display:block}
-.tray{position:fixed;bottom:18px;inset-inline-end:18px;z-index:40;display:flex;align-items:center;gap:10px;padding:8px 8px 8px 20px;border-radius:40px;background:var(--navy);color:#fff;box-shadow:0 20px 40px -14px rgba(11,31,63,.6);transform:translateY(160%);transition:transform .6s var(--ease)}
-html[dir="rtl"] .tray{padding:8px 20px 8px 8px}
-.tray.on{transform:none}
-.tray .th{display:flex;padding-inline-start:8px}
-.tray .th img{width:32px;height:32px;object-fit:contain;border-radius:50%;background:#fff;padding:3px;margin-inline-start:-8px;border:2px solid var(--navy)}
-.tray b{font-size:.88rem;font-weight:600}
-.tray button{padding:9px 16px;border-radius:30px;background:var(--amber);font-weight:600;font-size:.82rem}
-.scrim{position:fixed;inset:0;z-index:90;background:rgba(11,31,63,.35);backdrop-filter:blur(4px);opacity:0;pointer-events:none;transition:opacity .4s}
-.scrim.on{opacity:1;pointer-events:auto}
-.drawer{position:fixed;top:10px;bottom:10px;inset-inline-end:10px;z-index:100;width:min(470px,calc(100% - 20px));background:var(--paper);border-radius:26px;display:flex;flex-direction:column;overflow:hidden;transform:translateX(calc(100% + 24px));transition:transform .6s var(--ease)}
-html[dir="rtl"] .drawer{transform:translateX(calc(-100% - 24px))}
-.drawer.on{transform:none!important}
-.d-top{display:flex;justify-content:space-between;align-items:center;padding:14px 16px 14px 22px;border-bottom:1px solid var(--line)}
-html[dir="rtl"] .d-top{padding:14px 22px 14px 16px}
-.d-top span{font-size:.8rem;font-weight:700;color:var(--ink-3)}
-.x{width:38px;height:38px;border-radius:50%;background:var(--sand);display:grid;place-items:center;transition:transform .4s var(--ease)}
-.x:hover{transform:rotate(90deg)}.x svg{width:15px;height:15px}
-.d-body{flex:1;overflow:auto;padding:0 22px 22px}
-.d-pic{margin-inline:-22px;background:var(--cc,var(--aqua-soft));aspect-ratio:1.3;display:grid;place-items:center;cursor:zoom-in}
-.d-pic img{height:78%;object-fit:contain;filter:drop-shadow(0 24px 26px rgba(11,31,63,.25));animation:pop .7s var(--ease)}
-.d-body h3{font-family:var(--f-serif);font-weight:500;font-size:2rem;line-height:1.05;margin-top:20px}
-.d-body .alt{color:var(--ink-3);margin-top:4px}
-.d-body .desc{color:var(--ink-2);margin-top:14px;font-size:.95rem}
-.spec{margin-top:18px;border-top:1px solid var(--line)}
-.spec div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.88rem}
-.spec dt{color:var(--ink-3)}.spec dd{text-align:end;font-weight:500}
-.d-foot{padding:14px 16px;border-top:1px solid var(--line);display:flex;gap:8px}
-.d-foot .b{flex:1;justify-content:center}
-.ql{display:grid;gap:8px;padding-top:18px}
-.ql-i{display:grid;grid-template-columns:54px 1fr auto;gap:12px;align-items:center;padding:8px;border-radius:var(--r-sm);background:var(--bg);animation:pop .5s var(--ease) both}
-.ql-i img{width:54px;height:54px;object-fit:contain}
-.ql-i b{font-family:var(--f-serif);font-weight:500}
-.ql-i small{display:block;color:var(--ink-3);font-size:.78rem}
-.ql-i button{width:32px;height:32px;border-radius:50%;background:var(--paper);display:grid;place-items:center}
-.ql-i button svg{width:13px;height:13px}
-.ql-empty{padding:40px 0;color:var(--ink-3);text-align:center}
-.lightbox{position:fixed;inset:0;z-index:120;background:rgba(11,31,63,.92);display:grid;place-items:center;padding:30px;opacity:0;pointer-events:none;transition:opacity .3s;cursor:zoom-out}
-.lightbox.on{opacity:1;pointer-events:auto}
-.lightbox img{max-height:88svh;width:auto}
-.rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(212px,1fr);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:none}
-.rail::-webkit-scrollbar{display:none}
-.step{scroll-snap-align:start;border-radius:var(--r);padding:26px;background:var(--paper);border:1px solid var(--line);min-height:290px;display:flex;flex-direction:column;justify-content:space-between;transition:background .4s,transform .6s var(--ease)}
-.step:hover{transform:translateY(-6px)}
-.step .n{font-family:var(--f-serif);font-size:5.4rem;line-height:.8;font-weight:400;color:transparent;-webkit-text-stroke:1.2px var(--ink-3);transition:color .4s,-webkit-text-stroke-color .4s}
-.step:hover .n{color:var(--amber);-webkit-text-stroke-color:var(--amber)}
-.step h3{font-family:var(--f-serif);font-weight:500;font-size:1.45rem;line-height:1.1}
-.step p{font-size:.9rem;color:var(--ink-2);margin-top:8px}
-.step.last{background:var(--amber);color:#fff;border:0}.step.last p{color:rgba(255,255,255,.9)}.step.last .n{-webkit-text-stroke-color:rgba(255,255,255,.7)}.step.last:hover .n{color:#fff}
-.rail-nav{display:flex;gap:8px}
-.rail-nav button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;transition:background .3s,color .3s}
-.rail-nav button:hover{background:var(--navy);color:#fff}
-.rail-nav svg{width:18px;height:18px}
-html[dir="rtl"] .rail-nav svg{transform:scaleX(-1)}
-.shelf-wrap{border-radius:32px;background:var(--navy);color:#fff;padding:clamp(26px,4vw,56px);position:relative;overflow:hidden}
-.shelf-wrap::before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(27,168,189,.35),transparent 65%);top:-220px;inset-inline-end:-140px}
-.shelf-wrap>*{position:relative}
-.shelf-wrap .eyebrow{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.85)}
-.shelf-wrap h2.t{color:#fff}.shelf-wrap .sub{color:rgba(255,255,255,.72)}
-.pills{display:flex;gap:8px;flex-wrap:wrap}
-.pills button{padding:10px 18px;border-radius:40px;border:1px solid rgba(255,255,255,.22);font-weight:500;font-size:.9rem;color:rgba(255,255,255,.8);transition:all .3s}
-.pills button:hover{border-color:#fff;color:#fff}
-.pills button.on{background:#fff;color:var(--navy);border-color:#fff}
-.shelf{margin-top:44px;display:grid;grid-template-columns:repeat(6,1fr);gap:10px;align-items:end;position:relative;padding:0 14px}
-.shelf::after{content:"";position:absolute;inset-inline:0;bottom:-10px;height:14px;border-radius:6px;background:linear-gradient(#2E5596,#15366C);box-shadow:0 22px 30px -12px rgba(0,0,0,.6)}
-.sp{display:flex;flex-direction:column;align-items:center;gap:10px;animation:drop .8s var(--ease) both}
-@keyframes drop{from{opacity:0;transform:translateY(-50px)}}
-.sp img{height:clamp(90px,12vw,165px);max-width:100%;object-fit:contain;filter:drop-shadow(0 14px 12px rgba(0,0,0,.4));transition:transform .5s var(--ease)}
-.sp:hover img{transform:translateY(-10px) rotate(-3deg)}
-.sp span{font-size:.75rem;color:rgba(255,255,255,.72);text-align:center;line-height:1.25;min-height:2.5em}
-.perks{display:flex;flex-wrap:wrap;gap:8px;margin-top:48px}
-.perks span{padding:8px 14px;border-radius:30px;background:rgba(255,255,255,.08);font-size:.84rem;display:flex;gap:8px;align-items:center;animation:pop .6s var(--ease) both}
-.perks span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--amber)}
-.acc{border-top:1.5px solid var(--ink)}
-.ac{border-bottom:1px solid var(--line)}
-.ac-h{width:100%;display:grid;grid-template-columns:80px 1fr auto;gap:18px;align-items:center;padding:26px 0;text-align:start}
-.ac-h .k{font-size:.8rem;font-weight:700;color:var(--ink-3)}
-.ac-h h3{font-family:var(--f-serif);font-weight:500;font-size:clamp(1.7rem,3.6vw,3rem);line-height:1;letter-spacing:-.02em;transition:color .3s,transform .5s var(--ease)}
-.ac-h:hover h3{color:var(--aqua);transform:translateX(8px)}
-html[dir="rtl"] .ac-h:hover h3{transform:translateX(-8px)}
-.ac-h .pm{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:transform .5s var(--ease),background .3s,color .3s}
-.ac-h .pm svg{width:18px;height:18px}
-.ac.on .pm{transform:rotate(45deg);background:var(--navy);color:#fff;border-color:var(--navy)}
-.ac-b{display:grid;grid-template-rows:0fr;transition:grid-template-rows .7s var(--ease)}
-.ac.on .ac-b{grid-template-rows:1fr}
-.ac-b>div{overflow:hidden;min-height:0}
-.ac-in{display:grid;grid-template-columns:80px 1.4fr 1fr;gap:18px;padding-bottom:30px}
-.ac-in ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px;grid-column:2;align-content:start}
-.ac-in li{padding:14px 16px;border-radius:var(--r-sm);background:var(--paper);border:1px solid var(--line);font-size:.92rem;display:flex;gap:10px;align-items:flex-start}
-.ac-in li::before{content:"✓";color:var(--aqua);font-weight:700}
-.ac-in .ph{border-radius:var(--r);overflow:hidden;min-height:220px;background:var(--sand);position:relative}
-.ac-in .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.ac-in .ph.pk{display:grid;place-items:center;background:var(--aqua-soft)}
-.ac-in .ph.pk img{position:static;width:auto;height:80%;max-height:240px;object-fit:contain;filter:drop-shadow(0 18px 20px rgba(11,31,63,.25))}
-.hubs{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:14px}
-.globe{border-radius:var(--r);overflow:hidden;position:relative;min-height:400px;color:#fff;padding:28px;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate}
-.globe img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.12);transition:transform 2.4s var(--ease)}
-.globe.in img{transform:none}
-.globe::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(11,31,63,.92),rgba(11,31,63,.05) 65%)}
-.globe .num{font-family:var(--f-serif);font-weight:500;font-size:clamp(3.4rem,6vw,5.4rem);line-height:.9}
-.globe p{color:rgba(255,255,255,.82);max-width:38ch;margin-top:10px}
-.regions{display:flex;gap:6px;flex-wrap:wrap;margin-top:16px}
-.regions span{padding:6px 12px;border-radius:30px;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);font-size:.8rem}
-.hub{border-radius:var(--r);background:var(--paper);border:1px solid var(--line);padding:26px;display:flex;flex-direction:column;gap:12px}
-.hub .flag{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.hub .flag span{font-size:.75rem;font-weight:700;padding:5px 11px;border-radius:30px;background:var(--aqua-soft);color:var(--navy)}
-.hub.eg .flag span{background:var(--amber-soft)}
-.clock{font-family:var(--f-serif);font-size:3.2rem;line-height:1;font-weight:400;font-variant-numeric:tabular-nums;margin-top:10px}
-.clock small{font-size:.32em;color:var(--ink-3);font-family:var(--f-sans);margin-inline-start:6px}
-.hub h3{font-family:var(--f-serif);font-weight:500;font-size:1.8rem;line-height:1}
-.hub p{font-size:.9rem;color:var(--ink-2)}
-.hub a.m{margin-top:auto;padding-top:10px;font-size:.86rem;font-weight:600;display:inline-flex;gap:8px;align-items:center;color:var(--navy)}
-.hub a.m svg{width:15px;height:15px}
-.live{display:inline-flex;align-items:center;gap:6px;font-size:.75rem;color:var(--green);font-weight:600}
-.live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
-@keyframes pulse{50%{opacity:.3}}
-.q{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(30px,5vw,70px);align-items:center}
-.q blockquote{font-family:var(--f-serif);font-size:clamp(1.9rem,3.6vw,3.2rem);line-height:1.08;letter-spacing:-.02em;font-weight:400;margin-top:20px}
-.q blockquote em{color:var(--aqua)}
-.q cite{display:block;margin-top:18px;font-style:normal;color:var(--ink-3);font-size:.9rem}
-.qs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
-.qs div{background:var(--paper);padding:22px;display:flex;gap:14px;align-items:flex-start;transition:background .3s}
-.qs div:hover{background:var(--aqua-soft)}
-.qs svg{flex:none;width:26px;height:26px;color:var(--aqua)}
-.qs b{display:block;font-weight:600}
-.qs span{font-size:.84rem;color:var(--ink-3)}
-.form-card{border-radius:36px;background:var(--paper);border:1px solid var(--line);display:grid;grid-template-columns:.85fr 1.3fr;overflow:hidden;box-shadow:var(--sh)}
-.fc-l{background:var(--amber-soft);padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;gap:18px;position:relative;overflow:hidden;min-height:420px}
-.fc-l img.deco{position:absolute;width:58%;bottom:-6%;inset-inline-end:-10%;transform:rotate(-12deg);filter:drop-shadow(0 20px 20px rgba(0,0,0,.18));transition:transform 1s var(--ease)}
-.form-card:hover .fc-l img.deco{transform:rotate(-4deg) translateY(-8px)}
-.fc-l .c{display:grid;gap:10px;margin-top:auto;position:relative;z-index:1}
-.fc-l .c a{display:flex;align-items:center;gap:10px;font-weight:600;width:max-content}
-.fc-l .c svg{width:18px;height:18px;color:var(--amber)}
-.fc-r{padding:clamp(28px,4vw,52px);display:grid;gap:22px}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.f{position:relative}
-.f input,.f select,.f textarea{width:100%;border:0;border-bottom:1.5px solid var(--line);background:transparent;padding:22px 0 8px;font-size:1rem;border-radius:0;appearance:none;-webkit-appearance:none;transition:border-color .3s}
-.f select{cursor:pointer}
-.f textarea{min-height:70px;resize:vertical}
-.f label{position:absolute;top:22px;inset-inline-start:0;font-size:1rem;color:var(--ink-3);pointer-events:none;transition:all .3s var(--ease)}
-.f :is(input,textarea):focus+label,.f :is(input,textarea):not(:placeholder-shown)+label,.f select+label{top:0;font-size:.74rem;font-weight:600;color:var(--ink-2)}
-.f :is(input,select,textarea):focus{outline:0;border-color:var(--aqua)}
-.f.err :is(input,select){border-color:var(--red)}
-.pk{display:grid;gap:10px}
-.pk>span{font-size:.74rem;font-weight:600;color:var(--ink-2)}
-.chips{display:flex;flex-wrap:wrap;gap:6px;max-height:150px;overflow:auto}
-.chip{padding:7px 12px;border-radius:30px;background:var(--bg);border:1px solid var(--line);font-size:.8rem;cursor:pointer;transition:all .25s;user-select:none}
-.chip:hover{border-color:var(--ink-3)}
-.chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
-.chips.err .chip{border-color:#EDB0A9}
-.send{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.send p{font-size:.8rem;color:var(--ink-3);max-width:34ch}
-.toast{display:none;padding:12px 16px;border-radius:var(--r-sm);font-size:.88rem}
-.toast.show{display:block}.toast.ok{background:var(--green-soft);color:#276236}.toast.bad{background:var(--red-soft);color:#9B2A22}
-.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,70px);align-items:start}
-.faq .side-h{position:sticky;top:100px}
-.faq .side-h .b{margin-top:26px}
+button,input,select,textarea{font:inherit;color:inherit;letter-spacing:inherit}
+button{background:none;border:0;cursor:pointer;text-align:inherit}
+ul,ol{list-style:none}
+svg{flex:none}
+::selection{background:var(--navy);color:var(--paper)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{width:100%;max-width:calc(var(--wrap) + 2*var(--gut));margin-inline:auto;padding-inline:var(--gut)}
+.skip{position:fixed;z-index:100;inset-inline-start:12px;top:-80px;background:var(--navy);color:var(--paper);padding:10px 16px;border-radius:3px;transition:top .3s}
+.skip:focus{top:12px}
+table,.tnum{font-variant-numeric:lining-nums tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- type ---------- */
+h1,h2,h3,.disp{font-family:var(--f-display);font-weight:400;line-height:1.02;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:clamp(3rem,6.1vw,5.6rem);line-height:.96;letter-spacing:-.03em}
+h2{font-size:clamp(2.3rem,4.6vw,4.2rem)}
+h3{font-size:clamp(1.4rem,1.9vw,1.8rem);font-weight:500;line-height:1.12;letter-spacing:-.01em}
+:is(h1,h2,h3,.disp):lang(ar){font-family:var(--f-ar-display);font-weight:700;letter-spacing:0;line-height:1.32}
+h1:lang(ar){font-size:clamp(3rem,6.6vw,5.6rem);line-height:1.24}
+h2:lang(ar){font-size:clamp(2.2rem,4.4vw,3.9rem)}
+figcaption{font-family:var(--f-display);font-style:italic;font-size:1rem;line-height:1.4;color:var(--ink-2);font-optical-sizing:none;font-variation-settings:"opsz" 11}
+figcaption:lang(ar){font-family:var(--f-ar-display);font-style:normal;font-size:1.02rem}
+.lede{font-size:clamp(1.08rem,1.25vw,1.2rem);line-height:1.55;color:var(--ink-2);max-width:54ch;text-wrap:pretty}
+p{text-wrap:pretty}
+
+/* ---------- controls ---------- */
+.btn{display:inline-flex;align-items:center;gap:12px;height:54px;padding-inline:26px;border-radius:3px;background:var(--navy);color:var(--paper);font-weight:500;font-size:.98rem;letter-spacing:.005em;white-space:nowrap;transition:background .35s var(--ease)}
+.btn:hover{background:var(--royal)}
+.btn:active{translate:0 1px}
+.btn svg,.link svg{width:18px;height:18px;transition:translate .5s var(--ease)}
+.btn:hover svg,.link:hover svg{translate:4px 0}
+html[dir=rtl] :is(.btn,.link) svg{scale:-1 1}
+html[dir=rtl] :is(.btn,.link):hover svg{translate:-4px 0}
+.btn-sm{height:44px;padding-inline:18px;font-size:.9rem}
+.btn-light{background:var(--paper);color:var(--navy)}
+.btn-light:hover{background:#fff}
+.link{display:inline-flex;align-items:center;gap:10px;font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-thickness:1px;text-decoration-color:var(--gold);text-underline-offset:7px;transition:color .3s}
+.link:hover{color:var(--royal)}
+.link.light{color:var(--paper);text-decoration-color:var(--gold-2)}
+.link.light:hover{color:#fff}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;inset:0 0 auto;z-index:60;height:var(--hdr);transition:background-color .4s,box-shadow .4s}
+.hdr.solid{background:rgba(243,238,229,.97);box-shadow:0 1px 0 var(--line-2)}
+.hdr .in{height:100%;display:flex;align-items:center;gap:clamp(16px,2.4vw,34px)}
+.brand{flex:none;display:block;position:relative}
+.brand img{height:44px;width:auto}
+.brand .lg-white{position:absolute;inset:0;opacity:0;transition:opacity .3s}
+.menu{display:flex;gap:clamp(16px,2vw,30px);margin-inline-start:auto}
+.menu a{position:relative;font-size:.94rem;font-weight:500;color:var(--ink-2);padding-block:8px;transition:color .3s}
+.menu a::after{content:"";position:absolute;inset-inline:0;bottom:3px;height:1px;background:var(--gold);scale:0 1;transform-origin:0 50%;transition:scale .5s var(--ease)}
+html[dir=rtl] .menu a::after{transform-origin:100% 50%}
+.menu a:hover,.menu a[aria-current=true]{color:var(--ink)}
+.menu a:hover::after,.menu a[aria-current=true]::after{scale:1 1}
+.lang{display:flex;align-items:center;gap:4px;font-size:.88rem;font-weight:600;color:var(--ink-3)}
+.lang button{padding:8px 4px;color:var(--ink-3);transition:color .3s}
+.lang button:hover{color:var(--ink)}
+.lang button[aria-pressed=true]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:6px}
+.lang button:lang(ar){font-family:var(--f-ar-text);font-size:.95rem}
+.burger{display:none;width:44px;height:44px;border-radius:3px;align-items:center;justify-content:center;flex-direction:column;gap:7px;margin-inline-start:4px}
+.burger span{display:block;width:22px;height:1.5px;background:currentColor;transition:translate .45s var(--ease),rotate .45s var(--ease)}
+.burger[aria-expanded=true] span:first-child{translate:0 4.25px;rotate:45deg}
+.burger[aria-expanded=true] span:last-child{translate:0 -4.25px;rotate:-45deg}
+.hdr.menu-open{background:transparent;box-shadow:none;color:var(--paper)}
+.hdr.menu-open .lg-white{opacity:1}
+.hdr.menu-open .lg-navy{opacity:0}
+.hdr.menu-open .lang,.hdr.menu-open .lang button{color:var(--on-navy-2)}
+.hdr.menu-open .lang button[aria-pressed=true]{color:var(--paper)}
+.mnav{position:fixed;inset:0;z-index:59;background:var(--navy-2);color:var(--paper);padding:calc(var(--hdr) + 18px) var(--gut) max(28px,env(safe-area-inset-bottom));display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:opacity .4s,visibility 0s .4s}
+.mnav.open{opacity:1;visibility:visible;transition:opacity .4s}
+.mnav nav{display:flex;flex-direction:column}
+.mnav nav a{font-family:var(--f-display);font-size:clamp(2rem,8.4vw,2.6rem);line-height:1.15;padding-block:12px;border-bottom:1px solid var(--line-navy)}
+.mnav nav a:lang(ar){font-family:var(--f-ar-display);font-weight:700}
+.mnav .btn{margin-top:auto;justify-content:center}
+.mnav-foot{margin-top:18px;font-size:.88rem;color:var(--on-navy-2)}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:minmax(0,1.14fr) minmax(0,1fr);min-height:max(660px,min(100svh,1020px))}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding-block:calc(var(--hdr) + clamp(36px,7vh,96px)) clamp(48px,7vh,88px);padding-inline:max(var(--gut),calc((100vw - var(--wrap))/2)) clamp(28px,5.6vw,96px)}
+.hero h1{margin-bottom:clamp(22px,3.4vh,34px)}
+.hero .lede{max-width:44ch}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 30px;margin-top:clamp(28px,4.6vh,44px)}
+.facts{margin-top:clamp(40px,8vh,88px);padding-top:18px;border-top:1px solid var(--line);font-size:.9rem;line-height:1.5;color:var(--ink-3);max-width:52ch}
+.hero-media{position:relative;min-height:100%}
+.hero-photo{position:absolute;inset:0;overflow:hidden;background:var(--sand)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 58%;animation:settle 1.8s var(--ease) both}
+.hero-photo figcaption{position:absolute;inset-inline-end:clamp(18px,2vw,28px);bottom:16px;font-size:.92rem;color:var(--ink-2);max-width:32ch;text-align:end}
+@keyframes settle{from{scale:1.07}}
+.pk{position:absolute;display:block;filter:var(--shadow-pack);will-change:transform}
+.pk img{width:100%;height:auto}
+button.pk{cursor:pointer;transition:scale .6s var(--ease)}
+button.pk:hover{scale:1.04}
+.hero .pk{animation:rise 1.3s var(--ease) both}
+.pk-a{width:clamp(170px,18vw,300px);bottom:10%;inset-inline-start:-12%;rotate:-7deg;animation-delay:.2s!important}
+.pk-b{width:clamp(150px,15.5vw,250px);bottom:3%;inset-inline-start:7%;rotate:4deg;animation-delay:.38s!important}
+html[dir=rtl] .pk-a{rotate:7deg}html[dir=rtl] .pk-b{rotate:-4deg}
+@keyframes rise{from{opacity:0;translate:0 70px}}
+
+/* ---------- range intro + index ---------- */
+.range-intro{padding-block:var(--sec) clamp(40px,5vw,72px)}
+.ri{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:28px var(--gut);align-items:end}
+.ri h2{grid-column:1/8}
+.ri .lede{grid-column:8/13;justify-self:end}
+.index{grid-column:1/-1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:clamp(28px,4vw,52px);border-top:1px solid var(--ink)}
+.index li{border-bottom:1px solid var(--line-2)}
+.index li:not(:nth-child(5n)){border-inline-end:1px solid var(--line-2)}
+.index button{width:100%;min-height:118px;display:flex;flex-direction:column;justify-content:space-between;gap:14px;padding:18px 18px 16px;transition:background-color .35s}
+.index button:hover{background:var(--paper-2)}
+.index b{font-family:var(--f-display);font-weight:500;font-size:1.28rem;line-height:1.1;letter-spacing:-.01em}
+.index b:lang(ar){font-family:var(--f-ar-display);font-weight:700;font-size:1.42rem;line-height:1.3}
+.index small{display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:var(--ink-3)}
+.index small svg{width:16px;height:16px;opacity:0;translate:-6px 0;transition:opacity .35s,translate .5s var(--ease)}
+.index button:hover small svg{opacity:1;translate:0 0}
+html[dir=rtl] .index small svg{scale:-1 1;translate:6px 0}
+html[dir=rtl] .index button:hover small svg{translate:0 0}
+
+/* ---------- spreads ---------- */
+.spread{padding-block:clamp(32px,4vw,64px) var(--sec)}
+.spread .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:40px var(--gut);align-items:center}
+.sp-media{grid-column:1/7;position:relative}
+.sp-text{grid-column:8/13}
+.sp-photo{aspect-ratio:1000/1332;overflow:hidden;border-radius:2px;background:var(--sand)}
+.sp-photo img{width:100%;height:100%;object-fit:cover}
+.sp-media figcaption{margin-top:14px;max-width:44ch}
+.sp-text h2{margin-bottom:24px}
+.pk-c{width:clamp(150px,16vw,250px);bottom:13%;inset-inline-end:-14%;rotate:-5deg}
+.pk-d{width:clamp(130px,13vw,205px);bottom:-3%;inset-inline-end:3%;rotate:6deg}
+html[dir=rtl] .pk-c{rotate:5deg}html[dir=rtl] .pk-d{rotate:-6deg}
+.leaders{margin-block:34px 30px;border-top:1px solid var(--line);font-size:.97rem}
+.leaders li{display:flex;align-items:baseline;gap:12px;padding-block:13px;border-bottom:1px solid var(--line-2)}
+.leaders li>span{color:var(--ink-2)}
+.leaders li i{flex:1;min-width:24px;border-bottom:1px dotted var(--sand-2);translate:0 -5px}
+.leaders li b{font-weight:500;font-variant-numeric:lining-nums proportional-nums;text-align:end}
+
+/* ---------- canned shelf (navy) ---------- */
+.shelf-sec{background:var(--navy);color:var(--on-navy);padding-block:var(--sec);overflow:hidden}
+.sh-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:28px var(--gut);align-items:start}
+.sh-head h2{grid-column:1/7}
+.sh-head>div{grid-column:8/13}
+.shelf-sec .lede{color:var(--on-navy-2)}
+.shelf-sec .leaders{border-color:var(--line-navy)}
+.shelf-sec .leaders li{border-color:var(--line-navy)}
+.shelf-sec .leaders li>span{color:var(--on-navy-2)}
+.shelf-sec .leaders li i{border-color:rgba(205,178,131,.4)}
+.shelf-wrap{margin-top:clamp(56px,7vw,104px);overflow-x:auto;scrollbar-width:none;overscroll-behavior-x:contain}
+.shelf-wrap::-webkit-scrollbar{display:none}
+.shelf{display:flex;align-items:flex-end;justify-content:center;gap:clamp(6px,1.2vw,18px);position:relative;width:max-content;min-width:100%;padding:0 var(--gut) 64px}
+.shelf::before{content:"";position:absolute;inset-inline:var(--gut);bottom:63px;height:1px;background:var(--gold-2);opacity:.7}
+.can{position:relative;flex:none;width:clamp(84px,7.1vw,116px);transition:translate .6s var(--ease)}
+.can img{width:100%;filter:drop-shadow(0 22px 16px rgba(0,0,0,.42)) drop-shadow(0 3px 3px rgba(0,0,0,.3))}
+.can span{position:absolute;top:calc(100% + 14px);inset-inline:-30%;text-align:center;font-size:.78rem;line-height:1.3;color:var(--on-navy-2);opacity:0;translate:0 -4px;transition:opacity .35s,translate .5s var(--ease)}
+.can:hover,.can:focus-visible{translate:0 -12px}
+.can.more{align-self:flex-end;aspect-ratio:440/720;display:grid;place-items:center;padding:10px;border:1px solid rgba(205,178,131,.45);text-align:center;font-family:var(--f-display);font-style:italic;font-size:1.02rem;line-height:1.3;color:var(--gold-2)}
+.can.more:lang(ar){font-family:var(--f-ar-display);font-style:normal}
+.can.more b{display:block;font-style:normal;font-weight:400;font-size:2.1rem;line-height:1;color:var(--paper)}
+.can.more:hover{border-color:var(--gold-2)}
+.can:hover span,.can:focus-visible span{opacity:1;translate:0 12px}
+.sh-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px 32px;margin-top:8px}
+.onpack{font-size:.88rem;color:var(--ink-3)}
+.shelf-sec .onpack{color:var(--gold-2)}
+
+/* ---------- frozen still life ---------- */
+.frz .sp-text{grid-column:1/6}
+.frz{padding-top:var(--sec)}
+.frz .cluster{grid-column:6/13}
+.cluster{position:relative;aspect-ratio:1.12}
+.cluster::after{content:"";position:absolute;inset-inline:8%;bottom:-1%;height:16%;background:radial-gradient(closest-side,rgba(12,24,48,.2),rgba(12,24,48,0));z-index:0;pointer-events:none}
+.cluster .pk{animation:none}
+.bag{width:32%}
+.b1{width:26%;inset-inline-start:1%;top:9%;rotate:-9deg;z-index:1}
+.b2{width:35%;inset-inline-start:23%;top:0;rotate:-2deg;z-index:3}
+.b3{width:32%;inset-inline-start:56%;top:7%;rotate:8deg;z-index:2}
+.b4{width:33%;inset-inline-start:5%;top:47%;rotate:4deg;z-index:4}
+.b5{width:31%;inset-inline-start:36%;top:45%;rotate:-6deg;z-index:5}
+.b6{width:31%;inset-inline-start:66%;top:48%;rotate:5deg;z-index:4}
+.cluster button.pk:hover{z-index:9}
+.sp-links{display:flex;flex-wrap:wrap;gap:12px 28px}
+
+/* ---------- catalogue ---------- */
+.cat{background:var(--paper-2);padding-block:var(--sec);border-block:1px solid var(--line-2)}
+.cat-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px var(--gut);align-items:end}
+.cat-head h2{grid-column:1/7}
+.cat-head>div{grid-column:8/13;display:grid;gap:20px;justify-items:start}
+.cat-body{display:grid;grid-template-columns:250px minmax(0,1fr);gap:clamp(28px,4.4vw,72px);margin-top:clamp(44px,5vw,72px);align-items:start}
+.cat-side{position:sticky;top:calc(var(--hdr) + 24px)}
+.search{position:relative;display:block;margin-bottom:22px}
+.search svg{position:absolute;inset-inline-start:0;top:50%;translate:0 -50%;width:18px;height:18px;color:var(--ink-3);pointer-events:none}
+.search input{width:100%;height:46px;border:0;border-bottom:1px solid var(--ink);background:transparent;padding-inline:30px 6px;font-size:.98rem;border-radius:0;outline:0}
+.search input::placeholder{color:var(--ink-3);opacity:1}
+.search input:focus{border-bottom-color:var(--gold);box-shadow:0 1px 0 var(--gold)}
+.search input::-webkit-search-cancel-button{-webkit-appearance:none}
+.lines{display:flex;flex-direction:column}
+.lines button{position:relative;display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:11px 0 11px 18px;font-size:.97rem;color:var(--ink-2);border-bottom:1px solid var(--line-2);transition:color .3s}
+html[dir=rtl] .lines button{padding:11px 18px 11px 0}
+.lines button::before{content:"";position:absolute;inset-inline-start:0;top:50%;width:8px;height:1px;background:var(--gold);scale:0 1;transform-origin:0 50%;transition:scale .4s var(--ease)}
+.lines button small{font-size:.8rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.lines button:hover{color:var(--ink)}
+.lines button[aria-selected=true]{color:var(--ink);font-weight:600}
+.lines button[aria-selected=true]::before{scale:1 1}
+.dl{display:inline-flex;align-items:center;gap:10px;margin-top:26px;font-size:.9rem;font-weight:500;color:var(--ink-2);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:6px}
+.dl svg{width:17px;height:17px}
+.dl:hover{color:var(--royal)}
+.panel{min-width:0}
+.ph{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:10px 24px;padding-bottom:18px;border-bottom:1px solid var(--ink)}
+.ph h3{font-size:clamp(1.9rem,3vw,2.7rem);font-weight:400;letter-spacing:-.02em}
+.ph h3:lang(ar){font-weight:700}
+.ph-alt{margin-top:6px;color:var(--ink-3);font-size:1rem}
+.ph-meta{font-size:.86rem;color:var(--ink-3)}
+.ph-note{margin-top:20px;color:var(--ink-2);max-width:62ch}
+.packs{display:flex;gap:12px;overflow-x:auto;padding:26px 2px 16px;scroll-snap-type:x proximity;scrollbar-width:thin}
+.packs button{flex:0 0 138px;scroll-snap-align:start;display:flex;flex-direction:column;gap:10px;text-align:start}
+.packs .pf{height:168px;display:grid;place-items:center;background:var(--paper);border:1px solid var(--line-2);border-radius:2px;padding:14px;transition:border-color .3s,background-color .3s}
+.packs img{max-height:100%;width:auto;object-fit:contain;filter:drop-shadow(0 12px 10px rgba(12,24,48,.2));transition:translate .6s var(--ease)}
+.packs button:hover .pf{border-color:var(--gold);background:#fff}
+.packs button:hover img{translate:0 -5px}
+.packs span{font-size:.82rem;line-height:1.3;color:var(--ink-2)}
+.plist{margin-top:8px}
+.prow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:6px 22px;align-items:center;padding-block:13px;border-bottom:1px solid var(--line-2)}
+.prow .nm{display:flex;flex-direction:column;align-items:flex-start;text-align:start;min-width:0}
+.prow .nm>span:first-child{font-weight:500;transition:color .3s}
+.prow .nm:hover>span:first-child{color:var(--royal);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:5px}
+.prow .alt{font-size:.88rem;color:var(--ink-3);line-height:1.4}
+.prow .sz{font-size:.86rem;color:var(--ink-3);white-space:nowrap}
+.add{display:inline-flex;align-items:center;gap:7px;height:36px;padding-inline:12px 14px;border:1px solid var(--line);border-radius:3px;font-size:.86rem;font-weight:500;color:var(--ink);transition:background-color .3s,border-color .3s,color .3s}
+.add svg{width:15px;height:15px}
+.add:hover{border-color:var(--ink)}
+.add[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:var(--paper)}
+.spec-b{margin-top:38px}
+.spec-b h4{font-size:.86rem;font-weight:600;color:var(--ink-2);margin-bottom:8px}
+.tscroll{overflow-x:auto;scrollbar-width:thin}
+.stable{width:100%;min-width:560px;border-collapse:collapse;font-size:.9rem}
+.stable th,.stable td{padding:11px 0 11px 14px;text-align:end;border-bottom:1px solid var(--line-2);white-space:nowrap}
+html[dir=rtl] .stable :is(th,td){padding:11px 14px 11px 0}
+.stable thead th{font-weight:500;font-size:.78rem;color:var(--ink-3);border-bottom:1px solid var(--line);vertical-align:bottom}
+.stable :is(thead th,tbody th):first-child{text-align:start;padding-inline-start:0}
+.stable tbody th{font-weight:600}
+.na,.empty{margin-top:22px;color:var(--ink-3)}
+.panel .onpack{margin-top:22px}
+
+/* ---------- services (navy) ---------- */
+.svc{background:var(--navy-2);color:var(--on-navy);padding-block:var(--sec)}
+.svc-top{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px var(--gut);align-items:end}
+.svc-top h2{grid-column:1/7}
+.svc-top .lede{grid-column:8/13;color:var(--on-navy-2)}
+.svc-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:40px var(--gut);margin-top:clamp(56px,6vw,96px);align-items:start}
+.svc-list{grid-column:1/8;display:grid;grid-template-columns:1fr 1fr;gap:0 var(--gut)}
+.svc-item{padding-block:26px 40px;border-top:1px solid var(--line-navy)}
+.svc-item h3{margin-bottom:12px;color:var(--paper)}
+.svc-item p{color:var(--on-navy-2);font-size:1rem;max-width:40ch}
+.sectors{display:flex;flex-wrap:wrap;gap:4px 0;margin-top:16px;font-size:.9rem;color:var(--gold-2)}
+.sectors li:not(:last-child)::after{content:"·";margin-inline:10px;color:var(--on-navy-2)}
+.svc-fig{grid-column:9/13}
+.svc-fig .ph-van{aspect-ratio:4/3.4;overflow:hidden;border-radius:2px}
+.svc-fig .ph-van img{width:100%;height:100%;object-fit:cover;object-position:46% 62%;scale:1.28}
+.svc-fig figcaption{margin-top:14px;color:var(--on-navy-2)}
+.family{margin-top:26px;padding-top:20px;border-top:1px solid var(--line-navy);font-size:.92rem;color:var(--on-navy-2)}
+.family b{color:var(--paper);font-weight:500}
+.logos{display:flex;align-items:center;gap:22px;margin-top:18px}
+.logos img{height:44px;width:auto;filter:brightness(0) invert(1);opacity:.85}
+
+/* ---------- steps ---------- */
+.steps-sec{padding-block:var(--sec) 0}
+.steps-sec h2{max-width:14ch}
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:clamp(40px,5vw,72px);border-top:1px solid var(--ink)}
+.steps li{padding:22px 24px 8px 0;display:grid;grid-template-rows:auto auto 1fr;gap:10px}
+html[dir=rtl] .steps li{padding:22px 0 8px 24px}
+.steps li+li{border-inline-start:1px solid var(--line-2);padding-inline-start:24px}
+.steps .n{font-family:var(--f-display);font-size:1.05rem;color:var(--gold-ink);font-variant-numeric:lining-nums}
+.steps h3{font-size:1.28rem}
+.steps p{font-size:.95rem;color:var(--ink-2)}
+
+/* ---------- quality ---------- */
+.quality{padding-block:var(--sec)}
+.q-top{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:36px var(--gut);align-items:start}
+.q-top h2{grid-column:1/6}
+.q-top blockquote{grid-column:7/13}
+blockquote p{font-family:var(--f-display);font-size:clamp(1.6rem,2.7vw,2.45rem);line-height:1.18;letter-spacing:-.015em}
+blockquote p:lang(ar){font-family:var(--f-ar-display);font-weight:400;line-height:1.55;letter-spacing:0}
+blockquote footer{margin-top:18px;font-size:.86rem;color:var(--ink-3)}
+.q-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 var(--gut);margin-top:clamp(48px,6vw,88px);border-top:1px solid var(--line)}
+.q-cols>div{padding-top:24px}
+.q-cols h3{font-size:1.3rem;margin-bottom:10px}
+.q-cols p{font-size:.97rem;color:var(--ink-2)}
+.quality .onpack{margin-top:40px}
+
+/* ---------- offices ---------- */
+.offices{background:var(--sand);padding-block:var(--sec)}
+.off-grid{display:grid;grid-template-columns:1fr 1fr;margin-top:clamp(40px,5vw,64px);border-top:1px solid var(--ink)}
+.office{padding:30px clamp(20px,4vw,56px) 6px 0;display:flex;flex-direction:column;gap:6px}
+html[dir=rtl] .office{padding:30px 0 6px clamp(20px,4vw,56px)}
+.office+.office{border-inline-start:1px solid var(--line);padding-inline-start:clamp(20px,4vw,56px)}
+.office h3{font-size:clamp(2.6rem,5vw,4.2rem);font-weight:400;line-height:1;letter-spacing:-.025em;margin-bottom:18px}
+.office .co{font-weight:500;margin-top:6px}
+.office address{font-style:normal;color:var(--ink-2);max-width:36ch}
+.office .ct{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin-top:14px}
+.office .ct a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:5px}
+.office .ct a:hover{color:var(--royal)}
+.office .map{margin-top:18px}
+
+/* ---------- request ---------- */
+.req{padding-block:var(--sec)}
+.req-card{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.3fr);margin-top:clamp(40px,5vw,64px);background:var(--paper-2);border:1px solid var(--line-2);border-radius:3px}
+.req-side{padding:clamp(26px,3.6vw,52px);border-inline-end:1px solid var(--line-2);display:flex;flex-direction:column;gap:18px}
+.req-side h3{font-size:1.5rem}
+.qlist{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.qlist li{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:14px;align-items:center;padding-block:10px;border-bottom:1px solid var(--line-2)}
+.qlist img{width:44px;height:44px;object-fit:contain}
+.qlist .qd{width:44px;height:44px;display:grid;place-items:center;background:var(--sand);border-radius:2px;font-family:var(--f-display);font-size:1.1rem;color:var(--ink-2)}
+.qlist b{display:block;font-weight:500;font-size:.95rem;line-height:1.3}
+.qlist small{font-size:.8rem;color:var(--ink-3)}
+.qlist button{width:34px;height:34px;display:grid;place-items:center;border-radius:3px;color:var(--ink-3);transition:color .3s,background-color .3s}
+.qlist button:hover{background:var(--sand);color:var(--ink)}
+.qlist button svg{width:14px;height:14px}
+.qlist .q-empty{display:block;padding-block:16px;color:var(--ink-3);font-size:.93rem;border-bottom:0}
+.req-contact{margin-top:auto;padding-top:22px;display:flex;flex-direction:column;gap:6px;font-size:.93rem}
+.req-contact a{display:inline-flex;align-items:center;gap:10px;width:max-content}
+.req-contact svg{width:17px;height:17px;color:var(--gold)}
+.req-contact a:hover{color:var(--royal)}
+.form{padding:clamp(26px,3.6vw,52px);display:grid;grid-template-columns:1fr 1fr;gap:20px 22px;align-content:start}
+.field{display:grid;gap:7px;min-width:0}
+.field.full{grid-column:1/-1}
+.field label{font-size:.84rem;font-weight:500;color:var(--ink-2)}
+.field :is(input,select,textarea){width:100%;height:50px;border:1px solid var(--line);background:var(--paper);border-radius:3px;padding-inline:14px;font-size:1rem;outline:0;transition:border-color .3s,box-shadow .3s;appearance:none;-webkit-appearance:none}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235B6477' stroke-width='1.6'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:18px;background-position:right 14px center;padding-inline-end:40px;cursor:pointer}
+html[dir=rtl] .field select{background-position:left 14px center}
+.field textarea{height:auto;min-height:112px;padding-block:12px;resize:vertical;line-height:1.5}
+.field :is(input,select,textarea):hover{border-color:var(--ink-3)}
+.field :is(input,select,textarea):focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(168,132,74,.28)}
+.field .msg{display:none;font-size:.82rem;color:var(--err)}
+.field.err :is(input,select){border-color:var(--err)}
+.field.err .msg{display:block}
+.send{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:6px}
+.send p{font-size:.84rem;color:var(--ink-3);max-width:38ch}
+.status{grid-column:1/-1;display:none;padding:14px 16px;border-radius:3px;font-size:.93rem}
+.status.show{display:block}
+.status.ok{background:#E3EADF;color:#26452B}
+.status.bad{background:#F3DFDA;color:var(--err)}
+
+/* ---------- faq ---------- */
+.faq{padding-block:0 var(--sec)}
+.faq-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:36px var(--gut);align-items:start}
+.faq-grid h2{grid-column:1/5;position:sticky;top:calc(var(--hdr) + 32px)}
+.faq-list{grid-column:6/13;border-top:1px solid var(--ink)}
 details{border-bottom:1px solid var(--line)}
-details:first-child{border-top:1px solid var(--line)}
-summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-family:var(--f-serif);font-size:1.3rem;font-weight:500;line-height:1.2;transition:color .3s}
-summary:hover{color:var(--aqua)}
+summary{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-block:22px;cursor:pointer;list-style:none;font-family:var(--f-display);font-size:clamp(1.18rem,1.6vw,1.42rem);font-weight:500;line-height:1.25;transition:color .3s}
+summary:lang(ar){font-family:var(--f-ar-display);font-weight:700;font-size:clamp(1.3rem,1.8vw,1.6rem)}
 summary::-webkit-details-marker{display:none}
-summary i{flex:none;width:34px;height:34px;border-radius:50%;background:var(--sand);position:relative;transition:background .3s}
-summary i::before,summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.6px;background:var(--ink);transform:translate(-50%,-50%);transition:transform .4s var(--ease),background .3s}
-summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
-details[open] summary i{background:var(--amber)}
-details[open] summary i::after{transform:translate(-50%,-50%) rotate(0)}
-details[open] summary i::before,details[open] summary i::after{background:#fff}
-details p{padding:0 54px 22px 0;color:var(--ink-2);animation:pop .5s var(--ease)}
-html[dir="rtl"] details p{padding:0 0 22px 54px}
-footer{background:var(--navy);color:rgba(255,255,255,.72);border-radius:36px 36px 0 0;margin-inline:clamp(0px,1.4vw,18px);padding-top:clamp(60px,7vw,100px);overflow:hidden}
-.f-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
-.f-top h4{font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:#fff;margin-bottom:14px}
-.f-top ul{list-style:none;display:grid;gap:8px;font-size:.92rem}
-.f-top a:hover{color:#fff}
-.f-cta h3{font-family:var(--f-serif);font-weight:400;font-size:2rem;color:#fff;line-height:1.05;margin-bottom:18px}
-.f-cta h3 em{color:var(--amber);font-style:italic}
-.f-group{display:flex;gap:14px;margin-top:24px}.f-group img{height:30px;width:auto;mix-blend-mode:screen;opacity:.7}
-.mark{font-family:var(--f-serif);font-weight:500;font-size:clamp(3.6rem,15.5vw,14rem);line-height:.82;letter-spacing:-.05em;color:rgba(255,255,255,.07);white-space:nowrap;margin-top:60px;text-align:center;transition:color 1s;user-select:none}
-.mark:hover{color:rgba(27,168,189,.35)}
-.f-bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 0 28px;border-top:1px solid rgba(255,255,255,.1);font-size:.8rem;color:rgba(255,255,255,.5)}
-@media (max-width:1100px){
-  .nav-links{display:none}.burger{display:flex}
-  .bento{grid-template-columns:1fr 1fr}.bx.story{grid-row:auto}
-  .hubs{grid-template-columns:1fr 1fr}.globe{grid-column:1/-1;min-height:300px}
-  .grid{grid-template-columns:repeat(2,1fr)}
+summary:hover{color:var(--royal)}
+summary svg{width:20px;height:20px;color:var(--gold);transition:rotate .5s var(--ease)}
+details[open] summary svg{rotate:45deg}
+details>div{padding-bottom:24px;color:var(--ink-2);max-width:62ch}
+
+/* ---------- footer ---------- */
+.ftr{background:var(--navy-2);color:var(--on-navy-2);padding-top:clamp(72px,8vw,120px)}
+.ftr-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:40px var(--gut)}
+.ftr .fl img{height:58px;width:auto}
+.ftr .sig{margin-top:22px;font-family:var(--f-ar-display);font-weight:700;font-size:2rem;line-height:1.3;color:var(--paper)}
+.ftr .sig-t{font-size:.9rem;max-width:32ch}
+.ftr h4{font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-2);margin-bottom:16px}
+.ftr h4:lang(ar){letter-spacing:0;font-size:.9rem}
+.ftr ul{display:flex;flex-direction:column;gap:9px;font-size:.93rem}
+.ftr ul button{color:inherit;text-align:start}
+.ftr a:hover,.ftr ul button:hover{color:var(--paper)}
+.ftr-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;margin-top:clamp(56px,6vw,96px);padding-block:22px max(28px,env(safe-area-inset-bottom));border-top:1px solid var(--line-navy);font-size:.84rem}
+
+/* ---------- tray, drawer ---------- */
+.tray{visibility:hidden;position:fixed;z-index:55;inset-inline-start:50%;bottom:max(18px,env(safe-area-inset-bottom));display:flex;align-items:center;gap:16px;padding:8px 8px 8px 20px;background:var(--navy);color:var(--paper);border-radius:3px;box-shadow:0 20px 40px -18px rgba(12,24,48,.6);translate:-50% 160%;transition:translate .6s var(--ease),visibility 0s .6s;white-space:nowrap}
+html[dir=rtl] .tray{padding:8px 20px 8px 8px}
+.tray.on{visibility:visible;translate:-50% 0;transition:translate .6s var(--ease)}
+.tray b{font-weight:500;font-size:.93rem}
+.tray a{display:inline-flex;align-items:center;height:40px;padding-inline:16px;border-radius:2px;background:var(--paper);color:var(--navy);font-weight:600;font-size:.88rem;transition:background-color .3s}
+.tray a:hover{background:#fff}
+.scrim{position:fixed;inset:0;z-index:75;background:rgba(10,20,40,.42);opacity:0;pointer-events:none;transition:opacity .45s}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{visibility:hidden;position:fixed;z-index:80;top:0;bottom:0;inset-inline-end:0;width:min(520px,100%);background:var(--paper-2);display:flex;flex-direction:column;translate:105% 0;transition:translate .65s var(--ease),visibility 0s .65s;box-shadow:-30px 0 60px -34px rgba(12,24,48,.55)}
+html[dir=rtl] .drawer{translate:-105% 0}
+.drawer.on{visibility:visible;translate:0 0!important;transition:translate .65s var(--ease)}
+.d-top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 14px 14px 26px;border-bottom:1px solid var(--line-2)}
+html[dir=rtl] .d-top{padding:14px 26px 14px 14px}
+.d-top span{font-size:.86rem;font-weight:500;color:var(--ink-3)}
+.x{width:44px;height:44px;display:grid;place-items:center;border-radius:3px;transition:background-color .3s}
+.x:hover{background:var(--sand)}
+.x svg{width:16px;height:16px}
+.d-body{flex:1;overflow:auto;overscroll-behavior:contain;padding:0 26px 30px}
+.d-fig{margin-inline:-26px;height:clamp(230px,36vh,350px);display:flex;align-items:center;justify-content:center;background:var(--paper);border-bottom:1px solid var(--line-2)}
+.d-fig img{height:80%;width:auto;max-width:84%;object-fit:contain;filter:var(--shadow-pack)}
+.d-plate{margin-inline:-26px;height:clamp(200px,30vh,280px);display:grid;place-items:center;padding:24px;background:var(--navy);color:var(--paper);text-align:center}
+.d-plate span{font-family:var(--f-display);font-size:clamp(2rem,6vw,2.8rem);line-height:1.15}
+.d-plate span:lang(ar){font-family:var(--f-ar-display);font-weight:700}
+.d-body h3{font-size:clamp(1.9rem,4vw,2.3rem);font-weight:400;margin-top:24px}
+.d-body h3:lang(ar){font-weight:700}
+.d-alt{margin-top:4px;color:var(--ink-3)}
+.d-desc{margin-top:16px;color:var(--ink-2)}
+.d-facts{margin-top:22px;border-top:1px solid var(--line)}
+.d-facts div{display:flex;justify-content:space-between;gap:18px;padding-block:11px;border-bottom:1px solid var(--line-2);font-size:.93rem}
+.d-facts dt{color:var(--ink-3)}
+.d-facts dd{text-align:end;font-weight:500}
+.d-body .spec-b{margin-top:28px}
+.d-body .stable{min-width:0;display:block}
+.d-body .stable thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.d-body .stable tbody{display:block}
+.d-body .stable tr{display:grid;grid-template-columns:1fr 1fr;gap:6px 22px;padding-block:14px;border-bottom:1px solid var(--line-2)}
+.d-body .stable tr:first-child{border-top:1px solid var(--line)}
+.d-body .stable tbody th{grid-column:1/-1;padding:0 0 4px;border:0;font-size:1rem}
+.d-body .stable td{display:flex;justify-content:space-between;gap:10px;padding:0;border:0;font-size:.9rem}
+.d-body .stable td::before{content:attr(data-l);color:var(--ink-3);white-space:normal}
+.d-foot{display:flex;gap:10px;padding:14px 16px max(14px,env(safe-area-inset-bottom));border-top:1px solid var(--line-2)}
+.d-foot .btn{flex:1;justify-content:center}
+.d-foot .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.d-foot .btn.ghost:hover{border-color:var(--ink);background:transparent}
+
+/* ---------- responsive ---------- */
+@media (max-width:1180px){
+  .menu{display:none}
+  .burger{display:flex}
+  .hdr .btn-sm{margin-inline-start:auto}
+  .index{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .index li{border-inline-end:1px solid var(--line-2)!important}
+  .index li:nth-child(4n){border-inline-end:0!important}
 }
-@media (max-width:900px){
-  .hero-grid,.q,.faq,.form-card{grid-template-columns:1fr}
-  .hero-tiles{max-width:520px;margin-inline:auto;width:100%}
-  .cat-layout{grid-template-columns:1fr}
-  .side{position:static;flex-direction:row;overflow-x:auto;scrollbar-width:none;gap:6px}
-  .side::-webkit-scrollbar{display:none}
-  .side button{flex:none;border:1px solid var(--line);border-radius:30px;padding:9px 14px}
-  .side .search,.side .side-note{display:none}
-  .m-search{display:block}
-  .ac-in{grid-template-columns:1fr}.ac-in ul{grid-column:auto}.ac-h{grid-template-columns:36px 1fr auto}
-  .faq .side-h{position:static}
-  .f-top{grid-template-columns:1fr 1fr}
-  .shelf{grid-template-columns:repeat(3,1fr);row-gap:26px;padding:0}
-  .shelf::after{display:none}
-  .sp{border-bottom:10px solid #2A4F8E;padding-bottom:8px}
-  .fc-l{min-height:320px}
+@media (max-width:980px){
+  :root{--hdr:68px}
+  .brand img{height:38px}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-media{order:-1;min-height:0;height:clamp(300px,46svh,520px);z-index:1}
+  .hero-photo img{object-position:50% 70%}
+  .hero-photo figcaption{display:none}
+  .hero-copy{padding-block:clamp(58px,10vw,84px) 48px;padding-inline:var(--gut)}
+  .hero .lede{max-width:52ch}
+  .cta{margin-top:26px}
+  .facts{margin-top:36px}
+  .pk-a{width:min(34vw,250px);bottom:-9%;inset-inline-start:5%}
+  .pk-b{width:min(30vw,220px);bottom:-13%;inset-inline-start:32%}
+  .sp-media figcaption{padding-inline-end:46%}
+  .ri h2,.ri .lede{grid-column:1/-1;justify-self:start}
+  .index{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .index li{border-inline-end:0!important}
+  .index li:nth-child(odd){border-inline-end:1px solid var(--line-2)!important}
+  .index button{min-height:96px;padding:16px 14px 14px}
+  .spread .grid,.sh-head,.cat-head,.svc-top,.svc-grid,.q-top,.faq-grid{grid-template-columns:1fr}
+  .spread .grid>*,.sh-head>*,.cat-head>*,.svc-top>*,.svc-grid>*,.q-top>*,.faq-grid>*,.ri>*{grid-column:1/-1!important}
+  .sp-media{margin-inline-end:18%}
+  html[dir=rtl] .sp-media{margin-inline-end:18%}
+  .pk-c{width:38vw;inset-inline-end:-26%}
+  .pk-d{width:30vw;inset-inline-end:-10%}
+  .frz .cluster{order:-1;margin-bottom:12px}
+  .cat-body{grid-template-columns:minmax(0,1fr);gap:28px}
+  .cat-side{position:static;min-width:0}
+  .lines{flex-direction:row;overflow-x:auto;scrollbar-width:none;gap:8px;margin-inline:calc(var(--gut) * -1);padding-inline:var(--gut);scroll-snap-type:x proximity}
+  .lines::-webkit-scrollbar{display:none}
+  .lines button{flex:none;border:1px solid var(--line);border-radius:3px;padding:9px 14px!important;gap:10px;scroll-snap-align:start;white-space:nowrap}
+  .lines button::before{display:none}
+  .lines button[aria-selected=true]{background:var(--navy);border-color:var(--navy);color:var(--paper)}
+  .lines button[aria-selected=true] small{color:var(--on-navy-2)}
+  .svc-list{grid-template-columns:1fr}
+  .svc-fig{max-width:560px}
+  .steps{grid-template-columns:1fr;border-top:1px solid var(--ink)}
+  .steps li,.steps li+li{grid-template-columns:44px 1fr;grid-template-rows:auto auto;column-gap:10px;row-gap:6px;padding:20px 0;border-inline-start:0;border-bottom:1px solid var(--line-2)}
+  .steps .n{grid-row:1/3;padding-top:3px}
+  .q-cols{grid-template-columns:1fr}
+  .q-cols>div{padding-block:22px;border-bottom:1px solid var(--line-2)}
+  .faq-grid h2{position:static}
+  .req-card{grid-template-columns:1fr}
+  .req-side{border-inline-end:0;border-bottom:1px solid var(--line-2)}
+  .ftr-top{grid-template-columns:1fr 1fr}
+  .ftr-top>div:first-child{grid-column:1/-1}
 }
-@media (max-width:620px){
-  .nav .b .t{display:none}
-  .bento{grid-template-columns:1fr}.bx.story,.bx.photo{grid-column:auto}
-  .vals{grid-template-columns:1fr}
-  .hubs{grid-template-columns:1fr}
-  .grid{grid-template-columns:1fr 1fr;gap:10px}
-  .card{padding:10px 10px 12px}.card h3{font-size:1rem}.plus{width:36px;height:36px}
-  .card .info{flex-direction:column;align-items:flex-start}
-  .row,.ac-in ul,.qs{grid-template-columns:1fr}
-  .f-top{grid-template-columns:1fr}
-  .proof{gap:20px}.proof b{font-size:1.6rem}
-  .stamp{width:92px;height:92px}.stamp b{font-size:1.1rem}
-  .tray b{display:none}
-  summary{font-size:1.12rem}
+@media (max-width:640px){
+  body{font-size:1rem}
+  .hdr .btn-sm{display:none}
+  .lang{margin-inline-start:auto}
+  .cta .btn{width:100%;justify-content:center}
+  .off-grid{grid-template-columns:1fr}
+  .office,.office+.office{padding:26px 0 8px;border-inline-start:0}
+  .office+.office{border-top:1px solid var(--line)}
+  .prow{grid-template-columns:minmax(0,1fr) auto;padding-block:12px}
+  .prow .sz{grid-row:2;grid-column:1;white-space:normal}
+  .prow .add{grid-row:1/3;grid-column:2}
+  .packs button{flex-basis:118px}
+  .packs .pf{height:140px}
+  .form{grid-template-columns:1fr}
+  .field.half{grid-column:1/-1}
+  .send .btn{width:100%;justify-content:center}
+  .tray{width:calc(100% - 24px);justify-content:space-between}
+  .d-top{padding-inline-start:20px}
+  .drawer{top:auto;inset-inline:0;width:100%;max-height:92svh;border-radius:3px 3px 0 0;translate:0 105%!important}
+  html[dir=rtl] .drawer{translate:0 105%!important}
+  .drawer.on{translate:0 0!important}
+  .d-body{padding:0 20px 24px}
+  .d-fig,.d-plate{margin-inline:-20px}
+  .ftr-top{grid-template-columns:1fr}
+  .shelf{justify-content:flex-start;gap:22px;padding-bottom:78px}
+  .shelf::before{bottom:77px}
+  .can{width:92px}
+  .can span{opacity:1;translate:0 0;inset-inline:-8px;font-size:.72rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .can:hover,.can:focus-visible{translate:0 0}
+  .stable{min-width:0}
+  .stable thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .stable,.stable tbody{display:block}
+  .stable tr{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px;padding-block:14px;border-bottom:1px solid var(--line-2)}
+  .stable tr:first-child{border-top:1px solid var(--line)}
+  .stable tbody th{grid-column:1/-1;padding:0 0 4px;border:0;font-size:1rem}
+  .stable td{display:flex;justify-content:space-between;gap:10px;padding:0;border:0;text-align:end;font-size:.88rem}
+  .stable td::before{content:attr(data-l);color:var(--ink-3);text-align:start;white-space:normal}
+  .d-body .stable{min-width:0}
 }
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.rv{opacity:1;filter:none;transform:none}.w>span{transform:none}}
-/* fixes */
-.num,.proof b,.clock,.stamp b,.step .n,.mark,h1,h2,h3{font-variant-numeric:lining-nums}
-.clock{font-variant-numeric:lining-nums tabular-nums}
-.stamp{top:auto;left:auto;bottom:-34px;inset-inline-start:-34px;transform:none}
-@media (max-width:900px){.stamp{bottom:-24px;inset-inline-start:-10px}}
-.stamp{inset-inline-start:auto;inset-inline-end:-34px;bottom:-40px}
-@media (max-width:900px){.stamp{inset-inline-end:-8px;inset-inline-start:auto;bottom:-30px}}
-.vals span span{display:block;padding:0;background:none;border-radius:0}
-.fc-l img.deco{width:44%;bottom:-8%;inset-inline-end:-6%}
-html,body{overflow-x:clip}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}
+}
+.req-lede{margin-top:22px}
+.can.more span{position:static;inset:auto;opacity:1;translate:none;display:block;font-size:inherit;line-height:inherit;color:inherit;-webkit-line-clamp:unset;overflow:visible}
 </style>
 </head>
 <body>
-<header class="nav" id="nav"><div class="nav-in">
-  <a href="#top" class="nav-logo" aria-label="Aqua Premium"><img src="assets/img/logo-navy.png" alt="Aqua Premium"></a>
-  <nav class="nav-links" aria-label="Main">
-    <a href="#about" data-ar="من نحن">About</a>
+<a class="skip" href="#main" data-ar="تخطَّ إلى المحتوى">Skip to content</a>
+
+<header class="hdr" id="hdr">
+  <div class="wrap in">
+    <a class="brand" href="#top" aria-label="Aqua Premium" data-ar-label="أكوا بريميوم"><img class="lg-navy" src="assets/img/logo-navy.png" alt="" width="548" height="398"><img class="lg-white" src="assets/img/logo-white.png" alt="" width="548" height="398"></a>
+    <nav class="menu" id="menu" aria-label="Main" data-ar-label="القائمة الرئيسية">
+      <a href="#range" data-ar="التشكيلة">The range</a>
+      <a href="#catalogue" data-ar="الكتالوج">Catalogue</a>
+      <a href="#services" data-ar="خدماتنا">Services</a>
+      <a href="#quality" data-ar="الجودة">Quality</a>
+      <a href="#offices" data-ar="مكاتبنا">Offices</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language"><button type="button" data-l="en" lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-l="ar" lang="ar" aria-pressed="false">عربي</button></div>
+    <a class="btn btn-sm" href="#request"><span data-ar="اطلب عرض سعر">Request a quote</span></a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Menu" data-ar-label="القائمة"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" inert>
+  <nav aria-label="Mobile" data-ar-label="قائمة الجوال">
+    <a href="#range" data-ar="التشكيلة">The range</a>
     <a href="#catalogue" data-ar="الكتالوج">Catalogue</a>
-    <a href="#ordering" data-ar="طريقة الطلب">Ordering</a>
-    <a href="#partnership" data-ar="الشراكة">Partnership</a>
-    <a href="#hubs" data-ar="مكاتبنا">Hubs</a>
-    <a href="#faq" data-ar="الأسئلة">FAQ</a>
+    <a href="#services" data-ar="خدماتنا">Services</a>
+    <a href="#quality" data-ar="الجودة">Quality</a>
+    <a href="#offices" data-ar="مكاتبنا">Offices</a>
+    <a href="#faq" data-ar="أسئلة شائعة">Questions</a>
   </nav>
-  <div class="lang" role="group" aria-label="Language"><button id="lEn" class="on">EN</button><button id="lAr">ع</button></div>
-  <a href="#request" class="b b-ink"><span class="t" data-ar="أسعار الجملة">Wholesale pricing</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-</div></header>
-<div class="mmenu" id="mmenu">
-  <a href="#about" data-ar="من نحن">About</a>
-  <a href="#catalogue" data-ar="الكتالوج">Catalogue</a>
-  <a href="#ordering" data-ar="طريقة الطلب">Ordering</a>
-  <a href="#partnership" data-ar="الشراكة">Partnership</a>
-  <a href="#hubs" data-ar="مكاتبنا">Hubs</a>
-  <a href="#faq" data-ar="الأسئلة">FAQ</a>
-  <a href="#request" class="b b-amber" data-ar="اطلب أسعار الجملة">Get wholesale pricing</a>
+  <a class="btn btn-light" href="#request"><span data-ar="اطلب عرض سعر">Request a quote</span></a>
+  <p class="mnav-foot"><span dir="ltr">+971 4 380 0899</span> · info@pureibs.com</p>
 </div>
 
-<section class="hero" id="top">
-  <div class="wrap hero-grid">
+<main id="main">
+
+<section class="hero" id="top" aria-labelledby="h-hero">
+  <div class="hero-copy">
+    <h1 id="h-hero" data-ar="غذاء فاخر.<br>توريد عالمي.">Premium food.<br>Global supply.</h1>
+    <p class="lede" data-ar="تونة وسردين، بقوليات وخضروات معلبة، مجمدات ومنتجات بقالة أساسية، بمواصفات حتى الكرتونة والحاوية وتوريد من القاهرة ودبي.">Canned fish, legumes and vegetables, frozen lines and pantry staples, specified to the carton and the container and supplied from Cairo and Dubai.</p>
+    <div class="cta">
+      <a class="btn" href="#request"><span data-ar="اطلب عرض سعر">Request a quote</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="link" href="#range"><span data-ar="تصفّح التشكيلة">Explore the range</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <p class="facts" data-ar="65 منتجًا في 10 خطوط · أرقام الكرتونة والحاوية لكل خط · مكاتب في القاهرة ودبي">65 products in 10 lines · carton and container figures for every line · offices in Cairo and Dubai</p>
+  </div>
+  <div class="hero-media">
+    <figure class="hero-photo">
+      <img src="assets/img/photos/cans-light.webp" alt="Aqua Premium plain fava beans, chickpeas and red kidney beans in morning light" data-ar-alt="علب أكوا بريميوم: فول مدمس سادة وحمص وفاصوليا حمراء في ضوء الصباح" width="1000" height="1500" fetchpriority="high">
+      <figcaption data-ar="فول مدمس سادة وحمص وفاصوليا حمراء، 400 جم">Plain fava beans, chickpeas and red kidney beans, 400 g</figcaption>
+    </figure>
+    <div class="pk pk-a" data-depth="36" aria-hidden="true"><img src="assets/img/products/fz-green-peas.webp" alt="" width="698" height="720"></div>
+    <div class="pk pk-b" data-depth="72" aria-hidden="true"><img src="assets/img/products/tuna-solid.webp" alt="" width="720" height="577"></div>
+  </div>
+</section>
+
+<section class="range-intro" id="range" aria-labelledby="h-range">
+  <div class="wrap ri">
+    <h2 id="h-range" data-ar="عشرة خطوط، ومخزن واحد.">Ten lines, one pantry.</h2>
+    <p class="lede" data-ar="من علبة التونة إلى كيس المجمدات: 65 منتجًا، لكل منها أرقام الكرتونة والحاوية. ثلاثة خطوط عن قرب، ثم الكتالوج كاملًا.">From the tuna tin to the freezer bag: sixty-five products, each specified by the carton and the container. Three lines up close, then the full catalogue.</p>
+    <ul class="index" id="index"></ul>
+  </div>
+</section>
+
+<section class="spread" aria-labelledby="h-fish">
+  <div class="wrap grid">
+    <div class="sp-media">
+      <figure>
+        <div class="sp-photo"><img src="assets/img/photos/tuna-stack.webp" alt="Aqua Premium tuna cans stacked between slices of toast" data-ar-alt="علب تونة أكوا بريميوم بين شرائح التوست" width="1000" height="1332" loading="lazy"></div>
+        <figcaption data-ar="تونة سوليد جولد ومفتتة وقطع، بين شرائح التوست.">Solid Gold, shredded and chunk tuna, between slices of toast.</figcaption>
+      </figure>
+      <button class="pk pk-c" type="button" data-open="tuna-chunk" data-depth="46" aria-label="Chunk Tuna" data-ar-label="تونة قطع"><img src="assets/img/products/tuna-chunk.webp" alt="" width="720" height="577" loading="lazy"></button>
+      <button class="pk pk-d" type="button" data-open="tuna-shredded" data-depth="84" aria-label="Shredded Tuna" data-ar-label="تونة مفتتة"><img src="assets/img/products/tuna-shredded.webp" alt="" width="720" height="577" loading="lazy"></button>
+    </div>
+    <div class="sp-text">
+      <h2 id="h-fish" data-ar="قطعة واحدة، قطع، أو مفتتة.">Solid, chunk or shredded.</h2>
+      <p class="lede" data-ar="تونة لحم فاتح وتونة يلوفين في علب 140 و160 و185 جم، عادية أو حارة، إلى جانب السردين العادي والحار.">Light-meat and yellowfin tuna in 140, 160 and 185 g cans, plain or spicy, alongside regular and spicy sardines.</p>
+      <ul class="leaders">
+        <li><span data-ar="علب في الكرتونة">Cans per carton</span><i></i><b>48</b></li>
+        <li><span data-ar="أحجام التونة">Tuna sizes</span><i></i><b data-ar="140 · 160 · 185 جم">140 · 160 · 185 g</b></li>
+        <li><span data-ar="كرتونة في حاوية 40 قدم">Cartons per 40ft</span><i></i><b data-ar="حتى 2,800">up to 2,800</b></li>
+        <li><span data-ar="السردين">Sardines</span><i></i><b data-ar="125 جم · 50 علبة في الكرتونة">125 g · 50 per carton</b></li>
+      </ul>
+      <button class="link" type="button" data-goto="fish"><span data-ar="الأصناف الثمانية في الكتالوج">All eight in the catalogue</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<section class="shelf-sec" aria-labelledby="h-canned">
+  <div class="wrap sh-head">
+    <h2 id="h-canned" data-ar="مائدة الفطور، في علب.">The breakfast table, canned.</h2>
     <div>
-      <span class="eyebrow"><i>✦</i><span data-ar="حلول الجملة · القاهرة · دبي">Wholesale supply · Cairo · Dubai</span></span>
-      <h1 class="split" data-split data-ar="مخزن كامل من المعلبات والمجمدات، <em>بمورّد واحد.</em>">A whole pantry of canned &amp; frozen, <em>from one supplier.</em></h1>
-      <p class="sub rv" data-ar="تونة وبقوليات وخضروات ومجمدات بجودة HACCP — لسلاسل التجزئة والموزعين والمطاعم في أكثر من 50 دولة. الطلبات تبدأ من 50 كرتونة فقط.">Tuna, legumes, vegetables and frozen lines to HACCP standards — for retailers, distributors and restaurants in 50+ countries. Orders start from just 50 cartons.</p>
-      <div class="hero-cta rv">
-        <a href="#request" class="b b-ink"><span data-ar="اطلب قائمة الأسعار">Request a price list</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a href="#catalogue" class="b b-soft"><span data-ar="تصفّح 24 منتجًا">Browse 24 products</span></a>
-      </div>
-      <div class="proof rv">
-        <div><b><span class="count" data-to="20">0</span>+</b><span data-ar="عامًا من الخبرة">years of experience</span></div>
-        <div><b><span class="count" data-to="500">0</span>+</b><span data-ar="تاجر تجزئة">retailers worldwide</span></div>
-        <div><b><span class="count" data-to="50">0</span>+</b><span data-ar="دولة">countries served</span></div>
-      </div>
-    </div>
-    <div class="hero-tiles">
-      <div class="tiles" id="tiles"></div>
-      <div class="stamp" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="cp" d="M60 60m-47 0a47 47 0 1 1 94 0a47 47 0 1 1-94 0"/></defs><text><textPath href="#cp">HACCP CERTIFIED · 100% NATURAL · </textPath></text></svg><b>50<small>CARTONS MIN</small></b></div>
+      <p class="lede" data-ar="فول مدمس سادة وخمس وصفات متبّلة، حمص بالطحينة، حمص حب، فاصوليا، مشروم وخضروات، في علب 400 جم و800 جم و3 كجم.">Plain fava beans and five seasoned recipes, hummus with tahina, chickpeas, beans, mushrooms and vegetables, in 400 g, 800 g and 3 kg tins.</p>
+      <ul class="leaders">
+        <li><span data-ar="علب 400 جم في الكرتونة">400 g tins per carton</span><i></i><b>24</b></li>
+        <li><span data-ar="كرتونة في حاوية 20 قدم">Cartons per 20ft</span><i></i><b>2,090</b></li>
+        <li><span data-ar="كرتونة في حاوية 40 قدم">Cartons per 40ft</span><i></i><b>2,500</b></li>
+      </ul>
     </div>
   </div>
-  <div class="ticker" aria-hidden="true"><div class="tk" id="tk"></div></div>
-</section>
-
-<section id="about">
-  <div class="wrap">
-    <div class="head">
-      <div><span class="eyebrow rv"><i>01</i><span data-ar="من نحن">Who we are</span></span>
-      <h2 class="t split" data-split data-ar="الجودة الفاخرة <em>ليست رفاهية.</em>">Premium quality <em>shouldn't be a luxury.</em></h2></div>
-      <p class="sub rv" data-ar="رقابة جودة صارمة، ومكونات صادقة، وشبكة لوجستية مخصصة — لنوصل أفضل ما لدينا إلى رفوفك ومطبخك.">Rigorous quality control, honest ingredients and a dedicated logistics network — bringing the best of our range to your shelves and kitchens.</p>
-    </div>
-    <div class="bento">
-      <div class="bx story rv">
-        <div>
-          <h3 data-ar="نبني الثقة <em>عامًا بعد عام.</em>">Built on trust, <em>year after year.</em></h3>
-          <p style="margin-top:14px" data-ar="من منشآت تصنيع حديثة إلى شبكة توصيل مخصصة، صُممت كل خطوة لتوصل أطعمة طازجة وموثوقة — لعائلة تبحث عن وجبة سهلة، أو مطعم يحتاج إمدادًا ثابتًا.">From state-of-the-art facilities to a dedicated delivery network, every step is designed to bring the freshest, most reliable foods — to a busy family or a restaurant that needs steady supply.</p>
-        </div>
-        <div class="vals">
-          <span><b data-ar="الجودة أولًا">Quality first</b><span data-ar="لا تنازل عن المكونات">No compromise on ingredients</span></span>
-          <span><b data-ar="العميل أولًا">Customer focus</b><span data-ar="قراراتنا تبدأ منك">Decisions start with you</span></span>
-          <span><b data-ar="الاستدامة">Sustainability</b><span data-ar="مصادر مسؤولة">Responsible sourcing</span></span>
-          <span><b data-ar="النزاهة">Integrity</b><span data-ar="نقف خلف كل وعد">We stand behind every promise</span></span>
-        </div>
-      </div>
-      <div class="bx amber rv"><div class="num"><span class="count" data-to="20">0</span><small>+</small></div><p data-ar="عامًا من الخبرة في المعلبات والمجمدات.">years of experience in canned and frozen foods.</p></div>
-      <div class="bx aqua rv"><div class="num"><span class="count" data-to="500">0</span><small>+</small></div><p data-ar="تاجر تجزئة حول العالم يثق بأكوا بريميوم.">retailers worldwide trust Aqua Premium.</p></div>
-      <div class="bx rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></div><div><h3>HACCP</h3><p data-ar="تصنيع معتمد وتدقيقات منتظمة.">Certified manufacturing, regular audits.</p></div></div>
-      <div class="bx green rv"><div class="num"><span class="count" data-to="50">0</span><small>+</small></div><p data-ar="دولة نخدمها من مكتبي القاهرة ودبي.">countries served from Cairo and Dubai.</p></div>
-      <div class="bx photo rv"><img src="assets/img/photos/van.webp" alt="Aqua Premium delivery van" loading="lazy"><span data-ar="توزيع مخصص لشركائنا">Dedicated distribution for partners</span></div>
-      <div class="bx rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg></div><div><h3 data-ar="50 كرتونة">50 cartons</h3><p data-ar="حد أدنى مرن للطلب المخصص.">Flexible minimum for custom orders.</p></div></div>
-      <div class="bx rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></div><div><h3 data-ar="علامتك الخاصة">Your own label</h3><p data-ar="علامة خاصة وبيضاء وتعبئة مخصصة.">Private &amp; white label, custom packs.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="cat" id="catalogue">
-  <div class="wrap">
-    <div class="head">
-      <div><span class="eyebrow rv"><i>02</i><span data-ar="الكتالوج">Catalogue</span></span>
-      <h2 class="t split" data-split data-ar="24 منتجًا، <em>مختارة بعناية.</em>">24 lines, <em>carefully chosen.</em></h2></div>
-      <p class="sub rv" data-ar="اضغط على أي منتج لتفتح مواصفاته، واضغط + لتضيفه إلى قائمة عرض السعر.">Tap any product to open its spec sheet, and hit + to add it to your quote list.</p>
-    </div>
-    <div class="cat-layout">
-      <aside class="side" id="side">
-        <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" class="q-in" placeholder="Search products" data-ph-ar="ابحث عن منتج" aria-label="Search"></label>
-        <div id="cats" style="display:contents"></div>
-        <div class="side-note"><b data-ar="امزج كما تريد">Mix as you like</b><span data-ar="معلبات ومجمدات في طلب واحد، بعلامتنا أو بعلامتك.">Canned and frozen in one order, under our brand or yours.</span></div>
-      </aside>
-      <div>
-        <label class="search m-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" class="q-in" placeholder="Search products" data-ph-ar="ابحث عن منتج" aria-label="Search"></label>
-        <div class="grid" id="grid"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="ordering">
-  <div class="wrap">
-    <div class="head">
-      <div><span class="eyebrow rv"><i>03</i><span data-ar="طريقة الطلب">How ordering works</span></span>
-      <h2 class="t split" data-split data-ar="من أول رسالة <em>إلى رفّك.</em>">From first message <em>to your shelf.</em></h2></div>
-      <div class="rail-nav rv"><button id="rPrev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button id="rNext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
-    </div>
-    <div class="rail rv" id="rail">
-      <div class="step"><span class="n">1</span><div><h3 data-ar="أرسل استفسارك">Send your inquiry</h3><p data-ar="المنتجات، والكميات التقريبية، ومدينة التسليم.">Products, rough volumes and delivery city.</p></div></div>
-      <div class="step"><span class="n">2</span><div><h3 data-ar="قائمة أسعار ومدير حساب">Price list &amp; account manager</h3><p data-ar="مدير حساب مخصص يرسل لك الأسعار وتشكيلة مقترحة.">A dedicated account manager sends pricing and a suggested assortment.</p></div></div>
-      <div class="step"><span class="n">3</span><div><h3 data-ar="العينات والتشكيلة">Samples &amp; assortment</h3><p data-ar="جرّب المنتجات، واختر العلامة والتعبئة.">Try the products, choose branding and packaging.</p></div></div>
-      <div class="step"><span class="n">4</span><div><h3 data-ar="الطلب الأول">First order</h3><p data-ar="من 50 كرتونة، معلبات ومجمدات معًا.">From 50 cartons, canned and frozen together.</p></div></div>
-      <div class="step last"><span class="n">5</span><div><h3 data-ar="التوصيل والتتبّع">Delivery &amp; tracking</h3><p data-ar="تنسيق لوجستي وتتبّع لحظي للمخزون، ثم إعادة الطلب بسهولة.">Logistics coordination, real-time inventory tracking, easy reorders.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="channels" style="padding-top:0">
-  <div class="wrap"><div class="shelf-wrap rv">
-    <div class="head" style="margin-bottom:26px">
-      <div><span class="eyebrow"><i>04</i><span data-ar="حسب نشاطك">By business type</span></span>
-      <h2 class="t" data-ar="رف جاهز <em>لطريقة بيعك.</em>">A shelf stocked <em>for how you sell.</em></h2></div>
-      <div class="pills" id="pills" role="tablist"></div>
-    </div>
-    <p class="sub" id="chSub"></p>
+  <div class="shelf-wrap">
     <div class="shelf" id="shelf"></div>
-    <div class="perks" id="perks"></div>
-  </div></div>
+  </div>
+  <div class="wrap sh-foot">
+    <p class="onpack" data-ar="على العلبة: طبيعي 100% · جاهز للأكل · منتج مصري 100%">On the tin: 100% Natural · Ready to eat · Egyptian Product 100%</p>
+    <button class="link light" type="button" data-goto="canned"><span data-ar="الأصناف الستة عشر في الكتالوج">All sixteen in the catalogue</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+  </div>
 </section>
 
-<section id="partnership">
-  <div class="wrap">
-    <div class="head">
-      <div><span class="eyebrow rv"><i>05</i><span data-ar="الشراكة">Partnership</span></span>
-      <h2 class="t split" data-split data-ar="شريك طويل الأمد، <em>لا صفقة واحدة.</em>">A long-term partner, <em>not a transaction.</em></h2></div>
-      <p class="sub rv" data-ar="كل ما في صفحة الجملة لدينا، في ثلاثة وعود.">Everything our wholesale programme offers, in three promises.</p>
+<section class="spread frz" aria-labelledby="h-frozen">
+  <div class="wrap grid">
+    <div class="sp-text">
+      <h2 id="h-frozen" data-ar="مجمدات، من البامية إلى المانجو.">Frozen, from okra to mango.</h2>
+      <p class="lede" data-ar="بامية، ملوخية، بسلة، فاصوليا خضراء، خضار مشكل، فراولة ومانجو في أكياس 400 جم، مع بطاطس نصف مقلية ومعجنات ودجاج جاهز للطهي.">Okra, molokhia, peas, green beans, mixed vegetables, strawberries and mango in 400 g bags, plus pre-fried fries, pastries and ready-to-cook chicken.</p>
+      <ul class="leaders">
+        <li><span data-ar="أكياس 400 جم في الكرتونة">400 g bags per carton</span><i></i><b>20</b></li>
+        <li><span data-ar="كرتونة في حاوية 20 قدم">Cartons per 20ft</span><i></i><b>1,118</b></li>
+        <li><span data-ar="كرتونة في حاوية 40 قدم">Cartons per 40ft</span><i></i><b>2,650</b></li>
+        <li><span data-ar="البطاطس نصف المقلية">Pre-fried fries</span><i></i><b data-ar="2.5 كجم × 4 · 1 كجم × 10">2.5 kg × 4 · 1 kg × 10</b></li>
+      </ul>
+      <div class="sp-links">
+        <button class="link" type="button" data-goto="frozen"><span data-ar="الخضروات والفواكه المجمدة">Frozen vegetables &amp; fruit</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+        <button class="link" type="button" data-goto="chicken"><span data-ar="الدجاج الجاهز للطهي">Ready-to-cook chicken</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+      </div>
     </div>
-    <div class="acc rv" id="acc">
-      <div class="ac on"><button class="ac-h" aria-expanded="true"><span class="k">01</span><h3 data-ar="جودة مثبتة">Proven quality</h3><span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></button>
-        <div class="ac-b"><div><div class="ac-in"><span></span><ul>
-          <li data-ar="معتمدون HACCP">HACCP certified</li><li data-ar="إمداد ثابت يُعتمد عليه">Consistent supply you can depend on</li><li data-ar="مكونات فاخرة بأسعار تنافسية">Premium ingredients, competitive prices</li><li data-ar="خبرة تتجاوز 20 عامًا">Backed by 20+ years of experience</li><li data-ar="موثوقون لدى أكثر من 500 تاجر">Trusted by 500+ retailers worldwide</li></ul>
-          <div class="ph"><img src="assets/img/photos/cans-light.webp" alt="" loading="lazy"></div></div></div></div></div>
-      <div class="ac"><button class="ac-h" aria-expanded="false"><span class="k">02</span><h3 data-ar="حلول مرنة">Flexible solutions</h3><span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></button>
-        <div class="ac-b"><div><div class="ac-in"><span></span><ul>
-          <li data-ar="طلبات مخصصة من 50 كرتونة">Custom orders from 50 cartons</li><li data-ar="علامة خاصة وبيضاء">Private &amp; white-label options</li><li data-ar="مديرو حسابات مخصصون">Dedicated account managers</li><li data-ar="تتبّع المخزون لحظيًا">Real-time inventory tracking</li><li data-ar="تعبئة مخصصة متاحة">Custom packaging available</li></ul>
-          <div class="ph pk"><img src="assets/img/products/fz-fries-classic.webp" alt="" loading="lazy"></div></div></div></div></div>
-      <div class="ac"><button class="ac-h" aria-expanded="false"><span class="k">03</span><h3 data-ar="نهج الشراكة">Partnership approach</h3><span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></button>
-        <div class="ac-b"><div><div class="ac-in"><span></span><ul>
-          <li data-ar="فريق دعم سريع الاستجابة">Responsive support team</li><li data-ar="فرص حصرية للمناطق">Territory-exclusive opportunities</li><li data-ar="دعم تسويقي مشترك">Co-marketing support</li><li data-ar="تنسيق لوجستي مخصص">Dedicated logistics coordination</li></ul>
-          <div class="ph"><img src="assets/img/photos/tuna-stack.webp" alt="" loading="lazy" style="object-position:center 40%"></div></div></div></div></div>
+    <div class="cluster" id="cluster"></div>
+  </div>
+</section>
+
+<section class="cat" id="catalogue" aria-labelledby="h-cat">
+  <div class="wrap">
+    <div class="cat-head">
+      <h2 id="h-cat" data-ar="كل منتج، وكل كرتونة.">Every product, every carton.</h2>
+      <div>
+        <p class="lede" data-ar="اختر خطًا لتعرض منتجاته وأرقام الحاويات، ثم أضف ما تحتاجه إلى قائمة عرض السعر.">Choose a line to see its products and container figures, then add what you need to your quote list.</p>
+      </div>
+    </div>
+    <div class="cat-body">
+      <div class="cat-side">
+        <label class="search"><span class="sr" data-ar="ابحث في المنتجات">Search products</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><input id="q" type="search" autocomplete="off" placeholder="Search 65 products" data-ar-ph="ابحث في 65 منتجًا"></label>
+        <div class="lines" id="lines" role="tablist" aria-label="Product lines" data-ar-label="خطوط المنتجات"></div>
+        <a class="dl" href="https://www.aquapremiumfoods.com/_files/ugd/ad2790_89920731462442c6bc3b4d72c8624120.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg><span data-ar="حمّل الكتالوج (PDF)">Download the catalogue (PDF)</span></a>
+      </div>
+      <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
     </div>
   </div>
 </section>
 
-<section id="hubs" style="padding-top:0">
+<section class="svc" id="services" aria-labelledby="h-svc">
   <div class="wrap">
-    <div class="head">
-      <div><span class="eyebrow rv"><i>06</i><span data-ar="مكاتبنا">Our hubs</span></span>
-      <h2 class="t split" data-split data-ar="مكتبان، <em>وسوق عالمي.</em>">Two hubs, <em>one global market.</em></h2></div>
+    <div class="svc-top">
+      <h2 id="h-svc" data-ar="خلف العلامة: بيور.">Behind the brand: PURE.</h2>
+      <p class="lede" data-ar="أكوا بريميوم مدعومة من بيور: بيور للحلول المتكاملة للأعمال في القاهرة، وبيور أوشو للتجارة العامة في دبي. وتقدّم الشركتان الاستيراد والتصدير، والتصنيع بالعلامة الخاصة، والتوريد الغذائي، والخدمات اللوجستية.">Aqua Premium is backed by PURE: PURE Integrated Business Solutions in Cairo and PURE Osho General Trading in Dubai. Together they offer import and export, private label, food supply and logistics.</p>
     </div>
-    <div class="hubs">
-      <div class="globe rv" id="globe"><img src="assets/img/photos/logistics.webp" alt="" loading="lazy">
-        <div class="num">50+</div>
-        <p data-ar="دولة نخدمها بنفس الجودة — تاجر في أوروبا، مطعم في آسيا، أو عائلة في الشرق الأوسط.">countries served with one standard — a retailer in Europe, a restaurant in Asia or a family in the Middle East.</p>
-        <div class="regions"><span data-ar="الشرق الأوسط والخليج">Middle East &amp; GCC</span><span data-ar="أوروبا">Europe</span><span data-ar="آسيا">Asia</span><span data-ar="أفريقيا">Africa</span></div>
+    <div class="svc-grid">
+      <div class="svc-list">
+        <div class="svc-item">
+          <h3 data-ar="العلامة الخاصة">Private label</h3>
+          <p data-ar="تصنيع متكامل بعلامتك الخاصة: تطوير المنتج والتعبئة والهوية، من الفكرة حتى المنتج النهائي، بما يناسب سوقك وعملاءك.">End-to-end private label manufacturing: product development, packaging and branding, from concept to final product, adapted to your market.</p>
+        </div>
+        <div class="svc-item">
+          <h3 data-ar="الاستيراد والتصدير">Import &amp; export</h3>
+          <p data-ar="استيراد وتصدير وتنسيق لوجستي والتزام بالمتطلبات التنظيمية، عبر شبكة من الشركاء والموردين للأسواق الإقليمية والدولية.">Import, export, logistics coordination and regulatory compliance, through a network of partners and suppliers for regional and international markets.</p>
+        </div>
+        <div class="svc-item">
+          <h3 data-ar="التوريد الغذائي">Food supply</h3>
+          <p data-ar="محفظة منتجات من موردين محليين ودوليين، ونماذج توريد مرنة تُبنى حول احتياج كل عميل.">A portfolio sourced from local and international suppliers, with supply models built around each client's operation.</p>
+          <ul class="sectors">
+            <li data-ar="الفنادق والمطاعم والمقاهي">Hotels, restaurants &amp; cafés</li>
+            <li data-ar="التجزئة">Retail</li>
+            <li data-ar="الشركات">Corporate</li>
+            <li data-ar="القطاع الصناعي">Industrial</li>
+            <li data-ar="التوريد بالجملة">Bulk supply</li>
+          </ul>
+        </div>
+        <div class="svc-item">
+          <h3 data-ar="الخدمات اللوجستية">Logistics</h3>
+          <p data-ar="فريق لوجستي متمرس ينقل البضائع إلى أي مكان في العالم في الموعد المتفق عليه، لتتفرغ أنت لعملك.">An experienced logistics team that delivers goods to any part of the world on the agreed schedule, so you can stay focused on your business.</p>
+        </div>
       </div>
-      <div class="hub ae rv">
-        <div class="flag"><span data-ar="الإمارات">UAE</span><span class="live" data-ar="الآن">Live</span></div>
-        <div class="clock" id="clkDxb">--:--</div>
-        <h3 data-ar="دبي">Dubai</h3>
-        <p data-ar="مبنى مطلوب، بلوك B، الصفا 1، دبي">Matloob Building, Block B, Al Safa 1, Dubai</p>
-        <p dir="ltr" style="text-align:start">+971 4 380 0899</p>
-        <a class="m" href="https://www.google.com/maps/search/?api=1&amp;query=Matloob+Building+Al+Safa+1+Dubai" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-ar="افتح في الخرائط">Open in Maps</span></a>
-      </div>
-      <div class="hub eg rv">
-        <div class="flag"><span data-ar="مصر">Egypt</span><span class="live" data-ar="الآن">Live</span></div>
-        <div class="clock" id="clkCai">--:--</div>
+      <figure class="svc-fig">
+        <div class="ph-van"><img src="assets/img/photos/van.webp" alt="Refrigerated Aqua Premium delivery van in Dubai livery" data-ar-alt="سيارة توزيع مبرّدة بألوان أكوا بريميوم في دبي" width="1200" height="1200" loading="lazy"></div>
+        <figcaption data-ar="سيارة التوزيع المبرّدة لبيور أوشو للتجارة العامة في دبي.">The refrigerated delivery van of PURE Osho General Trading, Dubai.</figcaption>
+        <p class="family" data-ar="علامات شقيقة: <b>بيور إسبريسو</b> · <b>بيور فارم</b>">Family brands: <b>PURE Espresso</b> · <b>PURE Farm</b></p>
+        <div class="logos"><img src="assets/img/pure-ibs.png" alt="PURE Integrated Business Solutions" width="680" height="294" loading="lazy"><img src="assets/img/pure-osho.png" alt="PURE Osho General Trading" width="300" height="312" loading="lazy"></div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="steps-sec" aria-labelledby="h-steps">
+  <div class="wrap">
+    <h2 id="h-steps" data-ar="كيف يكتمل طلبك.">How an order comes together.</h2>
+    <ol class="steps">
+      <li><span class="n">1</span><h3 data-ar="أرسل قائمتك">Send your list</h3><p data-ar="المنتجات والكميات التقريبية ووجهة التسليم، أو جهّز القائمة هنا مباشرة من الكتالوج.">Products, rough volumes and destination. Or build the list right here from the catalogue.</p></li>
+      <li><span class="n">2</span><h3 data-ar="الأسعار والعرض">Pricing &amp; proposal</h3><p data-ar="يرد فريقنا بالأسعار وتشكيلة مقترحة تناسب سوقك.">Our team replies with prices and a suggested assortment for your market.</p></li>
+      <li><span class="n">3</span><h3 data-ar="العلامة والتعبئة">Brand &amp; packaging</h3><p data-ar="اختر علامة أكوا بريميوم أو علامتك الخاصة، والأحجام المناسبة لقناة بيعك.">Choose Aqua Premium or your own private label, and the pack sizes that suit your channel.</p></li>
+      <li><span class="n">4</span><h3 data-ar="تأكيد الطلب">Confirm the order</h3><p data-ar="بالكرتونة أو بالحاوية، ولكل خط أرقام تحميل 20 و40 قدمًا.">By the carton or by the container; every line lists its 20ft and 40ft loads.</p></li>
+      <li><span class="n">5</span><h3 data-ar="الشحن والتسليم">Shipping &amp; delivery</h3><p data-ar="يتولى فريق بيور اللوجستي تنسيق الشحن حتى وجهتك.">PURE's logistics team coordinates the shipment to your destination.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="quality" id="quality" aria-labelledby="h-q">
+  <div class="wrap">
+    <div class="q-top">
+      <h2 id="h-q" data-ar="مراقبة في الحقل، واختبار في المعمل.">Checked in the field, tested in the lab.</h2>
+      <blockquote>
+        <p data-ar="«تُختبر جميع المنتجات بانتظام في معامل معتمدة للكشف عن المعادن الثقيلة وبقايا المبيدات، للتأكد من بقائها ضمن الحدود المعتمدة.»">“All products are regularly tested by certified laboratories for heavy metals and pesticide residues, to make sure they stay within approved limits.”</p>
+        <footer data-ar="من سياسة المبيدات في كتالوج أكوا بريميوم">From the pesticide policy in the Aqua Premium catalogue</footer>
+      </blockquote>
+    </div>
+    <div class="q-cols">
+      <div><h3 data-ar="سياسة المبيدات">Pesticide policy</h3><p data-ar="الالتزام بالحدود القصوى للمتبقيات، ومهندسون زراعيون يتابعون المحاصيل ويوجّهون المزارعين إلى الأنواع والكميات المسموح بها.">Use is kept within Maximum Residue Limits; agricultural engineers inspect crops and guide farmers on permitted types and amounts.</p></div>
+      <div><h3 data-ar="سجلات الحقل">Field records</h3><p data-ar="سجلات لكل محصول تُراجَع قبل نقل الخامات إلى المصنع.">Records are kept for every crop and checked before raw materials are moved to the factory.</p></div>
+      <div><h3 data-ar="السياسة البيئية">Environmental policy</h3><p data-ar="تقليل الملوثات، وترشيد استهلاك الطاقة، وإعادة تدوير مواد الإنتاج، والسعي إلى صفر انبعاثات.">Reducing pollutants, optimising energy use and recycling production materials, with zero emissions as the aim.</p></div>
+    </div>
+    <p class="onpack" data-ar="مطبوع على علب البقوليات والخضروات: طبيعي 100% · جاهز للأكل · منتج مصري 100%">Printed on the canned legumes and vegetables: 100% Natural · Ready to eat · Egyptian Product 100%</p>
+  </div>
+</section>
+
+<section class="offices" id="offices" aria-labelledby="h-off">
+  <div class="wrap">
+    <h2 id="h-off" data-ar="القاهرة ودبي.">Cairo and Dubai.</h2>
+    <div class="off-grid">
+      <div class="office">
         <h3 data-ar="القاهرة">Cairo</h3>
-        <p data-ar="5أ شارع علي بهجت، أبو الفدا، الزمالك، القاهرة">5A Ali Bahgat St., Abou El Feda, Zamalek, Cairo</p>
-        <p>info@pureibs.com</p>
-        <a class="m" href="https://www.google.com/maps/search/?api=1&amp;query=5A+Ali+Bahgat+St+Abou+El+Feda+Zamalek+Cairo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-ar="افتح في الخرائط">Open in Maps</span></a>
+        <p class="co">PURE Integrated Business Solutions</p>
+        <address data-ar="5أ شارع بهجت علي، أبو الفدا، الزمالك، القاهرة، مصر">5A Bahgat Aly St., Abou El Feda, Zamalek, Cairo, Egypt</address>
+        <div class="ct"><a href="tel:+201220120185" dir="ltr">+20 122 012 0185</a><a href="mailto:info@pureibs.com">info@pureibs.com</a></div>
+        <a class="link map" href="https://www.google.com/maps/search/?api=1&amp;query=5A%20Bahgat%20Aly%20St%20Zamalek%20Cairo" target="_blank" rel="noopener"><span data-ar="افتح في الخرائط">Open in Maps</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="office">
+        <h3 data-ar="دبي">Dubai</h3>
+        <p class="co">PURE Osho General Trading</p>
+        <address data-ar="مبنى المطلوب، بلوك B، شارع الشيخ زايد، الصفا 1، ص.ب. 26265، دبي، الإمارات">Al Matloob Building, Block B, Sheikh Zayed Rd, Al Safa 1, P.O. Box 26265, Dubai, UAE</address>
+        <div class="ct"><a href="tel:+97143800899" dir="ltr">+971 4 380 0899</a><a href="mailto:info@pureosho-trading.com">info@pureosho-trading.com</a></div>
+        <a class="link map" href="https://www.google.com/maps/search/?api=1&amp;query=Al%20Matloob%20Building%20Al%20Safa%201%20Dubai" target="_blank" rel="noopener"><span data-ar="افتح في الخرائط">Open in Maps</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </div>
 </section>
 
-<section id="quality" style="padding-top:0">
-  <div class="wrap q">
-    <div>
-      <span class="eyebrow rv"><i>07</i><span data-ar="الجودة">Quality</span></span>
-      <blockquote class="rv" data-ar="«نحن لا نكتفي بالمتطلبات — <em>بل نتجاوزها.</em>»">“We don't just meet requirements — <em>we exceed them.</em>”</blockquote>
-      <cite class="rv" data-ar="كل دفعة تُختبر للطعم والقوام وثبات الصلاحية والقيمة الغذائية قبل أن تصل إليك.">Every batch is tested for taste, texture, shelf stability and nutritional value before it reaches you.</cite>
-    </div>
-    <div class="qs rv">
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><p><b>HACCP</b><span data-ar="تصنيع معتمد وتدقيقات منتظمة">Certified facilities, regular audits</span></p></div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M11 20A7 7 0 0 1 4 13c0-6 7-10 16-10 0 9-4 16-9 17z"/><path d="M4 21c3-6 7-9 11-11"/></svg><p><b data-ar="طبيعي 100%">100% natural</b><span data-ar="مكونات بسيطة وصادقة">Simple, honest ingredients</span></p></div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></svg><p><b data-ar="بلا إضافات صناعية">No artificial additives</b><span data-ar="بلا مواد حافظة صناعية">No artificial preservatives</span></p></div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3c0 4 10 5 10 9s-10 5-10 9M17 3c0 4-10 5-10 9s10 5 10 9"/></svg><p><b data-ar="بلا تعديل وراثي">Non-GMO</b><span data-ar="خالٍ من الكائنات المعدلة">Free from GMOs</span></p></div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 3h6M10 3v6L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/></svg><p><b data-ar="اختبار كل دفعة">Batch-tested</b><span data-ar="قبل أن تغادر المنشأة">Before it leaves the facility</span></p></div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg><p><b data-ar="مصادر مسؤولة">Responsible sourcing</b><span data-ar="صيد مسؤول وتعبئة صديقة للبيئة">Responsible fishing, eco packaging</span></p></div>
-    </div>
-  </div>
-</section>
-
-<section id="request" style="padding-top:0">
-  <div class="wrap"><div class="form-card rv">
-    <div class="fc-l">
-      <span class="eyebrow" style="align-self:flex-start"><i>08</i><span data-ar="أسعار الجملة">Wholesale pricing</span></span>
-      <h2 class="t" style="margin-top:0" data-ar="لنبنِ <em>طلبك الأول.</em>">Let's build <em>your first order.</em></h2>
-      <p class="sub" style="margin-top:0" data-ar="أرسل التفاصيل وسيعود إليك مدير حساب بقائمة الأسعار وتشكيلة مقترحة لسوقك.">Send the details — an account manager will come back with a price list and a suggested assortment for your market.</p>
-      <div class="c">
-        <a href="mailto:info@pureibs.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>info@pureibs.com</a>
-        <a href="tel:+97143800899" dir="ltr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+971 4 380 0899</a>
-      </div>
-      <img class="deco" src="assets/img/products/fz-strawberry.webp" alt="" loading="lazy">
-    </div>
-    <form class="fc-r" id="form" novalidate>
-      <div class="row">
-        <div class="f"><input id="fName" placeholder=" " autocomplete="name" required><label for="fName" data-ar="الاسم *">Full name *</label></div>
-        <div class="f"><input id="fCompany" placeholder=" " autocomplete="organization" required><label for="fCompany" data-ar="الشركة *">Company *</label></div>
-      </div>
-      <div class="row">
-        <div class="f"><input id="fEmail" type="email" placeholder=" " autocomplete="email" required><label for="fEmail" data-ar="البريد الإلكتروني *">Business email *</label></div>
-        <div class="f"><input id="fPhone" type="tel" placeholder=" " autocomplete="tel"><label for="fPhone" data-ar="هاتف / واتساب">Phone / WhatsApp</label></div>
-      </div>
-      <div class="row">
-        <div class="f"><select id="fCountry" required></select><label for="fCountry" data-ar="الدولة *">Country *</label></div>
-        <div class="f"><select id="fType" required>
-          <option value="" data-ar="اختر…">Select…</option>
-          <option value="Retail chain / Supermarket" data-ar="سلسلة تجزئة / سوبر ماركت">Retail chain / Supermarket</option>
-          <option value="Distributor / Wholesaler" data-ar="موزع / تاجر جملة">Distributor / Wholesaler</option>
-          <option value="Restaurant / HoReCa" data-ar="مطعم / فندق / تموين">Restaurant / HoReCa</option>
-          <option value="Importer" data-ar="مستورد">Importer</option>
-          <option value="Private / white label" data-ar="علامة خاصة / بيضاء">Private / white label</option>
-        </select><label for="fType" data-ar="نوع النشاط *">Business type *</label></div>
-      </div>
-      <div class="row">
-        <div class="f"><select id="fQty">
-          <option value="" data-ar="اختر…">Select…</option>
-          <option value="Trial — 50-100 cartons" data-ar="تجريبي — 50 إلى 100 كرتونة">Trial — 50–100 cartons</option>
-          <option value="100-500 cartons" data-ar="100 إلى 500 كرتونة">100–500 cartons</option>
-          <option value="500+ cartons" data-ar="أكثر من 500 كرتونة">500+ cartons</option>
-          <option value="Full container" data-ar="حاوية كاملة">Full container</option>
-          <option value="Recurring supply" data-ar="توريد دوري">Recurring supply</option>
-        </select><label for="fQty" data-ar="الكمية التقديرية">Estimated volume</label></div>
-        <div class="f"><select id="fBrand">
-          <option value="" data-ar="اختر…">Select…</option>
-          <option value="Aqua Premium brand" data-ar="علامة أكوا بريميوم">Aqua Premium brand</option>
-          <option value="Private label" data-ar="علامة خاصة">Private label</option>
-          <option value="White label" data-ar="علامة بيضاء">White label</option>
-        </select><label for="fBrand" data-ar="العلامة">Branding</label></div>
-      </div>
-      <div class="pk"><span data-ar="المنتجات المطلوبة * (متزامنة مع قائمة عرض السعر)">Products of interest * (synced with your quote list)</span><div class="chips" id="chips"></div></div>
-      <div class="f"><textarea id="fMsg" placeholder=" "></textarea><label for="fMsg" data-ar="ملاحظات — أحجام، مواعيد، مدينة التسليم">Notes — sizes, schedule, delivery city</label></div>
-      <div class="send"><button type="submit" class="b b-ink"><span data-ar="أرسل الطلب">Send request</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button><p data-ar="يفتح تطبيق البريد برسالة جاهزة إلى فريق الجملة.">Opens your email app with a ready-made message to our wholesale team.</p></div>
-      <div class="toast" id="toast"></div>
-    </form>
-  </div></div>
-</section>
-
-<section id="faq" style="padding-top:0">
-  <div class="wrap faq">
-    <div class="side-h">
-      <span class="eyebrow rv"><i>09</i><span data-ar="أسئلة شائعة">FAQ</span></span>
-      <h2 class="t split" data-split data-ar="أسئلة يطرحها <em>المشترون.</em>">Questions buyers <em>ask us.</em></h2>
-      <a href="mailto:info@pureibs.com" class="b b-soft rv"><span data-ar="اسأل فريقنا">Ask our team</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-    </div>
-    <div class="rv">
-      <details open><summary><span data-ar="ما الحد الأدنى للطلب؟">What is the minimum order?</span><i></i></summary><p data-ar="الطلبات المخصصة تبدأ من 50 كرتونة وتصل حتى حاويات كاملة، ويمكن مزج المعلبات والمجمدات.">Custom orders start from 50 cartons and scale to full containers. Canned and frozen lines can be mixed.</p></details>
-      <details><summary><span data-ar="هل توفرون علامة خاصة أو بيضاء؟">Do you offer private or white label?</span><i></i></summary><p data-ar="نعم — علامة خاصة وبيضاء، مع تعبئة مخصصة حسب قناتك.">Yes — both private and white label, with custom packaging for your channel.</p></details>
-      <details><summary><span data-ar="ما معايير الجودة؟">Which quality standards do you follow?</span><i></i></summary><p data-ar="منشآت معتمدة HACCP مع تدقيقات منتظمة، وكل دفعة تُختبر للطعم والقوام وثبات الصلاحية.">HACCP-certified facilities with regular audits; every batch is tested for taste, texture and shelf stability.</p></details>
-      <details><summary><span data-ar="هل يمكن الحصول على حصرية منطقة؟">Can we get territory exclusivity?</span><i></i></summary><p data-ar="تتوفر فرص حصرية للشركاء المؤهلين، مع دعم تسويقي مشترك.">Territory-exclusive opportunities are available for qualifying partners, with co-marketing support.</p></details>
-      <details><summary><span data-ar="من سيدير حسابي؟">Who manages my account?</span><i></i></summary><p data-ar="مدير حساب مخصص وتنسيق لوجستي، مع تتبّع لحظي للمخزون.">A dedicated account manager and logistics coordinator, with real-time inventory tracking.</p></details>
-      <details><summary><span data-ar="من أين تورّدون؟">Where do you supply from?</span><i></i></summary><p data-ar="من مكتبينا في القاهرة ودبي، إلى عملاء في أكثر من 50 دولة.">From our offices in Cairo and Dubai, to customers in 50+ countries.</p></details>
-    </div>
-  </div>
-</section>
-
-<footer>
+<section class="req" id="request" aria-labelledby="h-req">
   <div class="wrap">
-    <div class="f-top">
-      <div class="f-cta"><h3 data-ar="جاهز تملأ <em>رفوفك؟</em>">Ready to stock <em>your shelves?</em></h3><a href="#request" class="b b-amber"><span data-ar="اطلب أسعار الجملة">Get wholesale pricing</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <div class="f-group"><img src="assets/img/pure-ibs.png" alt="Pure Integrated Business Solutions"><img src="assets/img/pure-osho.png" alt="Pure Osho General Trading"></div></div>
-      <div><h4 data-ar="الموقع">Explore</h4><ul><li><a href="#about" data-ar="من نحن">About</a></li><li><a href="#catalogue" data-ar="الكتالوج">Catalogue</a></li><li><a href="#ordering" data-ar="طريقة الطلب">Ordering</a></li><li><a href="#partnership" data-ar="الشراكة">Partnership</a></li><li><a href="#faq" data-ar="الأسئلة">FAQ</a></li></ul></div>
-      <div><h4 data-ar="المنتجات">Products</h4><ul id="fProds"></ul></div>
-      <div><h4 data-ar="تواصل">Contact</h4><ul><li><a href="mailto:info@pureibs.com">info@pureibs.com</a></li><li><a href="mailto:marketing@pureibs.com">marketing@pureibs.com</a></li><li><a href="mailto:info@pureosho-trading.com">info@pureosho-trading.com</a></li><li><a href="tel:+97143800899" dir="ltr">+971 4 380 0899</a></li></ul></div>
+    <h2 id="h-req" data-ar="اطلب عرض سعر.">Request a quote.</h2>
+    <p class="lede req-lede" data-ar="أخبرنا بما تحتاجه، وسيرد فريقنا بالأسعار وتشكيلة مقترحة لسوقك.">Tell us what you need. Our team replies with prices and a proposed assortment for your market.</p>
+    <div class="req-card">
+      <div class="req-side">
+        <h3 data-ar="قائمتك">Your list</h3>
+        <ul class="qlist" id="qlist"></ul>
+        <button class="link" type="button" data-goto=""><span data-ar="أضف من الكتالوج">Add from the catalogue</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+        <div class="req-contact">
+          <a href="mailto:info@pureibs.com"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>info@pureibs.com</a>
+          <a href="tel:+97143800899" dir="ltr"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+971 4 380 0899</a>
+        </div>
+      </div>
+      <form class="form" id="form" novalidate>
+        <div class="field"><label for="fName" data-ar="الاسم الكامل">Full name</label><input id="fName" name="name" autocomplete="name" required><span class="msg" data-ar="اكتب اسمك.">Please enter your name.</span></div>
+        <div class="field"><label for="fCompany" data-ar="الشركة">Company</label><input id="fCompany" name="company" autocomplete="organization" required><span class="msg" data-ar="اكتب اسم الشركة.">Please enter your company.</span></div>
+        <div class="field"><label for="fEmail" data-ar="البريد الإلكتروني للعمل">Work email</label><input id="fEmail" name="email" type="email" autocomplete="email" inputmode="email" required><span class="msg" data-ar="اكتب بريدًا إلكترونيًا صحيحًا.">Please enter a valid email address.</span></div>
+        <div class="field"><label for="fPhone" data-ar="الهاتف أو واتساب (اختياري)">Phone or WhatsApp (optional)</label><input id="fPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" dir="ltr"></div>
+        <div class="field"><label for="fCountry" data-ar="الدولة">Country</label><select id="fCountry" name="country" required></select><span class="msg" data-ar="اختر الدولة.">Please choose a country.</span></div>
+        <div class="field"><label for="fType" data-ar="نوع النشاط">Business type</label><select id="fType" name="type" required>
+          <option value="" data-ar="اختر…">Choose…</option>
+          <option value="Importer / distributor" data-ar="مستورد / موزع">Importer / distributor</option>
+          <option value="Retail chain / supermarket" data-ar="سلسلة تجزئة / سوبر ماركت">Retail chain / supermarket</option>
+          <option value="Hotel / restaurant / café" data-ar="فندق / مطعم / مقهى">Hotel / restaurant / café</option>
+          <option value="Corporate / industrial" data-ar="شركات / قطاع صناعي">Corporate / industrial</option>
+          <option value="Private label" data-ar="علامة خاصة">Private label</option>
+        </select><span class="msg" data-ar="اختر نوع النشاط.">Please choose a business type.</span></div>
+        <div class="field"><label for="fQty" data-ar="الكمية التقديرية">Estimated volume</label><select id="fQty" name="volume">
+          <option value="" data-ar="اختر…">Choose…</option>
+          <option value="Trial order (cartons)" data-ar="طلب تجريبي (كراتين)">Trial order (cartons)</option>
+          <option value="Full 20ft container" data-ar="حاوية 20 قدم كاملة">Full 20ft container</option>
+          <option value="Full 40ft container" data-ar="حاوية 40 قدم كاملة">Full 40ft container</option>
+          <option value="Recurring supply" data-ar="توريد دوري">Recurring supply</option>
+        </select></div>
+        <div class="field"><label for="fBrand" data-ar="العلامة">Brand</label><select id="fBrand" name="brand">
+          <option value="Aqua Premium" data-ar="أكوا بريميوم">Aqua Premium</option>
+          <option value="Private label" data-ar="علامة خاصة">Private label</option>
+          <option value="Not sure yet" data-ar="لم أقرر بعد">Not sure yet</option>
+        </select></div>
+        <div class="field full"><label for="fMsg" data-ar="ملاحظات: الأحجام، المواعيد، ميناء أو مدينة التسليم">Notes: sizes, timing, destination port or city</label><textarea id="fMsg" name="notes" rows="4"></textarea></div>
+        <div class="status" id="status" role="status"></div>
+        <div class="send"><button class="btn" type="submit"><span data-ar="أرسل الطلب">Send request</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p data-ar="يفتح تطبيق البريد لديك برسالة جاهزة إلى info@pureibs.com.">Opens your email app with the request ready to send to info@pureibs.com.</p></div>
+      </form>
     </div>
-    <div class="mark" aria-hidden="true">Aqua Premium</div>
-    <div class="f-bot"><span>© <span id="yr"></span> <span data-ar="أكوا بريميوم فودز — القاهرة · دبي">Aqua Premium Foods Range — Cairo · Dubai</span></span><span data-ar="إعادة تصميم: محمد طارق">Redesign concept by Mohamed Tarek</span></div>
+  </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="h-faq">
+  <div class="wrap faq-grid">
+    <h2 id="h-faq" data-ar="أسئلة يطرحها المشترون.">Questions buyers ask.</h2>
+    <div class="faq-list">
+      <details name="faq" open><summary><span data-ar="ما الحد الأدنى للطلب؟">What is the minimum order?</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></summary><div><p data-ar="تبدأ الطلبات من 50 كرتونة وتصل إلى حاويات كاملة 20 و40 قدمًا. يعرض الكتالوج أرقام الكرتونة والحاوية لكل خط.">Orders start from 50 cartons and go up to full 20ft and 40ft containers. The catalogue lists carton and container figures for every line.</p></div></details>
+      <details name="faq"><summary><span data-ar="هل يمكنكم التعبئة بعلامتنا؟">Can you pack under our brand?</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></summary><div><p data-ar="نعم. تقدم بيور تصنيعًا متكاملًا بالعلامة الخاصة: تطوير المنتج والتعبئة والهوية، من الفكرة حتى المنتج النهائي.">Yes. PURE offers end-to-end private label manufacturing: product development, packaging and branding, from concept to final product.</p></div></details>
+      <details name="faq"><summary><span data-ar="ما القطاعات التي تورّدون لها؟">Which sectors do you supply?</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></summary><div><p data-ar="التجزئة، والفنادق والمطاعم والمقاهي، والشركات، والقطاع الصناعي، والتوريد بالجملة، في الأسواق المحلية والدولية.">Retail, hotels, restaurants and cafés, corporate, industrial and bulk supply, in local and international markets.</p></div></details>
+      <details name="faq"><summary><span data-ar="كيف تتم مراقبة الجودة؟">How is quality controlled?</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></summary><div><p data-ar="مهندسون زراعيون يتابعون المحاصيل وفق الحدود القصوى للمتبقيات، وسجلات حقل تُراجع قبل وصول الخامات إلى المصنع، واختبارات منتظمة في معامل معتمدة للمعادن الثقيلة وبقايا المبيدات.">Agricultural engineers monitor crops against Maximum Residue Limits, field records are checked before raw materials reach the factory, and products are regularly tested by certified laboratories for heavy metals and pesticide residues.</p></div></details>
+      <details name="faq"><summary><span data-ar="هل تتولون الشحن والتصدير؟">Do you handle shipping and export?</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></summary><div><p data-ar="نعم. تقدم بيور الاستيراد والتصدير والتنسيق اللوجستي والالتزام بالمتطلبات التنظيمية، مع فريق لوجستي يسلّم إلى أي مكان في العالم.">Yes. PURE provides import and export, logistics coordination and regulatory compliance, with a logistics team that delivers to any part of the world.</p></div></details>
+      <details name="faq"><summary><span data-ar="ما أحجام العبوات المتاحة؟">Which pack sizes are available?</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></summary><div><p data-ar="من علب السردين 125 جم إلى علب 3 كجم للمطابخ، وأكياس المجمدات 400 جم، والبطاطس 2.5 كجم، والزيوت 1 كجم، والبقوليات حتى 5 كجم. أحجام كل خط موضحة في الكتالوج.">From 125 g sardine tins to 3 kg catering tins, 400 g frozen bags, 2.5 kg fries, 1 kg oils and pulses up to 5 kg. Each line's sizes are in the catalogue.</p></div></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div>
+        <a class="fl" href="#top" aria-label="Aqua Premium" data-ar-label="أكوا بريميوم"><img src="assets/img/logo-white.png" alt="" width="548" height="398" loading="lazy"></a>
+        <p class="sig" lang="ar">من أولها… أكوا بريميوم</p>
+        <p class="sig-t" data-ar="علامة أغذية من القاهرة ودبي، مدعومة من بيور.">A food brand from Cairo and Dubai, backed by PURE.</p>
+      </div>
+      <div><h4 data-ar="التشكيلة">The range</h4><ul id="fLines"></ul></div>
+      <div><h4 data-ar="الشركة">Company</h4><ul>
+        <li><a href="#services" data-ar="خدماتنا">Services</a></li>
+        <li><a href="#quality" data-ar="الجودة">Quality</a></li>
+        <li><a href="#offices" data-ar="مكاتبنا">Offices</a></li>
+        <li><a href="#faq" data-ar="أسئلة شائعة">Questions</a></li>
+        <li><a href="https://www.instagram.com/aquapremiumfoods/" target="_blank" rel="noopener">Instagram · @aquapremiumfoods</a></li>
+      </ul></div>
+      <div><h4 data-ar="تواصل">Contact</h4><ul>
+        <li><a href="mailto:info@pureibs.com">info@pureibs.com</a></li>
+        <li><a href="mailto:info@pureosho-trading.com">info@pureosho-trading.com</a></li>
+        <li><a href="tel:+201220120185" dir="ltr">+20 122 012 0185</a></li>
+        <li><a href="tel:+97143800899" dir="ltr">+971 4 380 0899</a></li>
+      </ul></div>
+    </div>
+    <div class="ftr-bot"><span>© <span id="yr">2026</span> <span data-ar="أكوا بريميوم فودز · القاهرة · دبي">Aqua Premium Foods · Cairo · Dubai</span></span><span data-ar="تصميم مقترح: محمد طارق">Redesign concept by Mohamed Tarek</span></div>
   </div>
 </footer>
 
-<div class="tray" id="tray"><span class="th" id="trayTh"></span><b id="trayTxt"></b><button id="trayBtn" data-ar="عرض القائمة">View list</button></div>
+<div class="tray" id="tray" aria-live="polite"><b id="trayTxt"></b><a href="#request" data-ar="راجع الطلب">Review</a></div>
 <div class="scrim" id="scrim"></div>
-<aside class="drawer" id="drawer" aria-modal="true" role="dialog"><div class="d-top"><span id="dTitle"></span><button class="x" id="dClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div><div class="d-body" id="dBody"></div><div class="d-foot" id="dFoot"></div></aside>
-<div class="lightbox" id="lb"><img id="lbImg" alt=""></div>
-
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle" inert>
+  <div class="d-top"><span id="dLine"></span><button class="x" id="dClose" type="button" aria-label="Close" data-ar-label="إغلاق"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="d-body" id="dBody"></div>
+  <div class="d-foot" id="dFoot"></div>
+</aside>
 <script>
-const P=[
- {id:'fava-plain',en:'Plain Fava Beans',ar:'فول مدمس سادة',cat:'leg',pack:'400 g',dEn:'Slow-cooked Egyptian-style fava beans — the everyday staple for breakfast tables across the region.',dAr:'فول مدمس على الطريقة المصرية — الصنف الأساسي على موائد الإفطار في المنطقة.'},
- {id:'fava-olive',en:'Fava Beans with Olive Oil',ar:'فول بزيت الزيتون',cat:'leg',pack:'400 g',dEn:'Fava beans finished with olive oil — ready to heat and serve.',dAr:'فول مدمس بزيت الزيتون — جاهز للتسخين والتقديم.'},
- {id:'fava-chili',en:'Fava Beans with Chili',ar:'فول بالشطة',cat:'leg',pack:'400 g',dEn:'A spicy take on the classic — fava beans with a chili kick.',dAr:'لمسة حارة على الطبق الكلاسيكي — فول مدمس بالشطة.'},
- {id:'fava-chickpeas',en:'Fava Beans with Chickpeas',ar:'فول بالحمص',cat:'leg',pack:'400 g',dEn:'Fava beans and chickpeas together in one hearty can.',dAr:'فول وحمص معًا في علبة واحدة غنية.'},
- {id:'hummus-tahini',en:'Hummus with Tahini',ar:'حمص بالطحينة',cat:'leg',pack:'400 g',dEn:'Smooth chickpea hummus with tahini — a dip, spread or mezze in seconds.',dAr:'حمص ناعم بالطحينة — غموس أو مازة في ثوانٍ.'},
- {id:'chickpeas',en:'Chickpeas',ar:'حمص حب',cat:'leg',pack:'400 g',dEn:'Tender whole chickpeas, ready for salads, stews and hummus.',dAr:'حمص حب طري، جاهز للسلطات واليخنات والحمص.'},
- {id:'kidney-beans',en:'Red Kidney Beans',ar:'فاصوليا حمراء',cat:'leg',pack:'400 g',dEn:'Plump red kidney beans — a protein-rich base for chili, salads and rice dishes.',dAr:'فاصوليا حمراء ممتلئة — قاعدة غنية بالبروتين للأطباق والسلطات والأرز.'},
- {id:'black-eyed',en:'Black-Eyed Peas',ar:'لوبيا',cat:'leg',pack:'400 g',dEn:'Plain black-eyed peas, cooked and ready to use.',dAr:'لوبيا سادة مطهية وجاهزة للاستخدام.'},
- {id:'mushroom-whole',en:'Whole Mushrooms',ar:'مشروم كامل',cat:'veg',pack:'400 g',dEn:'Whole button mushrooms, canned for pizzas, sauces and sautés.',dAr:'مشروم كامل معلب للبيتزا والصوصات والأطباق السوتيه.'},
- {id:'mushroom-pieces',en:'Mushroom Pieces',ar:'مشروم قطع',cat:'veg',pack:'400 g',dEn:'Sliced mushroom pieces — a kitchen-ready ingredient for food service.',dAr:'مشروم مقطع — مكوّن جاهز للمطابخ وقطاع الضيافة.'},
- {id:'green-peas',en:'Green Peas',ar:'بسلة',cat:'veg',pack:'400 g',dEn:'Sweet green peas canned at peak ripeness.',dAr:'بسلة خضراء حلوة معلبة في ذروة النضج.'},
- {id:'sweet-corn',en:'Sweet Corn',ar:'ذرة حلوة',cat:'veg',pack:'400 g',dEn:'Golden sweet corn kernels for salads, sides and pizzas.',dAr:'حبات ذرة حلوة ذهبية للسلطات والأطباق الجانبية والبيتزا.'},
- {id:'mixed-veg',en:'Mixed Vegetables',ar:'خضار مشكل',cat:'veg',pack:'400 g',dEn:'Garden vegetables canned at peak ripeness. Ready-to-use for soups, stir-fries and rice dishes.',dAr:'خضروات مشكلة معلبة في ذروة النضج. جاهزة للشوربات والأطباق المقلية والأرز.'},
- {id:'tuna-solid',en:'Solid Gold Tuna',ar:'تونة سوليد جولد',cat:'sea',pack:'185 g',dEn:'Premium solid-pack tuna — perfect for quick meals, salads and professional kitchens.',dAr:'تونة قطعة واحدة فاخرة — مثالية للوجبات السريعة والسلطات والمطابخ الاحترافية.'},
- {id:'tuna-chunk',en:'Chunk Tuna',ar:'تونة قطع',cat:'sea',pack:'140 g · 1,850 g',dEn:'Chunk tuna in retail and 1,850 g catering sizes — high protein, versatile.',dAr:'تونة قطع بعبوات تجزئة وعبوة 1,850 جم للمطابخ — غنية بالبروتين ومتعددة الاستخدام.'},
- {id:'tuna-shredded',en:'Shredded Tuna',ar:'تونة مفتتة',cat:'sea',pack:'140 g',dEn:'Finely shredded tuna for sandwiches, fillings and spreads.',dAr:'تونة مفتتة للساندويتشات والحشوات.'},
- {id:'fz-fries-classic',en:'Classic Cut Fries',ar:'بطاطس فرايز كلاسيك',cat:'frz',pack:'2.5 kg',dEn:'Premium potatoes cut to perfection. Golden and crispy when cooked — a family favourite and restaurant staple.',dAr:'بطاطس فاخرة مقطعة بإتقان، ذهبية ومقرمشة — المفضلة للعائلات وأساسية للمطاعم.'},
- {id:'fz-fries-thin',en:'Thin Cut Fries',ar:'بطاطس فرايز رفيعة',cat:'frz',pack:'2.5 kg',dEn:'Pre-fried thin-cut fries for fast, crisp service in QSR and catering.',dAr:'بطاطس رفيعة مقلية مسبقًا لخدمة سريعة ومقرمشة في المطاعم والتموين.'},
- {id:'fz-green-beans',en:'Frozen Green Beans',ar:'فاصوليا خضراء مجمدة',cat:'frz',pack:'400 g',dEn:'Cut green beans, frozen to keep their colour and bite.',dAr:'فاصوليا خضراء مقطعة مجمدة لتحافظ على لونها وقوامها.'},
- {id:'fz-green-peas',en:'Frozen Green Peas',ar:'بسلة مجمدة',cat:'frz',pack:'400 g',dEn:'Natural green peas, quick-frozen for sweetness.',dAr:'بسلة طبيعية مجمدة سريعًا لتحتفظ بحلاوتها.'},
- {id:'fz-okra',en:'Frozen Okra Zero',ar:'بامية زيرو مجمدة',cat:'frz',pack:'400 g',dEn:'Small, tender "Zero" grade okra — the favourite for Middle Eastern cooking.',dAr:'بامية زيرو صغيرة وطرية — المفضلة في المطبخ الشرقي.'},
- {id:'fz-mixed-veg',en:'Frozen Mixed Vegetables',ar:'خضار مشكل مجمد',cat:'frz',pack:'400 g',dEn:'A colourful frozen blend for sides, soups and rice.',dAr:'خلطة خضار مجمدة ملونة للأطباق الجانبية والشوربات والأرز.'},
- {id:'fz-strawberry',en:'Frozen Strawberries',ar:'فراولة مجمدة',cat:'frz',fruit:1,pack:'400 g',dEn:'Whole strawberries frozen at peak ripeness — for smoothies, desserts and bakery.',dAr:'فراولة كاملة مجمدة في ذروة النضج — للعصائر والحلويات والمخبوزات.'},
- {id:'fz-mango',en:'Frozen Mango',ar:'مانجو مجمدة',cat:'frz',fruit:1,pack:'400 g',dEn:'Sweet mango chunks, frozen and ready for juices and desserts.',dAr:'قطع مانجو حلوة مجمدة وجاهزة للعصائر والحلويات.'}
+(() => {
+'use strict';
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const root = document.documentElement;
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) { } } };
+let LANG = store.get('aqua-lang') === 'ar' ? 'ar' : 'en';
+const T = (en, ar) => (LANG === 'ar' ? ar : en);
+const fmt = v => (typeof v === 'number' ? v.toLocaleString('en-US') : v);
+const IMG = id => `assets/img/products/${id}.webp`;
+const ICON = {
+  plus: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 5v14M5 12h14"/></svg>',
+  check: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
+  x: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+  arrow: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg>'
+};
+
+/* ------------------------------------------------------------------
+   Data — Aqua Premium catalogue (pack sizes, units per carton,
+   cartons and pallets per 20ft / 40ft container)
+   row: [size EN, size AR, units/carton, cartons/20ft, pallets/20ft, cartons/40ft, pallets/40ft]
+------------------------------------------------------------------ */
+const SIZES = {
+  tuna: [['185 g', '185 جم', 48, 1430, '10–12', 2300, '32'], ['160 g', '160 جم', 48, 1690, '10–12', 2700, '32'], ['140 g', '140 جم', 48, 1690, '10–12', 2800, '32']],
+  sardine: [['125 g', '125 جم', 50, 1690, '10–12', 2600, '32']],
+  canned: [['400 g', '400 جم', 24, 2090, '10–12', 2500, '22–24'], ['800 g', '800 جم', 12, 1800, '10–12', 2100, '22–24'], ['3 kg', '3 كجم', 6, 900, '10–12', 1420, '22–24']],
+  frozen: [['400 g', '400 جم', 20, 1118, '10–12', 2650, '22–24']],
+  fries: [['2.5 kg', '2.5 كجم', 4, 1100, '10–12', 2500, '22–24'], ['1 kg', '1 كجم', 10, 1100, '10–12', 2500, '22–24']],
+  box: [['1 kg', '1 كجم', 10, 1000, '10–12', 1800, '22–24']],
+  oil: [['1 kg', '1 كجم', 12, 1608, '10–12', 2400, '22–24']],
+  sauce: [['320 g', '320 جم', 12, 3500, '10–12', 4000, '22–24'], ['800 g', '800 جم', 12, 1815, '10–12', 2100, '22–24'], ['3 kg', '3 كجم', 4, 1600, '10–12', 1420, '22–24']],
+  pulse: [['400 g', '400 جم', 20, 1118, '10–12', 2650, '22–24'], ['500 g', '500 جم', 20, 1120, '10–12', 2400, '22–24'], ['1 kg', '1 كجم', 10, 1120, '10–12', 2400, '22–24'], ['5 kg', '5 كجم', 1, 4000, '10–12', 5000, '22–24']],
+  grain: [],
+  honey: [['350 g', '350 جم', 12, 4000, '10–12', 6000, '22–24'], ['875 g', '875 جم', 6, 3400, '10–12', 5000, '22–24']],
+  coffee: []
+};
+const SIZE_NOTE = { grain: ['Sizes on request', 'الأحجام عند الطلب'], coffee: ['1,000 g bag', 'كيس 1,000 جم'] };
+const CAPTION = { tuna: ['Tuna', 'التونة'], sardine: ['Sardines', 'السردين'], oil: ['Oils', 'الزيوت'], sauce: ['Sauces', 'الصلصات'], pulse: ['Pulses', 'البقوليات'], grain: ['Rice & pasta', 'الأرز والمكرونة'] };
+
+const LINES = [
+  { k: 'fish', en: 'Canned fish', ar: 'أسماك معلبة', f: 0, dEn: 'Light-meat and yellowfin tuna, plain or spicy, with regular and spicy sardines.', dAr: 'تونة لحم فاتح وتونة يلوفين، عادية أو حارة، مع السردين العادي والحار.' },
+  { k: 'canned', en: 'Canned legumes & vegetables', ar: 'بقوليات وخضروات معلبة', f: 0, dEn: 'Fava beans six ways, hummus with tahina, chickpeas, beans, mushrooms and vegetables.', dAr: 'فول مدمس بست طرق، حمص بالطحينة، حمص حب، فاصوليا، مشروم وخضروات.', onEn: 'On the tin: 100% Natural · Ready to eat · Egyptian Product 100%', onAr: 'على العلبة: طبيعي 100% · جاهز للأكل · منتج مصري 100%' },
+  { k: 'frozen', en: 'Frozen vegetables & fruit', ar: 'خضروات وفواكه مجمدة', f: 1, dEn: 'Okra, molokhia, peas, green beans, mixed vegetables, strawberries and mango.', dAr: 'بامية، ملوخية، بسلة، فاصوليا خضراء، خضار مشكل، فراولة ومانجو.', onEn: 'On the pack: Egyptian Product 100%', onAr: 'على الكيس: منتج مصري 100%' },
+  { k: 'fries', en: 'Pre-fried fries', ar: 'بطاطس نصف مقلية', f: 1, dEn: 'Pommes frites and allumettes, pre-fried and frozen, in 2.5 kg and 1 kg bags.', dAr: 'بوم فريت وألوميت، نصف مقلية ومجمدة، في أكياس 2.5 كجم و1 كجم.', onEn: 'On the pack: Egyptian Product 100%', onAr: 'على الكيس: منتج مصري 100%' },
+  { k: 'pastry', en: 'Frozen pastries', ar: 'معجنات مجمدة', f: 1, dEn: 'Cheese and pepperoni pizza, and spring rolls, in 1 kg boxes.', dAr: 'بيتزا بالجبنة وبيتزا ببروني وسبرينج رولز في علب 1 كجم.' },
+  { k: 'chicken', en: 'Ready-to-cook chicken', ar: 'دجاج جاهز للطهي', f: 1, dEn: 'Nuggets, strips and wings, plain or spicy, and fried chicken parts, in 1 kg boxes.', dAr: 'قطع وشرائح وأجنحة دجاج، عادية أو حارة، ودجاج مقلي، في علب 1 كجم.', onEn: 'On the pack: Egyptian Product 100%', onAr: 'على العلبة: منتج مصري 100%' },
+  { k: 'sauces', en: 'Oils & sauces', ar: 'الزيوت والصلصات', f: 0, dEn: 'Sunflower, corn, olive and mixed oils; tomato sauce, ketchup and mayonnaise.', dAr: 'زيت عباد الشمس والذرة والزيتون والخليط؛ صلصة طماطم وكاتشب ومايونيز.' },
+  { k: 'grains', en: 'Grains, pulses & pasta', ar: 'حبوب وبقوليات ومكرونة', f: 0, dEn: 'Beans, chickpeas and lentils up to 5 kg; basmati and white rice; penne and spaghetti.', dAr: 'فول وحمص وعدس وفاصوليا حتى 5 كجم؛ أرز بسمتي وأبيض؛ مكرونة قلم وإسباجيتي.', onEn: 'On the pack: Egyptian Product 100%', onAr: 'على الكيس: منتج مصري 100%' },
+  { k: 'honey', en: 'Honey', ar: 'العسل', f: 0, dEn: 'Black honey and natural white honey, in 350 g and 875 g jars.', dAr: 'عسل أسود وعسل أبيض طبيعي في برطمانات 350 جم و875 جم.' },
+  { k: 'coffee', en: 'Coffee (PURE Espresso)', ar: 'قهوة (بيور إسبريسو)', f: 0, dEn: 'Whole beans from our sister brand, PURE Espresso: Classico and single-origin Colombia, 1,000 g.', dAr: 'حبوب قهوة كاملة من علامتنا الشقيقة بيور إسبريسو: كلاسيكو وكولومبيا أحادية المصدر، 1,000 جم.', onEn: 'On the pack: Made in Italy', onAr: 'على الكيس: صُنع في إيطاليا' }
 ];
-P.forEach((p,i)=>p.no=String(i+1).padStart(2,'0'));
-const COUNTRIES=['United Arab Emirates','Egypt','Saudi Arabia','Kuwait','Qatar','Bahrain','Oman','Jordan','Lebanon','Iraq','Libya','Tunisia','Algeria','Morocco','Sudan','Kenya','Nigeria','South Africa','Turkey','United Kingdom','Germany','France','Netherlands','Belgium','Italy','Spain','Greece','Cyprus','Poland','Sweden','India','Pakistan','Bangladesh','Malaysia','Singapore','Indonesia','China','Hong Kong','Japan','Australia','USA','Canada','Other'];
-const CH=[
- {k:'retail',en:'Retail',ar:'التجزئة',sEn:'Supermarkets and retail chains — shelf-ready bilingual packs that move.',sAr:'السوبر ماركت وسلاسل التجزئة — عبوات ثنائية اللغة جاهزة للرف.',p:['fava-plain','hummus-tahini','tuna-solid','sweet-corn','fz-green-peas','fz-strawberry'],perks:[['Co-marketing support','دعم تسويقي مشترك'],['Consistent supply','إمداد ثابت'],['Dedicated account manager','مدير حساب مخصص']]},
- {k:'dist',en:'Distribution',ar:'التوزيع',sEn:'Distributors and wholesalers — high-rotation lines and territory options.',sAr:'الموزعون وتجار الجملة — أصناف سريعة الدوران وفرص حصرية.',p:['chickpeas','kidney-beans','tuna-chunk','mixed-veg','fz-mixed-veg','fz-fries-classic'],perks:[['Territory exclusivity','حصرية المناطق'],['Real-time inventory tracking','تتبّع لحظي للمخزون'],['Logistics coordination','تنسيق لوجستي']]},
- {k:'horeca',en:'Restaurants',ar:'المطاعم',sEn:'Restaurants, hotels and catering — kitchen sizes and fast-prep lines.',sAr:'المطاعم والفنادق والتموين — أحجام للمطابخ وأصناف سريعة التحضير.',p:['fz-fries-classic','fz-fries-thin','tuna-chunk','mushroom-pieces','chickpeas','fz-okra'],perks:[['2.5 kg & 1,850 g formats','عبوات 2.5 كجم و1,850 جم'],['Mixed canned + frozen','معلبات ومجمدات معًا'],['Responsive support','دعم سريع الاستجابة']]},
- {k:'pl',en:'Private label',ar:'علامة خاصة',sEn:'Private and white label — our certified lines under your brand.',sAr:'العلامة الخاصة والبيضاء — خطوطنا المعتمدة باسم علامتك.',p:['fava-olive','fava-chili','hummus-tahini','tuna-shredded','fz-mango','fz-okra'],perks:[['From 50 cartons','من 50 كرتونة'],['Custom packaging','تعبئة مخصصة'],['HACCP production','إنتاج معتمد HACCP']]}
+
+// [id, line, EN, AR, size key, has pack shot, description EN, description AR]
+const RAW = [
+  ['fish-solid', 'fish', 'Solid Tuna', 'تونة قطعة واحدة', 'tuna'],
+  ['tuna-solid', 'fish', 'Solid Gold Yellowfin Tuna', 'تونة سوليد جولد يلوفين', 'tuna', 1, 'Yellowfin tuna packed as one solid piece and labelled premium white meat.', 'تونة يلوفين قطعة واحدة، لحم أبيض فاخر كما هو مدوّن على العلبة.'],
+  ['tuna-chunk', 'fish', 'Chunk Tuna', 'تونة قطع', 'tuna', 1, 'Light-meat tuna in chunks, for salads, pasta and sandwiches.', 'تونة لحم فاتح قطع، للسلطات والمكرونة والسندوتشات.'],
+  ['fish-chunk-spicy', 'fish', 'Chunk Tuna, spicy', 'تونة قطع حارة', 'tuna'],
+  ['tuna-shredded', 'fish', 'Shredded Tuna', 'تونة مفتتة', 'tuna', 1, 'Light-meat tuna, shredded for fillings and spreads.', 'تونة لحم فاتح مفتتة، للحشوات والسندوتشات.'],
+  ['fish-shredded-spicy', 'fish', 'Shredded Tuna, spicy', 'تونة مفتتة حارة', 'tuna'],
+  ['fish-sardine', 'fish', 'Sardines', 'سردين', 'sardine'],
+  ['fish-sardine-spicy', 'fish', 'Sardines, spicy', 'سردين حار', 'sardine'],
+  ['fava-plain', 'canned', 'Plain Fava Beans', 'فول مدمس سادة', 'canned', 1, 'Egyptian ful medames, plain, ready to heat and dress your way.', 'فول مدمس سادة على الطريقة المصرية، جاهز للتسخين والتتبيل.'],
+  ['fava-chili', 'canned', 'Fava Beans with Chilli', 'فول مدمس بالشطة', 'canned', 1, 'Fava beans with a chilli kick.', 'فول مدمس بلمسة حارة.'],
+  ['fava-olive', 'canned', 'Fava Beans with Olive Oil', 'فول مدمس بزيت الزيتون', 'canned', 1, 'Fava beans finished with olive oil.', 'فول مدمس بزيت الزيتون.'],
+  ['fava-salsa', 'canned', 'Fava Beans with Salsa', 'فول مدمس بالصلصة', 'canned'],
+  ['fava-cumin', 'canned', 'Fava Beans with Cumin', 'فول مدمس بالكمون', 'canned'],
+  ['fava-chickpeas', 'canned', 'Fava Beans with Chickpeas', 'فول مدمس بالحمص', 'canned', 1, 'Fava beans and chickpeas in one tin.', 'فول وحمص معًا في علبة واحدة.'],
+  ['chickpeas', 'canned', 'Chickpeas', 'حمص حب', 'canned', 1, 'Whole chickpeas for salads, stews and hummus.', 'حمص حب للسلطات واليخنات والحمص.'],
+  ['hummus-tahini', 'canned', 'Hummus with Tahina', 'حمص بالطحينة', 'canned', 1, 'Hummus with tahina, ready to serve as a dip.', 'حمص بالطحينة، جاهز للتقديم كغموس.'],
+  ['mushroom-whole', 'canned', 'Whole Mushrooms', 'مشروم كامل', 'canned', 1, 'Whole button mushrooms for sauces, pizza and sautés.', 'مشروم كامل للصوصات والبيتزا والأطباق السوتيه.'],
+  ['mushroom-pieces', 'canned', 'Mushrooms, pieces & stems', 'مشروم قطع وشرائح', 'canned', 1, 'Mushroom pieces and stems, kitchen-ready.', 'قطع وشرائح مشروم جاهزة للمطبخ.'],
+  ['kidney-beans', 'canned', 'Red Kidney Beans', 'فاصوليا حمراء', 'canned', 1, 'Red kidney beans for stews, salads and rice dishes.', 'فاصوليا حمراء لليخنات والسلطات وأطباق الأرز.'],
+  ['can-white-beans', 'canned', 'White Beans', 'فاصوليا بيضاء', 'canned'],
+  ['mixed-veg', 'canned', 'Mixed Vegetables', 'خضار مشكل', 'canned', 1, 'Peas, carrots and corn, ready for rice and soups.', 'بسلة وجزر وذرة، جاهزة للأرز والشوربات.'],
+  ['sweet-corn', 'canned', 'Sweet Corn', 'ذرة حلوة', 'canned', 1, 'Whole-kernel sweet corn.', 'حبوب ذرة حلوة كاملة.'],
+  ['green-peas', 'canned', 'Green Peas', 'بسلة', 'canned', 1, 'Green peas, cooked and ready.', 'بسلة خضراء مطهية وجاهزة.'],
+  ['black-eyed', 'canned', 'Black-Eyed Peas', 'لوبيا', 'canned', 1, 'Plain black-eyed peas, cooked and ready.', 'لوبيا سادة مطهية وجاهزة.'],
+  ['fz-okra', 'frozen', 'Okra Zero', 'بامية زيرو', 'frozen', 1, 'Okra Zero: the small grade Egyptian kitchens ask for.', 'بامية زيرو: الحجم الصغير الذي تفضّله المطابخ المصرية.'],
+  ['fz-okra-2', 'frozen', 'Okra', 'بامية', 'frozen'],
+  ['fz-molokhia', 'frozen', 'Molokhia', 'ملوخية', 'frozen'],
+  ['fz-green-beans', 'frozen', 'Green Beans', 'فاصوليا خضراء', 'frozen', 1, 'Cut green beans, frozen.', 'فاصوليا خضراء مقطعة ومجمدة.'],
+  ['fz-green-peas', 'frozen', 'Peas', 'بسلة', 'frozen', 1, 'Frozen green peas.', 'بسلة خضراء مجمدة.'],
+  ['fz-mixed-veg', 'frozen', 'Mixed Vegetables', 'خضار مشكل', 'frozen', 1, 'A frozen blend for sides, soups and rice.', 'خلطة خضار مجمدة للأطباق الجانبية والشوربات والأرز.'],
+  ['fz-strawberry', 'frozen', 'Strawberries', 'فراولة', 'frozen', 1, 'Frozen strawberries for juices, desserts and bakery.', 'فراولة مجمدة للعصائر والحلويات والمخبوزات.'],
+  ['fz-mango', 'frozen', 'Mango', 'مانجو', 'frozen', 1, 'Frozen mango for juices and desserts.', 'مانجو مجمدة للعصائر والحلويات.'],
+  ['fz-fries-classic', 'fries', 'Pommes Frites (classic cut)', 'بطاطس بوم فريت', 'fries', 1, 'Pre-fried classic-cut fries.', 'بطاطس نصف مقلية بالقطع الكلاسيكي.'],
+  ['fz-fries-thin', 'fries', 'Allumettes (thin cut)', 'بطاطس ألوميت', 'fries', 1, 'Pre-fried thin-cut fries.', 'بطاطس نصف مقلية بالقطع الرفيع.'],
+  ['pz-cheese', 'pastry', 'Cheese Pizza', 'بيتزا بالجبنة', 'box'],
+  ['pz-pepperoni', 'pastry', 'Pepperoni Pizza', 'بيتزا ببروني', 'box'],
+  ['spring-rolls', 'pastry', 'Spring Rolls', 'سبرينج رولز', 'box'],
+  ['ck-nuggets', 'chicken', 'Chicken Nuggets', 'قطع دجاج', 'box'],
+  ['ck-nuggets-s', 'chicken', 'Chicken Nuggets, spicy', 'قطع دجاج حارة', 'box'],
+  ['ck-strips', 'chicken', 'Chicken Strips', 'شرائح دجاج', 'box'],
+  ['ck-strips-s', 'chicken', 'Chicken Strips, spicy', 'شرائح دجاج حارة', 'box'],
+  ['ck-wings', 'chicken', 'Chicken Wings', 'أجنحة دجاج', 'box'],
+  ['ck-wings-s', 'chicken', 'Chicken Wings, spicy', 'أجنحة دجاج حارة', 'box'],
+  ['ck-fried', 'chicken', 'Fried Chicken Parts', 'دجاج مقلي', 'box'],
+  ['oil-mix', 'sauces', 'Mixed Oil', 'زيت خليط', 'oil'],
+  ['oil-sunflower', 'sauces', 'Sunflower Oil', 'زيت عباد الشمس', 'oil'],
+  ['oil-corn', 'sauces', 'Corn Oil', 'زيت الذرة', 'oil'],
+  ['oil-olive', 'sauces', 'Olive Oil', 'زيت الزيتون', 'oil'],
+  ['sc-tomato-jar', 'sauces', 'Tomato Sauce, jar', 'صلصة طماطم (برطمان)', 'sauce'],
+  ['sc-tomato-tin', 'sauces', 'Tomato Sauce, tin', 'صلصة طماطم (علبة)', 'sauce'],
+  ['sc-ketchup', 'sauces', 'Ketchup', 'كاتشب', 'sauce'],
+  ['sc-mayo', 'sauces', 'Mayonnaise', 'مايونيز', 'sauce'],
+  ['gr-white-beans', 'grains', 'White Beans', 'فاصوليا بيضاء', 'pulse'],
+  ['gr-chickpeas', 'grains', 'Chickpeas', 'حمص', 'pulse'],
+  ['gr-brown-lentils', 'grains', 'Brown Lentils', 'عدس بني', 'pulse'],
+  ['gr-yellow-lentils', 'grains', 'Yellow Lentils', 'عدس أصفر', 'pulse'],
+  ['gr-fava', 'grains', 'Fava Beans', 'فول', 'pulse'],
+  ['gr-basmati', 'grains', 'Basmati Rice', 'أرز بسمتي', 'grain'],
+  ['gr-white-rice', 'grains', 'White Rice', 'أرز أبيض', 'grain'],
+  ['gr-penne', 'grains', 'Penne Rigate', 'مكرونة قلم', 'grain'],
+  ['gr-spaghetti', 'grains', 'Spaghetti', 'إسباجيتي', 'grain'],
+  ['hn-black', 'honey', 'Black Honey', 'عسل أسود', 'honey'],
+  ['hn-white', 'honey', 'White Honey', 'عسل أبيض', 'honey'],
+  ['cf-classico', 'coffee', 'Classico, intensità 8/10', 'كلاسيكو، شدة 8/10', 'coffee'],
+  ['cf-colombia', 'coffee', 'Colombia, single origin', 'كولومبيا، أحادية المصدر', 'coffee']
 ];
-const CATS=[['all','All products','كل المنتجات'],['leg','Canned legumes','بقوليات معلبة'],['veg','Canned vegetables','خضروات معلبة'],['sea','Tuna','تونة'],['frz','Frozen','مجمدات']];
-const TILES=[['leg','Legumes','بقوليات'],['frz','Frozen','مجمدات'],['sea','Tuna','تونة'],['veg','Vegetables','خضروات']];
-const TICK=[['Canned tuna','تونة معلبة'],['Fava beans','فول مدمس'],['Frozen okra','بامية مجمدة'],['Hummus','حمص'],['Classic fries','بطاطس فرايز'],['Sweet corn','ذرة حلوة'],['Strawberries','فراولة'],['Private label','علامة خاصة']];
-const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-const img=id=>'assets/img/products/'+id+'.webp';
-const byId=id=>P.find(p=>p.id===id);
-let LANG=(()=>{try{return localStorage.getItem('aqua-lang')||'en'}catch(e){return 'en'}})();
-const T=(en,ar)=>LANG==='ar'?ar:en;
-const catName=c=>{const x=CATS.find(k=>k[0]===c);return T(x[1],x[2])};
-const PLUS='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>';
+const P = RAW.map(([id, line, en, ar, size, img, dEn, dAr]) => ({ id, line, en, ar, size, img: !!img, dEn, dAr }));
+const byId = id => P.find(p => p.id === id);
+const lineOf = k => LINES.find(l => l.k === k);
+const inLine = k => P.filter(p => p.line === k);
+
+/* ---------- state ---------- */
+let curLine = 'fish', query = '';
+const quote = new Set((store.get('aqua-quote') || '').split(',').filter(id => byId(id)));
+const saveQuote = () => store.set('aqua-quote', [...quote].join(','));
 
 /* ---------- language ---------- */
-function splitWords(el){
-  // wrap each word (keeping <em> groups) in .w>span for the rise animation
-  const tmp=document.createElement('div');tmp.innerHTML=el.innerHTML;let out='',i=0;
-  tmp.childNodes.forEach(n=>{
-    const isEm=n.nodeType===1,txt=n.textContent;
-    txt.split(/(\s+)/).forEach(w=>{if(!w)return;if(/^\s+$/.test(w)){out+=' ';return}
-      const inner=isEm?`<em>${w}</em>`:w;out+=`<span class="w"><span style="transition-delay:${(i++*0.06).toFixed(2)}s">${inner}</span></span>`});
-  });
-  el.innerHTML=out;
+const TITLE = ['Aqua Premium Foods | Premium Food. Global Supply.', 'أكوا بريميوم فودز | غذاء فاخر. توريد عالمي.'];
+function swapAttr(el, attr, key) { const k = 'en' + key; if (el.dataset[k] === undefined) el.dataset[k] = el.getAttribute(attr) || ''; el.setAttribute(attr, LANG === 'ar' ? el.dataset['ar' + key] : el.dataset[k]); }
+function applyLang(l, animate) {
+  const run = () => {
+    LANG = l; store.set('aqua-lang', l);
+    root.lang = l; root.dir = l === 'ar' ? 'rtl' : 'ltr';
+    $$('[data-ar]').forEach(el => { if (el.dataset.en === undefined) el.dataset.en = el.innerHTML; el.innerHTML = l === 'ar' ? el.dataset.ar : el.dataset.en; });
+    $$('[data-ar-ph]').forEach(el => swapAttr(el, 'placeholder', 'Ph'));
+    $$('[data-ar-label]').forEach(el => swapAttr(el, 'aria-label', 'Label'));
+    $$('[data-ar-alt]').forEach(el => swapAttr(el, 'alt', 'Alt'));
+    $$('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === l)));
+    document.title = T(TITLE[0], TITLE[1]);
+    renderAll();
+  };
+  if (animate && document.startViewTransition && !reduce) document.startViewTransition(run); else run();
 }
-function applyLang(l){
-  LANG=l;try{localStorage.setItem('aqua-lang',l)}catch(e){}
-  const h=document.documentElement;h.lang=l;h.dir=l==='ar'?'rtl':'ltr';
-  $$('[data-ar]').forEach(el=>{if(el.dataset.en===undefined)el.dataset.en=el.innerHTML;el.innerHTML=l==='ar'?el.dataset.ar:el.dataset.en});
-  $$('[data-ph-ar]').forEach(el=>{if(el.dataset.phEn===undefined)el.dataset.phEn=el.placeholder;el.placeholder=l==='ar'?el.dataset.phAr:el.dataset.phEn});
-  $$('[data-split]').forEach(splitWords);
-  $('#lEn').classList.toggle('on',l==='en');$('#lAr').classList.toggle('on',l==='ar');
-  document.title=l==='ar'?'أكوا بريميوم فودز — توريد جملة للمعلبات والمجمدات':'Aqua Premium Foods — Wholesale Canned & Frozen Supply';
-  renderTicker();renderTiles();renderCats();renderGrid();renderShelf();renderChips();renderCountries();renderFooter();renderTray();
-  if(drawerMode)openDrawer(drawerMode,drawerId);
-}
-$('#lEn').onclick=()=>applyLang('en');$('#lAr').onclick=()=>applyLang('ar');
+$$('.lang button').forEach(b => b.addEventListener('click', () => { if (b.dataset.l !== LANG) applyLang(b.dataset.l, true); }));
 
-/* ---------- nav: hide on scroll down, show on up ---------- */
-const nav=$('#nav');let lastY=0;
-addEventListener('scroll',()=>{const y=scrollY;nav.classList.toggle('hide',y>lastY&&y>300&&!mm.classList.contains('open'));lastY=y},{passive:true});
-const burger=$('#burger'),mm=$('#mmenu');
-burger.onclick=()=>{const o=mm.classList.toggle('open');burger.classList.toggle('x',o);burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''};
-mm.addEventListener('click',e=>{if(e.target.closest('a')){mm.classList.remove('open');burger.classList.remove('x');document.body.style.overflow=''}});
-const navIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$('.nav-links a').forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
-$$('section[id]').forEach(s=>navIO.observe(s));
-
-/* ---------- reveal + counters ---------- */
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add('in');t.querySelectorAll('.count').forEach(countUp);if(t.classList.contains('count'))countUp(t);io.unobserve(t)}),{threshold:.15});
-function countUp(el){if(el.dataset.done)return;el.dataset.done=1;const to=+el.dataset.to,t0=performance.now();const f=t=>{const p=Math.min((t-t0)/1500,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
-function observe(){$$('.rv:not(.in),.split:not(.in),.globe:not(.in)').forEach(el=>io.observe(el))}
-
-/* ---------- hero: ticker + rotating tiles ---------- */
-function renderTicker(){$('#tk').innerHTML=TICK.concat(TICK).map(t=>`<span>${T(t[0],t[1])}</span>`).join('')}
-let tileIdx=[0,0,0,0];
-function renderTiles(){
-  $('#tiles').innerHTML=TILES.map(([c,en,ar],i)=>{const list=P.filter(p=>p.cat===c);const cur=list[tileIdx[i]%list.length];
-    return `<div class="tile" data-i="${i}"><div class="lab"><span>${T(en,ar)}</span><small>${list.length} ${T('SKUs','منتجات')}</small></div><div class="pics">${list.map(p=>`<img src="${img(p.id)}" alt="" class="${p===cur?'on':''}">`).join('')}</div><div class="nm">${T(cur.en,cur.ar)}</div></div>`}).join('');
+/* ---------- header, menu, active section ---------- */
+const hdr = $('#hdr'), burger = $('#burger'), mnav = $('#mnav');
+const onScroll = () => hdr.classList.toggle('solid', scrollY > 8);
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+function setMenu(open) {
+  mnav.classList.toggle('open', open); hdr.classList.toggle('menu-open', open);
+  burger.setAttribute('aria-expanded', String(open)); mnav.inert = !open;
+  document.body.style.overflow = open ? 'hidden' : '';
+  if (open) mnav.querySelector('a').focus({ preventScroll: true });
 }
-function stepTile(i){
-  const c=TILES[i][0],list=P.filter(p=>p.cat===c);tileIdx[i]=(tileIdx[i]+1)%list.length;
-  const t=$(`.tile[data-i="${i}"]`);if(!t)return;
-  t.querySelectorAll('.pics img').forEach((im,k)=>im.classList.toggle('on',k===tileIdx[i]));
-  const p=list[tileIdx[i]];t.querySelector('.nm').textContent=T(p.en,p.ar);
+burger.addEventListener('click', () => setMenu(!mnav.classList.contains('open')));
+mnav.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
+matchMedia('(min-width: 1181px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
+const links = $$('#menu a');
+const secIO = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  links.forEach(a => a.setAttribute('aria-current', String(a.getAttribute('href') === '#' + e.target.id)));
+}), { rootMargin: '-45% 0px -50% 0px' });
+['range', 'catalogue', 'services', 'quality', 'offices'].forEach(id => { const s = document.getElementById(id); if (s) secIO.observe(s); });
+new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.setAttribute('aria-current', 'false')); }), { rootMargin: '0px 0px -60% 0px' }).observe($('#top'));
+
+/* ---------- parallax: packs drift against the page ---------- */
+if (!reduce) {
+  let raf = 0;
+  const upd = () => {
+    raf = 0;
+    const wide = innerWidth > 980, vh = innerHeight;
+    $$('[data-depth]').forEach(el => {
+      if (!wide) { el.style.transform = ''; return; }
+      const r = el.parentElement.getBoundingClientRect();
+      if (r.bottom < -200 || r.top > vh + 200) return;
+      const c = (r.top + r.height / 2 - vh / 2) / vh;
+      el.style.transform = `translate3d(0,${(c * -el.dataset.depth).toFixed(1)}px,0)`;
+    });
+  };
+  const req = () => { if (!raf) raf = requestAnimationFrame(upd); };
+  addEventListener('scroll', req, { passive: true }); addEventListener('resize', req); upd();
 }
-if(!matchMedia('(prefers-reduced-motion: reduce)').matches){let k=0;setInterval(()=>{stepTile(k%4);k++},1400)}
-$('#tiles').addEventListener('click',e=>{const t=e.target.closest('.tile');if(!t)return;const i=+t.dataset.i,list=P.filter(p=>p.cat===TILES[i][0]);openDrawer('spec',list[tileIdx[i]%list.length].id)});
+
+/* ---------- range index, shelf, frozen cluster ---------- */
+function renderIndex() {
+  $('#index').innerHTML = LINES.map(l => `<li><button type="button" data-goto="${l.k}"><b>${T(l.en, l.ar)}</b><small><span>${inLine(l.k).length} ${T('products', 'منتجًا')}</span>${ICON.arrow}</small></button></li>`).join('');
+  $('#fLines').innerHTML = LINES.slice(0, 6).map(l => `<li><button type="button" data-goto="${l.k}">${T(l.en, l.ar)}</button></li>`).join('');
+}
+const SHELF = ['fava-plain', 'fava-olive', 'chickpeas', 'kidney-beans', 'black-eyed', 'mushroom-whole', 'mushroom-pieces', 'green-peas', 'sweet-corn', 'mixed-veg'];
+function renderShelf() {
+  const rest = inLine('canned').length - SHELF.length;
+  $('#shelf').innerHTML = SHELF.map(id => { const p = byId(id); return `<button class="can" type="button" data-open="${id}"><img src="${IMG(id)}" alt="" width="440" height="720" loading="lazy"><span>${T(p.en, p.ar)}</span></button>`; }).join('') +
+    `<button class="can more" type="button" data-goto="canned"><span><b>+${rest}</b>${T('more in the catalogue', 'أصناف أخرى في الكتالوج')}</span></button>`;
+}
+const CLUSTER = [['fz-fries-classic', 'b1', 519, 720, 30], ['fz-green-peas', 'b2', 698, 720, 60], ['fz-strawberry', 'b3', 692, 720, 44], ['fz-okra', 'b4', 693, 720, 76], ['fz-mango', 'b5', 694, 720, 96], ['fz-mixed-veg', 'b6', 693, 720, 64]];
+function renderCluster() {
+  $('#cluster').innerHTML = CLUSTER.map(([id, cls, w, h, d]) => { const p = byId(id); return `<button class="pk bag ${cls}" type="button" data-open="${id}" data-depth="${d}" aria-label="${T(p.en, p.ar)}"><img src="${IMG(id)}" alt="" width="${w}" height="${h}" loading="lazy"></button>`; }).join('');
+}
 
 /* ---------- catalogue ---------- */
-let cat='all',query='';const quote=new Set();
-function renderCats(){
-  $('#cats').innerHTML=CATS.map(([k,en,ar])=>`<button class="${k===cat?'on':''}" data-c="${k}">${T(en,ar)}<small>${k==='all'?P.length:P.filter(p=>p.cat===k).length}</small></button>`).join('');
+function sizeText(p) {
+  const rows = SIZES[p.size];
+  if (rows && rows.length) return rows.map(r => T(r[0], r[1])).join(' · ');
+  const n = SIZE_NOTE[p.size]; return n ? T(n[0], n[1]) : '';
 }
-$('#side').addEventListener('click',e=>{const b=e.target.closest('[data-c]');if(!b)return;cat=b.dataset.c;renderCats();filter()});
-$$('.q-in').forEach(inp=>inp.addEventListener('input',()=>{query=inp.value.trim().toLowerCase();$$('.q-in').forEach(o=>{if(o!==inp)o.value=inp.value});filter()}));
-function visible(p){return (cat==='all'||p.cat===cat)&&(!query||(p.en+' '+p.ar).toLowerCase().includes(query))}
-function renderGrid(){
-  $('#grid').innerHTML=P.map(p=>`<article class="card" data-id="${p.id}" data-cat="${p.cat}" tabindex="0"><span class="tag">${p.cat==='frz'?T('Frozen','مجمد'):T('Canned','معلب')}</span><div class="pic"><img src="${img(p.id)}" alt="${p.en}" loading="lazy"></div><div class="info"><div><h3>${T(p.en,p.ar)}</h3><div class="meta"><span dir="ltr">${p.pack}</span> · ${catName(p.cat)}</div></div><button class="plus ${quote.has(p.id)?'on':''}" data-add="${p.id}" aria-label="${T('Add to quote','أضف لعرض السعر')}">${PLUS}</button></div></article>`).join('')+`<div class="empty" id="empty">${T('No products match your search.','لا توجد منتجات مطابقة.')}</div>`;
-  filter();
+const addLabel = id => { const on = quote.has(id), p = byId(id); return (on ? T('Remove from quote: ', 'إزالة من عرض السعر: ') : T('Add to quote: ', 'أضف إلى عرض السعر: ')) + T(p.en, p.ar); };
+const addInner = id => (quote.has(id) ? ICON.check + T('Added', 'مُضاف') : ICON.plus + T('Add', 'أضف'));
+function addBtn(id) {
+  return `<button class="add" type="button" data-add="${id}" aria-pressed="${quote.has(id)}" aria-label="${addLabel(id)}">${addInner(id)}</button>`;
 }
-function filter(){let n=0,d=0;$$('#grid .card').forEach(c=>{const v=visible(byId(c.dataset.id));c.classList.toggle('hide',!v);if(v){c.style.animation='none';c.offsetWidth;c.style.animation='';c.style.animationDelay=(d++*.04)+'s';n++}});$('#empty').classList.toggle('on',!n)}
-$('#grid').addEventListener('click',e=>{const a=e.target.closest('[data-add]');if(a){e.stopPropagation();toggleQuote(a.dataset.add);return}const c=e.target.closest('.card');if(c)openDrawer('spec',c.dataset.id)});
-$('#grid').addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.classList.contains('card'))openDrawer('spec',e.target.dataset.id)});
-
-/* ---------- quote list + tray ---------- */
-function toggleQuote(id,force){
-  const on=force!==undefined?force:!quote.has(id);on?quote.add(id):quote.delete(id);
-  $$(`[data-add="${id}"]`).forEach(b=>b.classList.toggle('on',on));
-  $$(`.chip[data-id="${id}"]`).forEach(c=>c.classList.toggle('on',on));
-  renderTray();if(drawerMode)openDrawer(drawerMode,drawerId);
+function rowHTML(p) {
+  const other = LANG === 'ar' ? 'en' : 'ar';
+  return `<li class="prow"><button class="nm" type="button" data-open="${p.id}"><span>${T(p.en, p.ar)}</span><span class="alt" lang="${other}">${T(p.ar, p.en)}</span></button><span class="sz">${sizeText(p)}</span>${addBtn(p.id)}</li>`;
 }
-function renderTray(){
-  const ids=[...quote];$('#tray').classList.toggle('on',ids.length>0);
-  $('#trayTh').innerHTML=ids.slice(-3).map(id=>`<img src="${img(id)}" alt="">`).join('');
-  $('#trayTxt').textContent=T(ids.length+(ids.length===1?' product in your quote':' products in your quote'),ids.length+' منتج في قائمة عرض السعر');
+function specTable(key, withCaption) {
+  const rows = SIZES[key], cap = withCaption && CAPTION[key];
+  const head = cap ? `<h4>${T(cap[0], cap[1])}</h4>` : '';
+  if (!rows || !rows.length) return `<div class="spec-b">${head}<p class="na">${T('Pack sizes and container loads on request.', 'الأحجام وأرقام التحميل عند الطلب.')}</p></div>`;
+  const th = [T('Pack', 'العبوة'), T('Units per carton', 'عبوة / كرتونة'), T('Cartons per 20ft', 'كرتونة / 20 قدم'), T('Pallets per 20ft', 'باليت / 20 قدم'), T('Cartons per 40ft', 'كرتونة / 40 قدم'), T('Pallets per 40ft', 'باليت / 40 قدم')];
+  return `<div class="spec-b">${head}<div class="tscroll" tabindex="0" role="region" aria-label="${T('Container figures', 'أرقام التحميل')}"><table class="stable"><thead><tr>${th.map(h => `<th scope="col">${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr><th scope="row">${T(r[0], r[1])}</th>${r.slice(2).map((v, i) => `<td data-l="${th[i + 1]}">${fmt(v)}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`;
 }
-$('#trayBtn').onclick=()=>openDrawer('list');
-
-/* ---------- drawer (spec sheet / quote list) ---------- */
-let drawerMode=null,drawerId=null;
-const X='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg>';
-const ARROW='<svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
-const TINT={leg:'var(--amber-soft)',veg:'var(--green-soft)',sea:'var(--blue-soft)',frz:'var(--aqua-soft)'};
-function openDrawer(mode,id){
-  drawerMode=mode;drawerId=id;const d=$('#drawer');
-  if(mode==='spec'){
-    const p=byId(id),frz=p.cat==='frz',on=quote.has(id);
-    $('#dTitle').textContent=`SKU ${p.no} · ${catName(p.cat)}`;
-    const rows=[[T('Pack size','حجم العبوة'),`<span dir="ltr">${p.pack}</span>`],[T('Storage','التخزين'),frz?T('Frozen, ≤ −18°C','مجمد، ≤ −18°م'):T('Ambient, shelf-stable','درجة حرارة الغرفة')],[T('Branding','العلامة'),T('Aqua Premium · private · white label','أكوا بريميوم · خاصة · بيضاء')],[T('Minimum order','الحد الأدنى'),T('From 50 cartons (mixable)','من 50 كرتونة (قابلة للمزج)')],[T('Ingredients','المكونات'),T('100% natural, no artificial additives','طبيعية 100%، بلا إضافات')],[T('Certification','الشهادة'),'HACCP']];
-    $('#dBody').innerHTML=`<div class="d-pic" style="--cc:${TINT[p.cat]}"><img src="${img(id)}" alt="${p.en}"></div><h3>${T(p.en,p.ar)}</h3><p class="alt">${T(p.ar,p.en)}</p><p class="desc">${T(p.dEn,p.dAr)}</p><dl class="spec">${rows.map(r=>`<div><dt>${r[0]}</dt><dd>${r[1]}</dd></div>`).join('')}</dl>`;
-    $('#dFoot').innerHTML=`<button class="b ${on?'b-soft':'b-ink'}" id="dAdd">${on?T('✓ In your quote','✓ في قائمتك'):T('+ Add to quote','+ أضف لعرض السعر')}</button>${quote.size?`<button class="b b-amber" id="dList">${T('Quote list','القائمة')} (${quote.size})</button>`:''}`;
-    $('#dAdd').onclick=()=>toggleQuote(id);
-  }else{
-    $('#dTitle').textContent=T('Your quote list','قائمة عرض السعر');
-    const ids=[...quote];
-    $('#dBody').innerHTML=ids.length?`<div class="ql">${ids.map(i=>{const p=byId(i);return `<div class="ql-i"><img src="${img(i)}" alt=""><div><b>${T(p.en,p.ar)}</b><small><span dir="ltr">${p.pack}</span> · ${catName(p.cat)}</small></div><button data-rm="${i}" aria-label="Remove">${X}</button></div>`}).join('')}</div>`:`<p class="ql-empty">${T('Your list is empty — add products with +.','القائمة فارغة — أضف منتجات بعلامة +.')}</p>`;
-    $('#dFoot').innerHTML=`<button class="b b-soft" id="dMore">${T('Add more','أضف المزيد')}</button><a href="#request" class="b b-ink" id="dGo">${T('Request pricing','اطلب الأسعار')}${ARROW}</a>`;
-    $('#dMore').onclick=()=>{closeDrawer();$('#catalogue').scrollIntoView({behavior:'smooth'})};
-    $('#dGo').onclick=closeDrawer;
+function renderLines() {
+  $('#lines').innerHTML = LINES.map(l => `<button type="button" role="tab" id="tab-${l.k}" data-line="${l.k}" aria-selected="${!query && l.k === curLine}" tabindex="${!query && l.k === curLine ? 0 : -1}"><span>${T(l.en, l.ar)}</span><small>${inLine(l.k).length}</small></button>`).join('');
+  $('#panel').setAttribute('aria-labelledby', query ? 'q' : 'tab-' + curLine);
+}
+function renderPanel() {
+  const panel = $('#panel');
+  if (query) {
+    const q = query.toLowerCase();
+    const res = P.filter(p => { const l = lineOf(p.line); return (p.en + ' ' + p.ar + ' ' + l.en + ' ' + l.ar).toLowerCase().includes(q); });
+    panel.innerHTML = `<div class="ph"><h3>${T('Search results', 'نتائج البحث')}</h3><p class="ph-meta">${res.length} ${T(res.length === 1 ? 'product' : 'products', 'منتج')}</p></div>` +
+      (res.length ? `<ul class="plist">${res.map(rowHTML).join('')}</ul>` : `<p class="empty">${T('No product matches that name. Try another word, or send us your list and we will check.', 'لا يوجد منتج بهذا الاسم. جرّب كلمة أخرى، أو أرسل لنا قائمتك وسنراجعها.')}</p>`);
+    return;
   }
-  const L=$('#dList');if(L)L.onclick=()=>openDrawer('list');
-  d.classList.add('on');$('#scrim').classList.add('on');document.body.style.overflow='hidden';
+  const l = lineOf(curLine), items = inLine(curLine), pics = items.filter(p => p.img);
+  const keys = [...new Set(items.map(p => p.size))], multi = keys.length > 1;
+  panel.innerHTML =
+    `<div class="ph"><div><h3>${T(l.en, l.ar)}</h3><p class="ph-alt" lang="${LANG === 'ar' ? 'en' : 'ar'}">${T(l.ar, l.en)}</p></div><p class="ph-meta">${items.length} ${T('products', 'منتجًا')} · ${l.f ? T('Frozen', 'مجمد') : T('Ambient', 'حرارة الغرفة')}</p></div>` +
+    `<p class="ph-note">${T(l.dEn, l.dAr)}</p>` +
+    (pics.length ? `<div class="packs">${pics.map(p => `<button type="button" data-open="${p.id}"><span class="pf"><img src="${IMG(p.id)}" alt="" loading="lazy"></span><span>${T(p.en, p.ar)}</span></button>`).join('')}</div>` : '') +
+    `<ul class="plist">${items.map(rowHTML).join('')}</ul>` +
+    keys.map(k => specTable(k, multi)).join('') +
+    (l.onEn ? `<p class="onpack">${T(l.onEn, l.onAr)}</p>` : '');
 }
-function closeDrawer(){drawerMode=null;$('#drawer').classList.remove('on');$('#scrim').classList.remove('on');document.body.style.overflow=''}
-$('#dClose').onclick=closeDrawer;$('#scrim').onclick=closeDrawer;
-$('#dBody').addEventListener('click',e=>{const r=e.target.closest('[data-rm]');if(r){toggleQuote(r.dataset.rm,false);return}if(e.target.closest('.d-pic')){$('#lbImg').src=$('.d-pic img').src;$('#lb').classList.add('on')}});
-$('#lb').onclick=()=>$('#lb').classList.remove('on');
-addEventListener('keydown',e=>{if(e.key!=='Escape')return;if($('#lb').classList.contains('on'))$('#lb').classList.remove('on');else if(drawerMode)closeDrawer()});
-
-/* ---------- ordering rail ---------- */
-const rail=$('#rail');
-const railStep=d=>{const w=rail.querySelector('.step').offsetWidth+14;rail.scrollBy({left:(document.dir==='rtl'?-d:d)*w,behavior:'smooth'})};
-$('#rNext').onclick=()=>railStep(1);$('#rPrev').onclick=()=>railStep(-1);
-
-/* ---------- channel shelf ---------- */
-let ch='retail';
-function renderShelf(){
-  $('#pills').innerHTML=CH.map(c=>`<button class="${c.k===ch?'on':''}" data-k="${c.k}" role="tab" aria-selected="${c.k===ch}">${T(c.en,c.ar)}</button>`).join('');
-  const c=CH.find(x=>x.k===ch);
-  $('#chSub').textContent=T(c.sEn,c.sAr);
-  $('#shelf').innerHTML=c.p.map((id,i)=>{const p=byId(id);return `<button class="sp" data-id="${id}" style="animation-delay:${(i*.07).toFixed(2)}s"><img src="${img(id)}" alt="${p.en}"><span>${T(p.en,p.ar)}</span></button>`}).join('');
-  $('#perks').innerHTML=c.perks.map((k,i)=>`<span style="animation-delay:${(.3+i*.08).toFixed(2)}s">${T(k[0],k[1])}</span>`).join('');
+function selectLine(k, focusTab) {
+  curLine = k; query = ''; const q = $('#q'); if (q) q.value = '';
+  renderLines(); renderPanel();
+  if (focusTab) $('#tab-' + k).focus();
 }
-$('#pills').addEventListener('click',e=>{const b=e.target.closest('[data-k]');if(b){ch=b.dataset.k;renderShelf()}});
-$('#shelf').addEventListener('click',e=>{const b=e.target.closest('.sp');if(b)openDrawer('spec',b.dataset.id)});
-
-/* ---------- partnership accordion ---------- */
-$('#acc').addEventListener('click',e=>{const h=e.target.closest('.ac-h');if(!h)return;const ac=h.parentElement,open=!ac.classList.contains('on');
-  $$('#acc .ac').forEach(a=>{a.classList.remove('on');a.querySelector('.ac-h').setAttribute('aria-expanded','false')});
-  if(open){ac.classList.add('on');h.setAttribute('aria-expanded','true')}});
-
-/* ---------- live clocks ---------- */
-function tick(){
-  const f=tz=>new Intl.DateTimeFormat('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:tz}).format(new Date());
-  const lbl=tz=>{const h=+new Intl.DateTimeFormat('en-GB',{hour:'numeric',hour12:false,timeZone:tz}).format(new Date());return h>=9&&h<18?T('office open','المكتب مفتوح'):T('after hours','خارج الدوام')};
-  $('#clkDxb').innerHTML=`${f('Asia/Dubai')}<small>${lbl('Asia/Dubai')}</small>`;
-  $('#clkCai').innerHTML=`${f('Africa/Cairo')}<small>${lbl('Africa/Cairo')}</small>`;
-}
-tick();setInterval(tick,20000);
-
-/* ---------- form ---------- */
-function renderChips(){$('#chips').innerHTML=P.map(p=>`<span class="chip ${quote.has(p.id)?'on':''}" data-id="${p.id}" role="checkbox" tabindex="0" aria-checked="${quote.has(p.id)}">${T(p.en,p.ar)}</span>`).join('')}
-$('#chips').addEventListener('click',e=>{const c=e.target.closest('.chip');if(c){toggleQuote(c.dataset.id);$('#chips').classList.remove('err')}});
-$('#chips').addEventListener('keydown',e=>{const c=e.target.closest('.chip');if(c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();toggleQuote(c.dataset.id)}});
-function renderCountries(){const s=$('#fCountry'),v=s.value;s.innerHTML=`<option value="">${T('Select…','اختر…')}</option>`+COUNTRIES.map(c=>`<option>${c}</option>`).join('');s.value=v}
-$('#form').addEventListener('submit',e=>{
-  e.preventDefault();const t=$('#toast');let ok=true;
-  ['fName','fCompany','fEmail','fCountry','fType'].forEach(id=>{const el=$('#'+id),bad=!el.value.trim()||(el.type==='email'&&!/^\S+@\S+\.\S+$/.test(el.value));el.parentElement.classList.toggle('err',bad);if(bad)ok=false});
-  if(!ok){t.className='toast show bad';t.textContent=T('Please fill in the required fields.','يرجى إكمال الحقول المطلوبة.');return}
-  if(!quote.size){$('#chips').classList.add('err');t.className='toast show bad';t.textContent=T('Please choose at least one product.','يرجى اختيار منتج واحد على الأقل.');return}
-  const v=id=>$('#'+id).value||'—';
-  const body=`WHOLESALE PRICING REQUEST — Aqua Premium Foods\n\nName: ${v('fName')}\nCompany: ${v('fCompany')}\nEmail: ${v('fEmail')}\nPhone: ${v('fPhone')}\nCountry: ${v('fCountry')}\nBusiness type: ${v('fType')}\nEstimated volume: ${v('fQty')}\nBranding: ${v('fBrand')}\n\nProducts:\n${[...quote].map(id=>'- '+byId(id).en+' ('+byId(id).pack+')').join('\n')}\n\nNotes:\n${v('fMsg')}`;
-  location.href=`mailto:info@pureibs.com?subject=${encodeURIComponent('Wholesale request — '+$('#fCompany').value+' ('+$('#fCountry').value+')')}&body=${encodeURIComponent(body)}`;
-  t.className='toast show ok';t.textContent=T('Your email app is opening with the request ready. Thank you!','يتم فتح تطبيق البريد والطلب جاهز. شكرًا لك!');
+$('#lines').addEventListener('click', e => { const b = e.target.closest('[data-line]'); if (b) selectLine(b.dataset.line); });
+$('#lines').addEventListener('keydown', e => {
+  const keys = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 };
+  if (!(e.key in keys) && e.key !== 'Home' && e.key !== 'End') return;
+  e.preventDefault();
+  let i = LINES.findIndex(l => l.k === curLine), d = keys[e.key] || 0;
+  if (LANG === 'ar' && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) d = -d;
+  i = e.key === 'Home' ? 0 : e.key === 'End' ? LINES.length - 1 : (i + d + LINES.length) % LINES.length;
+  selectLine(LINES[i].k, true);
 });
-$$('.f :is(input,select)').forEach(el=>el.addEventListener('input',()=>el.parentElement.classList.remove('err')));
+let qTimer;
+$('#q').addEventListener('input', e => { clearTimeout(qTimer); qTimer = setTimeout(() => { query = e.target.value.trim(); renderLines(); renderPanel(); }, 120); });
 
-/* ---------- footer + init ---------- */
-function renderFooter(){$('#fProds').innerHTML=['tuna-solid','fava-plain','hummus-tahini','fz-fries-classic','fz-okra','fz-strawberry'].map(id=>`<li><a href="#catalogue" data-open="${id}">${T(byId(id).en,byId(id).ar)}</a></li>`).join('')}
-$('#fProds').addEventListener('click',e=>{const a=e.target.closest('[data-open]');if(a){e.preventDefault();openDrawer('spec',a.dataset.open)}});
-$('#yr').textContent=new Date().getFullYear();
-applyLang(LANG);observe();
+/* ---------- jump to a line ---------- */
+document.addEventListener('click', e => {
+  const g = e.target.closest('[data-goto]'); if (!g) return;
+  if (g.dataset.goto) selectLine(g.dataset.goto);
+  $('#catalogue').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+});
+
+/* ---------- quote list ---------- */
+function toggleQuote(id, force) {
+  const on = force !== undefined ? force : !quote.has(id);
+  on ? quote.add(id) : quote.delete(id); saveQuote();
+  $$(`.add[data-add="${id}"]`).forEach(b => { b.setAttribute('aria-pressed', String(on)); b.setAttribute('aria-label', addLabel(id)); b.innerHTML = addInner(id); });
+  renderQuote();
+  if (drawerId === id) { const inFoot = $('#dFoot').contains(document.activeElement); renderDrawerFoot(); if (inFoot) $('#dFoot [data-add]').focus(); }
+}
+document.addEventListener('click', e => { const a = e.target.closest('[data-add]'); if (a) { e.stopPropagation(); toggleQuote(a.dataset.add); } });
+function renderQuote() {
+  const ids = [...quote], n = ids.length;
+  $('#qlist').innerHTML = n ? ids.map(id => { const p = byId(id), l = lineOf(p.line); return `<li>${p.img ? `<img src="${IMG(id)}" alt="" loading="lazy">` : `<span class="qd" aria-hidden="true">${(T(p.en, p.ar)).charAt(0)}</span>`}<span><b>${T(p.en, p.ar)}</b><small>${T(l.en, l.ar)}</small></span><button type="button" data-rm="${id}" aria-label="${T('Remove', 'إزالة')}: ${T(p.en, p.ar)}">${ICON.x}</button></li>`; }).join('')
+    : `<li class="q-empty">${T('Nothing added yet. Pick products from the catalogue, or describe what you need in the notes.', 'لم تُضف منتجات بعد. اختر من الكتالوج، أو اكتب ما تحتاجه في الملاحظات.')}</li>`;
+  $('#trayTxt').textContent = T(`${n} ${n === 1 ? 'product' : 'products'} in your quote`, `${n} ${n === 1 ? 'منتج' : 'منتجات'} في عرض السعر`);
+  $('#tray').classList.toggle('on', n > 0 && !inRequest);
+}
+$('#qlist').addEventListener('click', e => { const r = e.target.closest('[data-rm]'); if (r) toggleQuote(r.dataset.rm, false); });
+let inRequest = false;
+new IntersectionObserver(es => es.forEach(e => { inRequest = e.isIntersecting; $('#tray').classList.toggle('on', quote.size > 0 && !inRequest); }), { threshold: .15 }).observe($('#request'));
+
+/* ---------- product drawer ---------- */
+const drawer = $('#drawer'), scrim = $('#scrim');
+let drawerId = null, lastFocus = null;
+function renderDrawerFoot() {
+  const on = quote.has(drawerId);
+  $('#dFoot').innerHTML = `<button class="btn ${on ? 'ghost' : ''}" type="button" data-add="${drawerId}" aria-pressed="${on}">${on ? T('Remove from quote', 'إزالة من عرض السعر') : T('Add to quote', 'أضف إلى عرض السعر')}</button>${quote.size ? `<a class="btn ${on ? '' : 'ghost'}" href="#request" data-close>${T('Review request', 'راجع الطلب')} (${quote.size})</a>` : ''}`;
+}
+function openDrawer(id) {
+  const p = byId(id); if (!p) return;
+  const l = lineOf(p.line), other = LANG === 'ar' ? 'en' : 'ar';
+  drawerId = id; lastFocus = document.activeElement;
+  $('#dLine').textContent = T(l.en, l.ar);
+  $('#dBody').innerHTML =
+    (p.img ? `<figure class="d-fig"><img src="${IMG(id)}" alt="${T(p.en, p.ar)}"></figure>` : `<div class="d-plate" aria-hidden="true"><span lang="${other}">${T(p.ar, p.en)}</span></div>`) +
+    `<h3 id="dTitle">${T(p.en, p.ar)}</h3><p class="d-alt" lang="${other}">${T(p.ar, p.en)}</p>` +
+    (p.dEn ? `<p class="d-desc">${T(p.dEn, p.dAr)}</p>` : '') +
+    `<dl class="d-facts"><div><dt>${T('Line', 'الخط')}</dt><dd>${T(l.en, l.ar)}</dd></div><div><dt>${T('Storage', 'التخزين')}</dt><dd>${l.f ? T('Frozen', 'مجمد') : T('Ambient', 'حرارة الغرفة')}</dd></div><div><dt>${T('Pack sizes', 'الأحجام')}</dt><dd>${sizeText(p)}</dd></div>${l.onEn ? `<div><dt>${T('On the pack', 'على العبوة')}</dt><dd>${T(l.onEn, l.onAr).replace(/^[^:]*:\s*/, '')}</dd></div>` : ''}<div><dt>${T('Brand', 'العلامة')}</dt><dd>${p.line === 'coffee' ? 'PURE Espresso' : T('Aqua Premium or private label', 'أكوا بريميوم أو علامة خاصة')}</dd></div></dl>` +
+    specTable(p.size, false);
+  renderDrawerFoot();
+  drawer.inert = false; drawer.classList.add('on'); scrim.classList.add('on');
+  document.body.style.overflow = 'hidden';
+  requestAnimationFrame(() => $('#dClose').focus({ preventScroll: true }));
+}
+function closeDrawer(keepFocus) {
+  if (!drawerId) return;
+  drawerId = null; drawer.classList.remove('on'); scrim.classList.remove('on'); drawer.inert = true;
+  document.body.style.overflow = '';
+  if (!keepFocus && lastFocus && lastFocus.isConnected) lastFocus.focus({ preventScroll: true });
+}
+document.addEventListener('click', e => {
+  const o = e.target.closest('[data-open]'); if (o && !e.target.closest('[data-add]')) { openDrawer(o.dataset.open); return; }
+  if (e.target.closest('[data-close]')) closeDrawer(true);
+});
+$('#dClose').addEventListener('click', () => closeDrawer()); scrim.addEventListener('click', () => closeDrawer());
+addEventListener('keydown', e => {
+  if (e.key === 'Escape') { if (drawerId) closeDrawer(); else if (mnav.classList.contains('open')) { setMenu(false); burger.focus(); } }
+  if (e.key === 'Tab' && drawerId) {
+    const f = $$('button, a[href], [tabindex="0"]', drawer).filter(el => el.offsetParent !== null);
+    if (!f.length) return;
+    if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+    else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+  }
+});
+
+/* ---------- request form ---------- */
+const COUNTRIES = ['United Arab Emirates', 'Egypt', 'Saudi Arabia', 'Kuwait', 'Qatar', 'Bahrain', 'Oman', 'Jordan', 'Lebanon', 'Iraq', 'Libya', 'Tunisia', 'Algeria', 'Morocco', 'Sudan', 'Kenya', 'Nigeria', 'South Africa', 'Turkey', 'United Kingdom', 'Germany', 'France', 'Netherlands', 'Italy', 'Spain', 'Greece', 'India', 'Pakistan', 'Malaysia', 'Singapore', 'China', 'Australia', 'United States', 'Canada'];
+function renderCountries() {
+  const s = $('#fCountry'), v = s.value;
+  s.innerHTML = `<option value="">${T('Choose…', 'اختر…')}</option>` + COUNTRIES.map(c => `<option>${c}</option>`).join('') + `<option value="Other">${T('Other', 'أخرى')}</option>`;
+  s.value = v;
+}
+const form = $('#form'), status = $('#status');
+const REQ = ['fName', 'fCompany', 'fEmail', 'fCountry', 'fType'];
+const bad = el => !el.value.trim() || (el.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(el.value.trim()));
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  let first = null;
+  REQ.forEach(id => { const el = $('#' + id), b = bad(el); el.closest('.field').classList.toggle('err', b); el.setAttribute('aria-invalid', String(b)); if (b && !first) first = el; });
+  if (first) { status.className = 'status show bad'; status.textContent = T('A few details are missing. Please check the highlighted fields.', 'بعض البيانات ناقصة. راجع الحقول المحددة.'); first.focus(); return; }
+  const v = id => $('#' + id).value.trim() || '—';
+  const items = [...quote].map(id => { const p = byId(id); return `- ${p.en} (${sizeText(p) || 'size on request'})`; }).join('\n') || '- (see notes)';
+  const body = `QUOTE REQUEST — Aqua Premium Foods\n\nName: ${v('fName')}\nCompany: ${v('fCompany')}\nEmail: ${v('fEmail')}\nPhone: ${v('fPhone')}\nCountry: ${v('fCountry')}\nBusiness type: ${v('fType')}\nEstimated volume: ${v('fQty')}\nBrand: ${v('fBrand')}\n\nProducts:\n${items}\n\nNotes:\n${v('fMsg')}`;
+  location.href = `mailto:info@pureibs.com?subject=${encodeURIComponent(`Quote request — ${v('fCompany')} (${v('fCountry')})`)}&body=${encodeURIComponent(body)}`;
+  status.className = 'status show ok'; status.textContent = T('Your email app should now open with the request ready. If it does not, write to info@pureibs.com.', 'من المفترض أن يفتح تطبيق البريد الآن والطلب جاهز. إن لم يفتح، راسلنا على info@pureibs.com.');
+});
+REQ.forEach(id => $('#' + id).addEventListener('input', e => { if (!bad(e.target)) { e.target.closest('.field').classList.remove('err'); e.target.removeAttribute('aria-invalid'); } }));
+
+/* ---------- boot ---------- */
+function renderAll() {
+  renderIndex(); renderShelf(); renderCluster(); renderLines(); renderPanel(); renderQuote(); renderCountries();
+  if (drawerId) openDrawer(drawerId);
+}
+$('#yr').textContent = new Date().getFullYear();
+applyLang(LANG, false);
+})();
 </script>
 </body>
 </html>

@@ -1,0 +1,12 @@
+{
+  "name": "aqua-premium-redesign",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Website redesign concept for Aqua Premium Foods — bilingual (EN/AR) static site.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "python -m http.server 5173"
+  },
+  "license": "UNLICENSED"
+}
